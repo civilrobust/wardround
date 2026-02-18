@@ -1,0 +1,851 @@
+patient_id,name,nhs_number,dob,age,gender,ward,bay,bed,hospital_site,consultant,registrar,team,specialty,admission_date,admission_reason,days_in,patient_class,priority,escalation_flag,dnacpr,isolation,vte_status,dw_diet,dw_activity,dw_vitals,dw_investigations,dw_drains,dw_wounds,dw_examination,dw_nursing,dw_drugs,dw_barriers,obs_hr,obs_hr_flag,obs_bp,obs_bp_flag,obs_temp,obs_temp_flag,obs_o2,obs_o2_flag,obs_rr,obs_rr_flag,news_score,medications,allergies,antibiotics,abx_day,abx_review,bloods,imaging,ecg,microbiology,social_situation,mobility,discharge_plan,expected_discharge,ttl_written,procedures,operation_date,post_op_day,case_classification,alerts,tags,status,created_at,last_updated,updated_by
+KCH0001,Mr Thomas Darko,242 854 2679,08/04/1963,63 yrs,Male,Ward 4B,Bay 1,Bed A,King's College Hospital,Dr Chen,Dr Frederick Adeyemi,Cardiology,Cardiology,28/01/2026,Permanent pacemaker implant,20,Inpatient,green,None,Yes,,Tinzaparin 3500u SC daily,Nutritional supplements BD — poor intake,"Mobilising with zimmer frame, physio BD",HR 77 | BP 116/85 | Temp 37.0°C | O2 99% | RR 13 | NEWS 1,Hb 98↓ | WCC 14.2↑ | Plt 210 | Na 136 | K 4.1 | Cr 98 | eGFR 68 | CRP 54↑ | INR 1.1,Chest drain removed day 2. Cannula only.,Sternal wound — staple line intact. Clean and dry.,Cool peripheries. JVP elevated. Bibasal creps.,Pressure area care — repositioning 2-hourly,"Heparin infusion (ACS protocol)
+Ticagrelor 90mg BD
+Aspirin 75mg OD
+GTN spray PRN
+Furosemide 40mg IV",Nil barriers — for discharge when medically fit,77,ok,116/85,ok,37.0,ok,99%,ok,13,ok,1,"Heparin infusion (ACS protocol)
+Ticagrelor 90mg BD
+Aspirin 75mg OD
+GTN spray PRN
+Furosemide 40mg IV",Latex — contact dermatitis,,,,Hb 98↓ | WCC 14.2↑ | Plt 210 | Na 136 | K 4.1 | Cr 98 | eGFR 68 | CRP 54↑ | INR 1.1,,Sinus tachycardia 104bpm,Wound swab: pending,Lives with spouse (frail). Both need POC arranging. Carer's assessment requested.,Mobilising with crutches NWB,Home with community nursing for wound care. Outpatient review booked.,19/02/2026,Complete,Permanent pacemaker implant,28/01/2026,Day 20,P1a - Emergency - Procedure needed within 24 hours,,CARDIOLOGY|DNACPR,Active,2026-02-17T13:38:03.423188,2026-02-17T13:38:03.423188,system
+KCH0002,Mr Kofi Lewis,821 171 1750,19/04/1952,74 yrs,Male,Ward 5A,Bay 2,Bed A,King's College Hospital,Ms Williams,Dr Kofi Mitchell,General Surgery,General Surgery,27/01/2026,Anterior resection (colorectal Ca),21,Inpatient,amber,amber,No,Droplet,Rivaroxaban 10mg OD,Diabetic diet. Good intake. HbA1c optimisation ongoing,Wheelchair transfers only,HR 85 | BP 123/71 | Temp 37.3°C | O2 95% | RR 21 | NEWS 2,Hb 132 | WCC 11.2 | Plt 280 | Na 140 | K 4.0 | Cr 85 | eGFR 78 | CRP 8 | HbA1c 52,Chest drain removed day 2. Cannula only.,Wound clean and dry. Steristrips intact. NERDS 0.,Bibasal crepitations — improving. Abdomen soft.,Family very anxious — need update today,"Heparin infusion (ACS protocol)
+Ticagrelor 90mg BD
+Aspirin 75mg OD
+GTN spray PRN
+Furosemide 40mg IV",Family not yet informed of diagnosis,85,ok,123/71,ok,37.3,ok,95%,ok,21,warn,2,"Heparin infusion (ACS protocol)
+Ticagrelor 90mg BD
+Aspirin 75mg OD
+GTN spray PRN
+Furosemide 40mg IV",NSAID — GI intolerance,,,,Hb 132 | WCC 11.2 | Plt 280 | Na 140 | K 4.0 | Cr 85 | eGFR 78 | CRP 8 | HbA1c 52,CT chest: no PE. Bilateral consolidation — improving,,Wound swab: pending,Lives with spouse (frail). Both need POC arranging. Carer's assessment requested.,Bed-bound — hoist transfers,Step-down to ward from HDU — discharge planning to begin.,23/02/2026,Written,Anterior resection (colorectal Ca),07/02/2026,Day 10,P4 - Elective,AMBER — antibiotic review due. Cultures pending. Micro input requested.,GENERAL SURGERY|MONITOR|DROPLET,Active,2026-02-17T13:38:03.423270,2026-02-17T13:38:03.423270,system
+KCH0003,Miss Sarah Robinson,538 697 7543,24/10/1965,61 yrs,Female,Ward 6C,Bay 4,Bed A,King's College Hospital,Dr Ali,Dr John Wilson,Medicine,Medicine,12/02/2026,Sepsis (urinary source),5,Surgery Admit,urgent,escalate,No,Contact,Enoxaparin 40mg SC daily,Full diet — eating and drinking well,Weight-bearing as tolerated with crutches,HR 120 | BP 75/53 | Temp 38.8°C | O2 91% | RR 28 | NEWS 11,Hb 105↓ | WCC 22.1↑↑ | Plt 420↑ | Na 134↓ | K 3.6 | Cr 118↑ | eGFR 52 | CRP 180↑ | PCT 4.2↑,PICC line in situ. Arterial line R radial.,Wound — mild erythema 1cm. No exudate. Monitor.,Cool peripheries. JVP elevated. Bibasal creps.,Wound soaking dressings — concern re infection,"Apixaban 5mg BD
+Atorvastatin 40mg ON
+Amlodipine 5mg OD
+Lisinopril 10mg OD",Awaiting scan result before discharge,120,warn,75/53,bad,38.8,bad,91%,warn,28,bad,11,"Apixaban 5mg BD
+Atorvastatin 40mg ON
+Amlodipine 5mg OD
+Lisinopril 10mg OD",Sulphonamides — rash,,,,Hb 105↓ | WCC 22.1↑↑ | Plt 420↑ | Na 134↓ | K 3.6 | Cr 118↑ | eGFR 52 | CRP 180↑ | PCT 4.2↑,"USS abdomen: gallstones, CBD 4mm — normal","Sinus rhythm 72bpm, normal axis, no ST changes",,Lives alone. Sheltered accommodation. Warden on site. Low-level support needed.,Mobilising with frame,Discharge today if bloods acceptable. TTL with pharmacy.,,,Sepsis (urinary source),,,P1b - Urgent - Procedure needed within 72 hours,URGENT — sepsis suspected. Lactate elevated. Cultures pending. Sepsis 6 initiated.,MEDICINE|URGENT|CONTACT,Active,2026-02-17T13:38:03.423322,2026-02-17T13:38:03.423322,system
+KCH0004,Mr Kwame Patel,600 119 2832,20/06/1998,28 yrs,Male,Thoracic Ward,Bay 2,Bed A,King's College Hospital,Dr Chen,Dr Lakshmi Davies,Medicine,Medicine,14/02/2026,Sepsis (urinary source),3,Day Case,urgent,escalate,No,,Contraindicated — haemorrhage risk,Soft/purée — thin fluids safe with chin tuck,"Mobilising with zimmer frame, physio BD",HR 123 | BP 85/42 | Temp 39.5°C | O2 92% | RR 24 | NEWS 8,Hb 78↓↓ | WCC 18.6↑ | Plt 88↓ | Na 131↓ | K 5.2↑ | Cr 210↑ | eGFR 28 | CRP 310↑ | Lactate 3.8↑,IDC in situ — UO monitoring. IV cannula.,Wound — mild erythema 1cm. No exudate. Monitor.,Chest clear. Abdomen soft. Calves non-tender.,Family very anxious — need update today,"Apixaban 5mg BD
+Atorvastatin 40mg ON
+Amlodipine 5mg OD
+Lisinopril 10mg OD",Nil barriers — for discharge when medically fit,123,bad,85/42,bad,39.5,bad,92%,warn,24,warn,8,"Apixaban 5mg BD
+Atorvastatin 40mg ON
+Amlodipine 5mg OD
+Lisinopril 10mg OD",Sulphonamides — rash,,,,Hb 78↓↓ | WCC 18.6↑ | Plt 88↓ | Na 131↓ | K 5.2↑ | Cr 210↑ | eGFR 28 | CRP 310↑ | Lactate 3.8↑,"Echo: EF 30%↓, dilated LV. Urgent cardiology review",,,Lives alone. Sheltered accommodation. Warden on site. Low-level support needed.,Mobilising with crutches NWB,Nursing home placement in progress. Social worker involved.,,,Sepsis (urinary source),,,P2b - Procedure can be deferred for up to 1 month,CRITICAL — post-op deterioration. Surgical review now. Return to theatre possible.,MEDICINE|URGENT,Active,2026-02-17T13:38:03.423375,2026-02-17T13:38:03.423375,system
+KCH0005,Mr David Thompson,172 626 4899,02/06/1990,36 yrs,Male,Cardiac HDU,Bay 2,Bed D,King's College Hospital,Dr Chen,Dr Brenda Adams,Thoracic Surgery,Thoracic Surgery,10/02/2026,Thoracotomy + decortication,7,Surgery Admit,amber,amber,No,,Rivaroxaban 10mg OD,Soft/purée — thin fluids safe with chin tuck,Sit in chair twice daily. Sternal precautions,HR 83 | BP 106/81 | Temp 37.6°C | O2 96% | RR 19 | NEWS 5,Hb 98↓ | WCC 14.2↑ | Plt 210 | Na 136 | K 4.1 | Cr 98 | eGFR 68 | CRP 54↑ | INR 1.1,No drains. Peripheral cannula in situ.,Port sites clean. Day 2 post-op. No concerns.,Cool peripheries. JVP elevated. Bibasal creps.,Wound soaking dressings — concern re infection,"Aspirin 75mg OD
+Atorvastatin 80mg ON
+Bisoprolol 2.5mg OD
+Ramipril 5mg OD
+Enoxaparin 40mg SC",Nil barriers — for discharge when medically fit,83,ok,106/81,warn,37.6,ok,96%,ok,19,ok,5,"Aspirin 75mg OD
+Atorvastatin 80mg ON
+Bisoprolol 2.5mg OD
+Ramipril 5mg OD
+Enoxaparin 40mg SC",Penicillin — rash,,,,Hb 98↓ | WCC 14.2↑ | Plt 210 | Na 136 | K 4.1 | Cr 98 | eGFR 68 | CRP 54↑ | INR 1.1,"X-ray hip: implant in good position, no loosening",Sinus bradycardia 48bpm,,Lives alone. Son visits daily. House has stairs — OT assessment pending.,Fully mobile — independent,Nursing home placement in progress. Social worker involved.,26/02/2026,Written,Thoracotomy + decortication,,,P1b - Urgent - Procedure needed within 72 hours,MONITOR — persistent pyrexia. Source unclear. Repeat bloods today.,THORACIC SURGERY|MONITOR,Active,2026-02-17T13:38:03.423427,2026-02-17T13:38:03.423427,system
+KCH0006,Mrs Sunita Osei,488 102 7396,02/03/1947,79 yrs,Female,CCU,Bay 3,Bed D,King's College Hospital,Mr Fraser,Dr Sunita Mensah,Thoracic Surgery,Thoracic Surgery,25/01/2026,VATS lobectomy (lung Ca),23,Day Case,amber,amber,No,,Enoxaparin 40mg SC daily,Free fluids — progressing well,Wheelchair transfers only,HR 84 | BP 112/69 | Temp 37.3°C | O2 93% | RR 20 | NEWS 6,Hb 98↓ | WCC 14.2↑ | Plt 210 | Na 136 | K 4.1 | Cr 98 | eGFR 68 | CRP 54↑ | INR 1.1,No drains. Peripheral cannula in situ.,Wound dehiscence — TVN referral made. Dressing daily.,Bibasal crepitations — improving. Abdomen soft.,No nursing concerns,"Aspirin 75mg OD
+Atorvastatin 80mg ON
+Bisoprolol 2.5mg OD
+Ramipril 5mg OD
+Enoxaparin 40mg SC",Awaiting physio discharge assessment,84,ok,112/69,ok,37.3,ok,93%,warn,20,ok,6,"Aspirin 75mg OD
+Atorvastatin 80mg ON
+Bisoprolol 2.5mg OD
+Ramipril 5mg OD
+Enoxaparin 40mg SC",NKDA,,,,Hb 98↓ | WCC 14.2↑ | Plt 210 | Na 136 | K 4.1 | Cr 98 | eGFR 68 | CRP 54↑ | INR 1.1,"CXR: clear lung fields, no pneumothorax",,C.diff toxin: negative,Independent. Drives own car. No mobility aids. Pre-op baseline excellent.,Walking with stick — improving,Home tomorrow if clinically stable overnight.,01/03/2026,,VATS lobectomy (lung Ca),09/02/2026,Day 8,P1a - Emergency - Procedure needed within 24 hours,MONITOR — wound concern. Erythema noted. TVN referral made.,THORACIC SURGERY|MONITOR,Active,2026-02-17T13:38:03.423474,2026-02-17T13:38:03.423474,system
+KCH0007,Miss Anne Martin,505 234 5915,08/05/1958,68 yrs,Female,Ward 5A,Bay 1,Bed D,King's College Hospital,Ms Nwosu,Dr Lakshmi Evans,Urology,Urology,14/02/2026,Transurethral resection prostate (TURP),3,Day Case,green,None,No,,Tinzaparin 3500u SC daily,NBM — return to theatre possible,Weight-bearing as tolerated with crutches,HR 76 | BP 118/69 | Temp 37.3°C | O2 96% | RR 13 | NEWS 1,Hb 105↓ | WCC 22.1↑↑ | Plt 420↑ | Na 134↓ | K 3.6 | Cr 118↑ | eGFR 52 | CRP 180↑ | PCT 4.2↑,Chest drain removed day 2. Cannula only.,Wound dehiscence — TVN referral made. Dressing daily.,Bibasal crepitations — improving. Abdomen soft.,Family very anxious — need update today,"Meropenem 1g TDS IV
+Vancomycin IV — levels
+Furosemide 80mg BD
+Enoxaparin 40mg SC
+Insulin sliding scale",Family not yet informed of diagnosis,76,ok,118/69,ok,37.3,ok,96%,ok,13,ok,1,"Meropenem 1g TDS IV
+Vancomycin IV — levels
+Furosemide 80mg BD
+Enoxaparin 40mg SC
+Insulin sliding scale",Sulphonamides — rash,Meropenem 1g TDS IV,3,21/02/2026,Hb 105↓ | WCC 22.1↑↑ | Plt 420↑ | Na 134↓ | K 3.6 | Cr 118↑ | eGFR 52 | CRP 180↑ | PCT 4.2↑,"MRI spine: L4/5 disc prolapse, no cord compression","Sinus rhythm 72bpm, normal axis, no ST changes",C.diff toxin: negative,Complex social situation. Homeless pre-admission. SW involved. Awaiting placement.,Mobilising with crutches NWB,Step-down to ward from HDU — discharge planning to begin.,17/02/2026,Pharmacy,Transurethral resection prostate (TURP),15/02/2026,Day 2,P1a - Emergency - Procedure needed within 24 hours,,UROLOGY,Active,2026-02-17T13:38:03.423524,2026-02-17T13:38:03.423524,system
+KCH0008,Mr William Okafor,145 103 6464,27/05/1944,82 yrs,Male,Thoracic Ward,Bay 2,Bed D,King's College Hospital,Dr Martinez,Dr Christine Khan,Respiratory,Respiratory,16/02/2026,Community-acquired pneumonia,1,Day Case,amber,amber,No,Contact,Enoxaparin 40mg SC daily,Soft diet — SALT assessment complete,Non-weight bearing R leg. Hoist transfers,HR 83 | BP 104/82 | Temp 38.4°C | O2 97% | RR 16 | NEWS 4,Hb 78↓↓ | WCC 18.6↑ | Plt 88↓ | Na 131↓ | K 5.2↑ | Cr 210↑ | eGFR 28 | CRP 310↑ | Lactate 3.8↑,PICC line in situ. Arterial line R radial.,Port sites clean. Day 2 post-op. No concerns.,Cool peripheries. JVP elevated. Bibasal creps.,"Night-time confusion, falls risk HIGH","Heparin infusion (ACS protocol)
+Ticagrelor 90mg BD
+Aspirin 75mg OD
+GTN spray PRN
+Furosemide 40mg IV",Family not yet informed of diagnosis,83,ok,104/82,warn,38.4,warn,97%,ok,16,ok,4,"Heparin infusion (ACS protocol)
+Ticagrelor 90mg BD
+Aspirin 75mg OD
+GTN spray PRN
+Furosemide 40mg IV",Sulphonamides — rash,,,,Hb 78↓↓ | WCC 18.6↑ | Plt 88↓ | Na 131↓ | K 5.2↑ | Cr 210↑ | eGFR 28 | CRP 310↑ | Lactate 3.8↑,"X-ray hip: implant in good position, no loosening",Sinus tachycardia 104bpm,,Residential care home. POC already in place. Ready to return when medically fit.,Mobilising with frame,Complex social situation. Family meeting this week. Package of care to arrange.,02/03/2026,,Community-acquired pneumonia,,,P1b - Urgent - Procedure needed within 72 hours,AMBER — antibiotic review due. Cultures pending. Micro input requested.,RESPIRATORY|MONITOR|CONTACT,Active,2026-02-17T13:38:03.423568,2026-02-17T13:38:03.423568,system
+KCH0009,Mr Trevor Adams,906 818 2771,09/03/1967,59 yrs,Male,CCU,Bay 2,Bed B,King's College Hospital,Ms Robertson,Dr Pauline Turner,Medicine,Medicine,07/02/2026,Delirium + fall,10,Surgery Admit,amber,amber,No,,Tinzaparin 3500u SC daily,Diabetic diet. Good intake. HbA1c optimisation ongoing,Non-weight bearing R leg. Hoist transfers,HR 105 | BP 114/67 | Temp 37.0°C | O2 94% | RR 19 | NEWS 4,Hb 88↓ | WCC 6.2 | Plt 156 | Na 142 | K 3.9 | Cr 62 | eGFR >90 | CRP 12 | Albumin 28↓,No lines in situ.,Wound dehiscence — TVN referral made. Dressing daily.,Cool peripheries. JVP elevated. Bibasal creps.,Wound soaking dressings — concern re infection,"Meropenem 1g TDS IV
+Vancomycin IV — levels
+Furosemide 80mg BD
+Enoxaparin 40mg SC
+Insulin sliding scale",NHS continuing healthcare assessment pending,105,warn,114/67,ok,37.0,ok,94%,warn,19,ok,4,"Meropenem 1g TDS IV
+Vancomycin IV — levels
+Furosemide 80mg BD
+Enoxaparin 40mg SC
+Insulin sliding scale",NKDA,Meropenem 1g TDS IV,2,20/02/2026,Hb 88↓ | WCC 6.2 | Plt 156 | Na 142 | K 3.9 | Cr 62 | eGFR >90 | CRP 12 | Albumin 28↓,,Sinus bradycardia 48bpm,,Lives alone. Sheltered accommodation. Warden on site. Low-level support needed.,Wheelchair dependent,Home with GP follow-up in 2 weeks. TTL written.,21/02/2026,,Delirium + fall,,,P4 - Elective,AMBER — antibiotic review due. Cultures pending. Micro input requested.,MEDICINE|MONITOR,Active,2026-02-17T13:38:03.423617,2026-02-17T13:38:03.423617,system
+KCH0010,Miss Mary Patel,171 780 6409,12/07/1973,53 yrs,Female,Ward 5A,Bay 3,Bed C,King's College Hospital,Dr Gupta,Dr Angela Harris,Gastroenterology,Gastroenterology,04/02/2026,Acute pancreatitis,13,Day Case,amber,amber,No,,Contraindicated — haemorrhage risk,Free fluids — progressing well,Mobilising well — physio goals met,HR 102 | BP 118/77 | Temp 37.2°C | O2 96% | RR 21 | NEWS 5,Hb 88↓ | WCC 6.2 | Plt 156 | Na 142 | K 3.9 | Cr 62 | eGFR >90 | CRP 12 | Albumin 28↓,Chest drain in situ — draining serosanguinous fluid.,Wound — mild erythema 1cm. No exudate. Monitor.,Examination unremarkable. Improving.,Wound soaking dressings — concern re infection,"Metoprolol 25mg BD
+Furosemide 40mg OD
+Spironolactone 25mg OD
+Warfarin — INR target 2-3
+Digoxin 125mcg OD",Awaiting scan result before discharge,102,warn,118/77,ok,37.2,ok,96%,ok,21,warn,5,"Metoprolol 25mg BD
+Furosemide 40mg OD
+Spironolactone 25mg OD
+Warfarin — INR target 2-3
+Digoxin 125mcg OD",Latex — contact dermatitis,,,,Hb 88↓ | WCC 6.2 | Plt 156 | Na 142 | K 3.9 | Cr 62 | eGFR >90 | CRP 12 | Albumin 28↓,"USS abdomen: gallstones, CBD 4mm — normal","Sinus rhythm 72bpm, normal axis, no ST changes",MSU: ESBL E.coli — sensitive to meropenem,Lives with family. Good support network. Daughter is main carer.,Fully mobile — independent,Nursing home placement in progress. Social worker involved.,27/02/2026,,Acute pancreatitis,,,P2b - Procedure can be deferred for up to 1 month,AMBER — antibiotic review due. Cultures pending. Micro input requested.,GASTROENTEROLOGY|MONITOR,Active,2026-02-17T13:38:03.423659,2026-02-17T13:38:03.423659,system
+KCH0011,Mrs Christine White,586 725 2193,02/04/1995,31 yrs,Female,Gynae Ward,Bay 2,Bed D,King's College Hospital,Mr Thompson,Dr Elizabeth Robinson,Urology,Urology,12/02/2026,Transurethral resection prostate (TURP),5,Day Case,green,None,Pending,Droplet,Not indicated — fully mobile low risk,Nutritional supplements BD — poor intake,Mobilising well — physio goals met,HR 82 | BP 110/68 | Temp 37.1°C | O2 97% | RR 13 | NEWS 2,Hb 132 | WCC 11.2 | Plt 280 | Na 140 | K 4.0 | Cr 85 | eGFR 78 | CRP 8 | HbA1c 52,IDC in situ — UO monitoring. IV cannula.,Healing well. Sutures for removal day 10.,Cognitively improved. Chest clear. Mobile.,Compliant and motivated. Good progress,"Prednisolone 40mg OD
+Omeprazole 40mg OD
+Calcium + Vit D
+Enoxaparin 40mg SC
+Azathioprine 100mg OD",Awaiting scan result before discharge,82,ok,110/68,ok,37.1,ok,97%,ok,13,ok,2,"Prednisolone 40mg OD
+Omeprazole 40mg OD
+Calcium + Vit D
+Enoxaparin 40mg SC
+Azathioprine 100mg OD",Sulphonamides — rash,Omeprazole 40mg OD,8,18/02/2026,Hb 132 | WCC 11.2 | Plt 280 | Na 140 | K 4.0 | Cr 85 | eGFR 78 | CRP 8 | HbA1c 52,CXR: bilateral basal atelectasis — improving,,,Lives alone. Sheltered accommodation. Warden on site. Low-level support needed.,Walking with stick — improving,Not ready — awaiting physio milestones and wound review.,21/02/2026,,Transurethral resection prostate (TURP),17/02/2026,Day 0,P4 - Elective,,UROLOGY|DROPLET|DC PLAN,Active,2026-02-17T13:38:03.423705,2026-02-17T13:38:03.423705,system
+KCH0012,Ms Janet Hall,340 378 6502,23/05/1989,37 yrs,Female,Ward 5A,Bay 2,Bed B,King's College Hospital,Dr Chen,Dr Karen Boateng,Gastroenterology,Gastroenterology,12/02/2026,Acute pancreatitis,5,Surgery Admit,amber,amber,Yes,CDiff,Enoxaparin 40mg SC daily,Free fluids — progressing well,Mobilising well — physio goals met,HR 102 | BP 113/62 | Temp 37.6°C | O2 95% | RR 20 | NEWS 5,Hb 88↓ | WCC 6.2 | Plt 156 | Na 142 | K 3.9 | Cr 62 | eGFR >90 | CRP 12 | Albumin 28↓,IDC in situ — UO monitoring. IV cannula.,Sternal wound — staple line intact. Clean and dry.,Cognitively improved. Chest clear. Mobile.,Compliant and motivated. Good progress,"Morphine PCA
+Cyclizine 50mg TDS
+Paracetamol 1g QDS IV
+Metronidazole 500mg TDS IV
+Co-amoxiclav 1.2g TDS IV",Nil barriers — for discharge when medically fit,102,warn,113/62,ok,37.6,ok,95%,ok,20,ok,5,"Morphine PCA
+Cyclizine 50mg TDS
+Paracetamol 1g QDS IV
+Metronidazole 500mg TDS IV
+Co-amoxiclav 1.2g TDS IV",NKDA,Metronidazole 500mg TDS IV,1,19/02/2026,Hb 88↓ | WCC 6.2 | Plt 156 | Na 142 | K 3.9 | Cr 62 | eGFR >90 | CRP 12 | Albumin 28↓,,"Sinus rhythm 72bpm, normal axis, no ST changes",Blood cultures: no growth at 48h,Independent. Drives own car. No mobility aids. Pre-op baseline excellent.,Wheelchair dependent,Complex social situation. Family meeting this week. Package of care to arrange.,26/02/2026,,Acute pancreatitis,,,P4 - Elective,AMBER — antibiotic review due. Cultures pending. Micro input requested.,GASTROENTEROLOGY|MONITOR|DNACPR|CDIFF,Active,2026-02-17T13:38:03.423750,2026-02-17T13:38:03.423750,system
+KCH0013,Mr Frederick Thomas,677 778 1444,13/10/1995,31 yrs,Male,Ward 6C,Bay 4,Bed B,King's College Hospital,Dr Shah,Dr Omar Baker,Orthopaedics,Orthopaedics,06/02/2026,Elective hip replacement (R NOF #),11,Inpatient,green,None,No,,Rivaroxaban 10mg OD,Free fluids — progressing well,Bed rest — haemodynamically unstable,HR 74 | BP 120/75 | Temp 37.1°C | O2 99% | RR 14 | NEWS 1,Hb 98↓ | WCC 14.2↑ | Plt 210 | Na 136 | K 4.1 | Cr 98 | eGFR 68 | CRP 54↑ | INR 1.1,No lines in situ.,Healing well. Sutures for removal day 10.,Chest clear. Abdomen soft. Calves non-tender.,IDC in situ — monitoring UO. IV access secure,"Meropenem 1g TDS IV
+Vancomycin IV — levels
+Furosemide 80mg BD
+Enoxaparin 40mg SC
+Insulin sliding scale",No barriers identified,74,ok,120/75,ok,37.1,ok,99%,ok,14,ok,1,"Meropenem 1g TDS IV
+Vancomycin IV — levels
+Furosemide 80mg BD
+Enoxaparin 40mg SC
+Insulin sliding scale",NKDA,Meropenem 1g TDS IV,2,21/02/2026,Hb 98↓ | WCC 14.2↑ | Plt 210 | Na 136 | K 4.1 | Cr 98 | eGFR 68 | CRP 54↑ | INR 1.1,"CXR: cardiomegaly, upper lobe diversion","Normal sinus rhythm, LBBB — old",,Complex social situation. Homeless pre-admission. SW involved. Awaiting placement.,Wheelchair dependent,Rehab unit transfer pending — OT assessment complete.,17/02/2026,,Elective hip replacement (R NOF #),09/02/2026,Day 8,P4 - Elective,,ORTHOPAEDICS,Active,2026-02-17T13:38:03.423794,2026-02-17T13:38:03.423794,system
+KCH0014,Mr Stephen Young,419 689 7149,19/01/1985,41 yrs,Male,Cardiac HDU,Bay 1,Bed B,King's College Hospital,Mr Harrington,Dr Daniel Asante,Medicine,Medicine,28/01/2026,Cellulitis — IV antibiotics,20,Day Case,green,None,Yes,Contact,Mechanical — TED stockings only,Low-sodium cardiac diet. Eating 80% meals,Mobilising well — physio goals met,HR 85 | BP 113/83 | Temp 37.1°C | O2 98% | RR 16 | NEWS 1,Hb 98↓ | WCC 14.2↑ | Plt 210 | Na 136 | K 4.1 | Cr 98 | eGFR 68 | CRP 54↑ | INR 1.1,No lines in situ.,Port sites clean. Day 2 post-op. No concerns.,Examination unremarkable. Improving.,Pressure area care — repositioning 2-hourly,"Co-amoxiclav 625mg TDS
+Paracetamol 1g QDS
+Oxycodone 5mg PRN
+Enoxaparin 40mg SC
+Omeprazole 20mg OD",Cognitive assessment incomplete,85,ok,113/83,ok,37.1,ok,98%,ok,16,ok,1,"Co-amoxiclav 625mg TDS
+Paracetamol 1g QDS
+Oxycodone 5mg PRN
+Enoxaparin 40mg SC
+Omeprazole 20mg OD",NKDA,Omeprazole 20mg OD,2,22/02/2026,Hb 98↓ | WCC 14.2↑ | Plt 210 | Na 136 | K 4.1 | Cr 98 | eGFR 68 | CRP 54↑ | INR 1.1,"X-ray hip: implant in good position, no loosening",,,Lives alone. Sheltered accommodation. Warden on site. Low-level support needed.,Fully mobile — independent,Not ready — awaiting physio milestones and wound review.,20/02/2026,Complete,Cellulitis — IV antibiotics,,,P1b - Urgent - Procedure needed within 72 hours,,MEDICINE|DNACPR|CONTACT,Active,2026-02-17T13:38:03.423871,2026-02-17T13:38:03.423871,system
+KCH0015,Mr Frederick Ahmed,606 971 6325,11/01/1950,76 yrs,Male,Surgical Ward 2,Bay 3,Bed C,King's College Hospital,Mr Adeyemi,Dr Miriam Boateng,General Surgery,General Surgery,08/02/2026,Elective lap cholecystectomy,9,Day Case,green,None,Yes,,Apixaban 2.5mg BD,Diabetic diet. Good intake. HbA1c optimisation ongoing,Wheelchair transfers only,HR 60 | BP 126/71 | Temp 36.3°C | O2 99% | RR 15 | NEWS 2,Hb 98↓ | WCC 14.2↑ | Plt 210 | Na 136 | K 4.1 | Cr 98 | eGFR 68 | CRP 54↑ | INR 1.1,Chest drain in situ — draining serosanguinous fluid.,Wound dehiscence — TVN referral made. Dressing daily.,Chest clear. Mild abdominal tenderness — expected post-op.,Family very anxious — need update today,"Amoxicillin 500mg TDS
+Metronidazole 400mg TDS
+Paracetamol 1g QDS
+Dalteparin 5000u SC",No barriers identified,60,ok,126/71,ok,36.3,ok,99%,ok,15,ok,2,"Amoxicillin 500mg TDS
+Metronidazole 400mg TDS
+Paracetamol 1g QDS
+Dalteparin 5000u SC",Codeine — nausea,Amoxicillin 500mg TDS,8,21/02/2026,Hb 98↓ | WCC 14.2↑ | Plt 210 | Na 136 | K 4.1 | Cr 98 | eGFR 68 | CRP 54↑ | INR 1.1,CXR: bilateral basal atelectasis — improving,AF with fast ventricular response — rate controlled,,Complex social situation. Homeless pre-admission. SW involved. Awaiting placement.,Wheelchair dependent,Not ready — awaiting physio milestones and wound review.,19/02/2026,Written,Elective lap cholecystectomy,16/02/2026,Day 1,P2b - Procedure can be deferred for up to 1 month,,GENERAL SURGERY|DNACPR,Active,2026-02-17T13:38:03.423927,2026-02-17T13:38:03.423927,system
+KCH0016,Mr Mark Harris,880 806 4033,24/09/1983,43 yrs,Male,CCU,Bay 3,Bed C,King's College Hospital,Mr Harrington,Dr Arthur Lewis,General Surgery,General Surgery,09/02/2026,Perforated appendix — appendicectomy,8,Surgery Admit,urgent,escalate,No,,Apixaban 2.5mg BD,NBM — return to theatre possible,"Fully mobile, no restrictions",HR 105 | BP 79/40 | Temp 39.0°C | O2 89% | RR 26 | NEWS 7,Hb 105↓ | WCC 22.1↑↑ | Plt 420↑ | Na 134↓ | K 3.6 | Cr 118↑ | eGFR 52 | CRP 180↑ | PCT 4.2↑,Chest drain removed day 2. Cannula only.,Port sites clean. Day 2 post-op. No concerns.,Chest clear. Abdomen soft. Calves non-tender.,Wound soaking dressings — concern re infection,"Aspirin 75mg OD
+Atorvastatin 80mg ON
+Bisoprolol 2.5mg OD
+Ramipril 5mg OD
+Enoxaparin 40mg SC",NHS continuing healthcare assessment pending,105,warn,79/40,bad,39.0,bad,89%,bad,26,bad,7,"Aspirin 75mg OD
+Atorvastatin 80mg ON
+Bisoprolol 2.5mg OD
+Ramipril 5mg OD
+Enoxaparin 40mg SC",Sulphonamides — rash,,,,Hb 105↓ | WCC 22.1↑↑ | Plt 420↑ | Na 134↓ | K 3.6 | Cr 118↑ | eGFR 52 | CRP 180↑ | PCT 4.2↑,,Sinus tachycardia 104bpm,Sputum: Strep pneumoniae — pen-sensitive,Lives with spouse (frail). Both need POC arranging. Carer's assessment requested.,Fully mobile — independent,Home tomorrow if clinically stable overnight.,,,Perforated appendix — appendicectomy,14/02/2026,Day 3,P2b - Procedure can be deferred for up to 1 month,URGENT — sepsis suspected. Lactate elevated. Cultures pending. Sepsis 6 initiated.,GENERAL SURGERY|URGENT,Active,2026-02-17T13:38:03.423966,2026-02-17T13:38:03.423966,system
+KCH0017,Mr Andrew Roberts,221 671 7818,03/04/1960,66 yrs,Male,Medical Ward 3,Bay 4,Bed D,King's College Hospital,Mr Adeyemi,Dr Ngozi Nelson,General Surgery,General Surgery,07/02/2026,Anterior resection (colorectal Ca),10,Surgery Admit,amber,amber,No,MRSA,Mechanical — TED stockings only,Low-sodium cardiac diet. Eating 80% meals,Mobilising well — physio goals met,HR 99 | BP 103/79 | Temp 38.4°C | O2 93% | RR 22 | NEWS 3,Hb 132 | WCC 11.2 | Plt 280 | Na 140 | K 4.0 | Cr 85 | eGFR 78 | CRP 8 | HbA1c 52,No drains. Peripheral cannula in situ.,Healing well. Sutures for removal day 10.,Bibasal crepitations — improving. Abdomen soft.,Pressure area care — repositioning 2-hourly,"Amoxicillin 500mg TDS
+Metronidazole 400mg TDS
+Paracetamol 1g QDS
+Dalteparin 5000u SC",Family not yet informed of diagnosis,99,warn,103/79,warn,38.4,warn,93%,warn,22,warn,3,"Amoxicillin 500mg TDS
+Metronidazole 400mg TDS
+Paracetamol 1g QDS
+Dalteparin 5000u SC",NSAID — GI intolerance,Amoxicillin 500mg TDS,5,18/02/2026,Hb 132 | WCC 11.2 | Plt 280 | Na 140 | K 4.0 | Cr 85 | eGFR 78 | CRP 8 | HbA1c 52,CT chest: no PE. Bilateral consolidation — improving,"AF rate 88bpm, no ST changes",,Independent. Drives own car. No mobility aids. Pre-op baseline excellent.,Fully mobile — independent,Awaiting cardiology outpatient slot before discharge.,20/02/2026,Written,Anterior resection (colorectal Ca),16/02/2026,Day 1,P1b - Urgent - Procedure needed within 72 hours,MONITOR — persistent pyrexia. Source unclear. Repeat bloods today.,GENERAL SURGERY|MONITOR|MRSA,Active,2026-02-17T13:38:03.424016,2026-02-17T13:38:03.424016,system
+KCH0018,Mr Graham Roberts,911 414 5728,02/03/1989,37 yrs,Male,Medical Ward 3,Bay 3,Bed D,King's College Hospital,Mr Thompson,Dr Stephen Sharma,Cardiology,Cardiology,15/02/2026,Heart failure exacerbation,2,Day Case,amber,amber,Pending,Droplet,Mechanical — TED stockings only,Soft/purée — thin fluids safe with chin tuck,"Mobilising with zimmer frame, physio BD",HR 93 | BP 120/79 | Temp 37.4°C | O2 93% | RR 17 | NEWS 6,Hb 105↓ | WCC 22.1↑↑ | Plt 420↑ | Na 134↓ | K 3.6 | Cr 118↑ | eGFR 52 | CRP 180↑ | PCT 4.2↑,No lines in situ.,Sternal wound — staple line intact. Clean and dry.,Cognitively improved. Chest clear. Mobile.,Family very anxious — need update today,"Heparin infusion (ACS protocol)
+Ticagrelor 90mg BD
+Aspirin 75mg OD
+GTN spray PRN
+Furosemide 40mg IV",Cognitive assessment incomplete,93,ok,120/79,ok,37.4,ok,93%,warn,17,ok,6,"Heparin infusion (ACS protocol)
+Ticagrelor 90mg BD
+Aspirin 75mg OD
+GTN spray PRN
+Furosemide 40mg IV",NKDA,,,,Hb 105↓ | WCC 22.1↑↑ | Plt 420↑ | Na 134↓ | K 3.6 | Cr 118↑ | eGFR 52 | CRP 180↑ | PCT 4.2↑,"MRI spine: L4/5 disc prolapse, no cord compression","Sinus rhythm 72bpm, normal axis, no ST changes",,Lives with spouse. Fully independent pre-admission. No care package needed.,Mobilising with frame,Discharge today if bloods acceptable. TTL with pharmacy.,01/03/2026,Complete,Heart failure exacerbation,,,P2b - Procedure can be deferred for up to 1 month,AMBER — antibiotic review due. Cultures pending. Micro input requested.,CARDIOLOGY|MONITOR|DROPLET,Active,2026-02-17T13:38:03.424055,2026-02-17T13:38:03.424055,system
+KCH0019,Ms Pauline Mensah,422 358 6296,15/02/1994,32 yrs,Female,Medical Ward 3,Bay 1,Bed D,King's College Hospital,Ms Williams,Dr John White,Orthopaedics,Orthopaedics,31/01/2026,Total knee replacement,17,Surgery Admit,green,None,No,,Apixaban 2.5mg BD,Soft diet — SALT assessment complete,Sit in chair twice daily. Sternal precautions,HR 79 | BP 134/80 | Temp 37.0°C | O2 96% | RR 13 | NEWS 1,Hb 144 | WCC 7.6 | Plt 210 | Na 139 | K 4.1 | Cr 78 | eGFR 84 | CRP 6 | All within normal limits,No drains. Peripheral cannula in situ.,Port sites clean. Day 2 post-op. No concerns.,Chest clear. Abdomen soft. Calves non-tender.,"Night-time confusion, falls risk HIGH","Prednisolone 40mg OD
+Omeprazole 40mg OD
+Calcium + Vit D
+Enoxaparin 40mg SC
+Azathioprine 100mg OD",No barriers identified,79,ok,134/80,ok,37.0,ok,96%,ok,13,ok,1,"Prednisolone 40mg OD
+Omeprazole 40mg OD
+Calcium + Vit D
+Enoxaparin 40mg SC
+Azathioprine 100mg OD",Codeine — nausea,Omeprazole 40mg OD,3,20/02/2026,Hb 144 | WCC 7.6 | Plt 210 | Na 139 | K 4.1 | Cr 78 | eGFR 84 | CRP 6 | All within normal limits,CXR: bilateral basal atelectasis — improving,"Sinus rhythm 72bpm, normal axis, no ST changes",Blood cultures: no growth at 48h,Complex social situation. Homeless pre-admission. SW involved. Awaiting placement.,Mobilising with crutches NWB,Not ready — awaiting physio milestones and wound review.,17/02/2026,Complete,Total knee replacement,11/02/2026,Day 6,P4 - Elective,,ORTHOPAEDICS|DC PLAN,Active,2026-02-17T13:38:03.424106,2026-02-17T13:38:03.424106,system
+KCH0020,Ms Priya Robinson,713 620 3236,13/04/1980,46 yrs,Female,Medical Ward 3,Bay 3,Bed C,King's College Hospital,Ms Robertson,Dr James Lewis,Cardiac Surgery,Cardiac Surgery,24/01/2026,Aortic dissection type A repair,24,Day Case,urgent,escalate,No,MRSA,Rivaroxaban 10mg OD,Soft/purée — thin fluids safe with chin tuck,Wheelchair transfers only,HR 126 | BP 88/58 | Temp 39.5°C | O2 91% | RR 24 | NEWS 10,Hb 88↓ | WCC 6.2 | Plt 156 | Na 142 | K 3.9 | Cr 62 | eGFR >90 | CRP 12 | Albumin 28↓,No lines in situ.,Healing well. Sutures for removal day 10.,Examination unremarkable. Improving.,"Night-time confusion, falls risk HIGH","Prednisolone 40mg OD
+Omeprazole 40mg OD
+Calcium + Vit D
+Enoxaparin 40mg SC
+Azathioprine 100mg OD",No barriers identified,126,bad,88/58,bad,39.5,bad,91%,warn,24,warn,10,"Prednisolone 40mg OD
+Omeprazole 40mg OD
+Calcium + Vit D
+Enoxaparin 40mg SC
+Azathioprine 100mg OD",NKDA,Omeprazole 40mg OD,8,20/02/2026,Hb 88↓ | WCC 6.2 | Plt 156 | Na 142 | K 3.9 | Cr 62 | eGFR >90 | CRP 12 | Albumin 28↓,"CT abdomen: no free gas, no collection",Sinus bradycardia 48bpm,,Lives alone. Son visits daily. House has stairs — OT assessment pending.,Mobilising with frame,Awaiting cardiology outpatient slot before discharge.,,,Aortic dissection type A repair,02/02/2026,Day 15,P2a - Procedure can be deferred for up to 2 weeks,URGENT — sepsis suspected. Lactate elevated. Cultures pending. Sepsis 6 initiated.,CARDIAC SURGERY|URGENT|MRSA,Active,2026-02-17T13:38:03.424155,2026-02-17T13:38:03.424155,system
+KCH0021,Mrs Susan Carter,247 519 3529,01/12/1940,86 yrs,Female,Thoracic Ward,Bay 3,Bed D,King's College Hospital,Dr Gupta,Dr Stephen King,Cardiac Surgery,Cardiac Surgery,26/01/2026,Aortic dissection type A repair,22,Inpatient,urgent,escalate,No,MRSA,Enoxaparin 40mg SC daily,Low-sodium cardiac diet. Eating 80% meals,"Fully mobile, no restrictions",HR 112 | BP 80/60 | Temp 39.0°C | O2 91% | RR 30 | NEWS 7,Hb 132 | WCC 11.2 | Plt 280 | Na 140 | K 4.0 | Cr 85 | eGFR 78 | CRP 8 | HbA1c 52,No drains. Peripheral cannula in situ.,Sternal wound — staple line intact. Clean and dry.,Chest clear. Abdomen soft. Calves non-tender.,Pressure area care — repositioning 2-hourly,"Heparin infusion (ACS protocol)
+Ticagrelor 90mg BD
+Aspirin 75mg OD
+GTN spray PRN
+Furosemide 40mg IV",Cognitive assessment incomplete,112,warn,80/60,bad,39.0,bad,91%,warn,30,bad,7,"Heparin infusion (ACS protocol)
+Ticagrelor 90mg BD
+Aspirin 75mg OD
+GTN spray PRN
+Furosemide 40mg IV",Penicillin — rash,,,,Hb 132 | WCC 11.2 | Plt 280 | Na 140 | K 4.0 | Cr 85 | eGFR 78 | CRP 8 | HbA1c 52,,AF with fast ventricular response — rate controlled,,Lives with family. Good support network. Daughter is main carer.,Bed-bound — hoist transfers,Rehab unit transfer pending — OT assessment complete.,,Written,Aortic dissection type A repair,12/02/2026,Day 5,P2b - Procedure can be deferred for up to 1 month,CRITICAL — post-op deterioration. Surgical review now. Return to theatre possible.,CARDIAC SURGERY|URGENT|MRSA,Active,2026-02-17T13:38:03.424203,2026-02-17T13:38:03.424203,system
+KCH0022,Mrs Miriam Asante,724 991 7267,06/02/1977,49 yrs,Female,Gynae Ward,Bay 2,Bed B,King's College Hospital,Mr Thompson,Dr Ali Mitchell,General Surgery,General Surgery,08/02/2026,Inguinal hernia repair,9,Surgery Admit,green,None,Yes,CDiff,Enoxaparin 40mg SC daily,Low-sodium cardiac diet. Eating 80% meals,Weight-bearing as tolerated with crutches,HR 85 | BP 124/74 | Temp 37.0°C | O2 97% | RR 12 | NEWS 1,Hb 105↓ | WCC 22.1↑↑ | Plt 420↑ | Na 134↓ | K 3.6 | Cr 118↑ | eGFR 52 | CRP 180↑ | PCT 4.2↑,No drains. Peripheral cannula in situ.,Healing well. Sutures for removal day 10.,Cognitively improved. Chest clear. Mobile.,Pressure area care — repositioning 2-hourly,"Co-amoxiclav 625mg TDS
+Paracetamol 1g QDS
+Oxycodone 5mg PRN
+Enoxaparin 40mg SC
+Omeprazole 20mg OD",Nil barriers — for discharge when medically fit,85,ok,124/74,ok,37.0,ok,97%,ok,12,ok,1,"Co-amoxiclav 625mg TDS
+Paracetamol 1g QDS
+Oxycodone 5mg PRN
+Enoxaparin 40mg SC
+Omeprazole 20mg OD",NKDA,Omeprazole 20mg OD,10,20/02/2026,Hb 105↓ | WCC 22.1↑↑ | Plt 420↑ | Na 134↓ | K 3.6 | Cr 118↑ | eGFR 52 | CRP 180↑ | PCT 4.2↑,"CT abdomen: no free gas, no collection",AF with fast ventricular response — rate controlled,,Lives alone. Son visits daily. House has stairs — OT assessment pending.,Mobilising with crutches NWB,Step-down to ward from HDU — discharge planning to begin.,20/02/2026,,Inguinal hernia repair,08/02/2026,Day 9,P4 - Elective,,GENERAL SURGERY|DNACPR|CDIFF,Active,2026-02-17T13:38:03.424250,2026-02-17T13:38:03.424250,system
+KCH0023,Ms Christine Sharma,735 356 3240,21/04/1970,56 yrs,Female,Ward 4B,Bay 3,Bed D,King's College Hospital,Dr Shah,Dr Blessing Scott,Orthopaedics,Orthopaedics,24/01/2026,Hip hemiarthroplasty (NOF #),24,Inpatient,amber,amber,No,CDiff,Apixaban 2.5mg BD,Free fluids — progressing well,Wheelchair transfers only,HR 84 | BP 105/69 | Temp 37.5°C | O2 96% | RR 17 | NEWS 3,Hb 118 | WCC 9.8 | Plt 195 | Na 137 | K 4.3 | Cr 95 | eGFR 72 | CRP 45↑ | INR 2.8,PICC line in situ. Arterial line R radial.,Sternal wound — staple line intact. Clean and dry.,Chest clear. Abdomen soft. Calves non-tender.,Patient refusing medications at times,"Metoprolol 25mg BD
+Furosemide 40mg OD
+Spironolactone 25mg OD
+Warfarin — INR target 2-3
+Digoxin 125mcg OD",Nil barriers — for discharge when medically fit,84,ok,105/69,warn,37.5,ok,96%,ok,17,ok,3,"Metoprolol 25mg BD
+Furosemide 40mg OD
+Spironolactone 25mg OD
+Warfarin — INR target 2-3
+Digoxin 125mcg OD",Sulphonamides — rash,,,,Hb 118 | WCC 9.8 | Plt 195 | Na 137 | K 4.3 | Cr 95 | eGFR 72 | CRP 45↑ | INR 2.8,"USS abdomen: gallstones, CBD 4mm — normal",AF with fast ventricular response — rate controlled,,Complex social situation. Homeless pre-admission. SW involved. Awaiting placement.,Mobilising with crutches NWB,Home with community nursing for wound care. Outpatient review booked.,27/02/2026,Complete,Hip hemiarthroplasty (NOF #),,,P1a - Emergency - Procedure needed within 24 hours,AMBER — antibiotic review due. Cultures pending. Micro input requested.,ORTHOPAEDICS|MONITOR|CDIFF,Active,2026-02-17T13:38:03.424294,2026-02-17T13:38:03.424294,system
+KCH0024,Ms Anne Ali,339 582 1410,04/11/1951,75 yrs,Female,Cardiac HDU,Bay 1,Bed D,King's College Hospital,Dr Mensah,Dr Daniel Nwosu,Gastroenterology,Gastroenterology,03/02/2026,Acute pancreatitis,14,Surgery Admit,amber,amber,Yes,,Contraindicated — haemorrhage risk,Full diet — eating and drinking well,Non-weight bearing R leg. Hoist transfers,HR 83 | BP 108/61 | Temp 38.4°C | O2 95% | RR 19 | NEWS 2,Hb 88↓ | WCC 6.2 | Plt 156 | Na 142 | K 3.9 | Cr 62 | eGFR >90 | CRP 12 | Albumin 28↓,IDC in situ — UO monitoring. IV cannula.,Port sites clean. Day 2 post-op. No concerns.,Cognitively improved. Chest clear. Mobile.,IDC in situ — monitoring UO. IV access secure,"Paracetamol 1g QDS
+Ibuprofen 400mg TDS
+Omeprazole 20mg OD
+Enoxaparin 40mg SC",Cognitive assessment incomplete,83,ok,108/61,warn,38.4,warn,95%,ok,19,ok,2,"Paracetamol 1g QDS
+Ibuprofen 400mg TDS
+Omeprazole 20mg OD
+Enoxaparin 40mg SC",NSAID — GI intolerance,Omeprazole 20mg OD,4,22/02/2026,Hb 88↓ | WCC 6.2 | Plt 156 | Na 142 | K 3.9 | Cr 62 | eGFR >90 | CRP 12 | Albumin 28↓,"CT abdomen: no free gas, no collection",Sinus bradycardia 48bpm,C.diff toxin: negative,Lives with spouse. Fully independent pre-admission. No care package needed.,Walking with stick — improving,Discharge today if bloods acceptable. TTL with pharmacy.,01/03/2026,,Acute pancreatitis,,,P2b - Procedure can be deferred for up to 1 month,AMBER — NEWS 2. Increased monitoring. Senior review today.,GASTROENTEROLOGY|MONITOR|DNACPR,Active,2026-02-17T13:38:03.424335,2026-02-17T13:38:03.424335,system
+KCH0025,Ms Linda Green,193 778 4475,04/08/1974,52 yrs,Female,Cardiac HDU,Bay 2,Bed B,King's College Hospital,Mr Harrington,Dr Priya Martin,Cardiology,Cardiology,29/01/2026,STEMI + primary PCI,19,Inpatient,green,None,No,,Tinzaparin 3500u SC daily,Diabetic diet. Good intake. HbA1c optimisation ongoing,"Fully mobile, no restrictions",HR 66 | BP 136/72 | Temp 36.6°C | O2 97% | RR 18 | NEWS 2,Hb 78↓↓ | WCC 18.6↑ | Plt 88↓ | Na 131↓ | K 5.2↑ | Cr 210↑ | eGFR 28 | CRP 310↑ | Lactate 3.8↑,IDC in situ — UO monitoring. IV cannula.,Sternal wound — staple line intact. Clean and dry.,Chest clear. Abdomen soft. Calves non-tender.,"Night-time confusion, falls risk HIGH","Aspirin 75mg OD
+Atorvastatin 80mg ON
+Bisoprolol 2.5mg OD
+Ramipril 5mg OD
+Enoxaparin 40mg SC",NHS continuing healthcare assessment pending,66,ok,136/72,ok,36.6,ok,97%,ok,18,ok,2,"Aspirin 75mg OD
+Atorvastatin 80mg ON
+Bisoprolol 2.5mg OD
+Ramipril 5mg OD
+Enoxaparin 40mg SC",Latex — contact dermatitis,,,,Hb 78↓↓ | WCC 18.6↑ | Plt 88↓ | Na 131↓ | K 5.2↑ | Cr 210↑ | eGFR 28 | CRP 310↑ | Lactate 3.8↑,CT chest: no PE. Bilateral consolidation — improving,AF with fast ventricular response — rate controlled,,Lives with spouse. Fully independent pre-admission. No care package needed.,Walking with stick — improving,Home with community nursing for wound care. Outpatient review booked.,19/02/2026,Complete,STEMI + primary PCI,,,P4 - Elective,,CARDIOLOGY,Active,2026-02-17T13:38:03.424374,2026-02-17T13:38:03.424374,system
+KCH0026,Miss Sharon Adeyemi,326 729 1710,15/09/1985,41 yrs,Female,Ward 4B,Bay 1,Bed D,King's College Hospital,Ms Robertson,Dr Elizabeth Nelson,Cardiac Surgery,Cardiac Surgery,26/01/2026,Mitral valve repair,22,Surgery Admit,amber,amber,Yes,,Enoxaparin 40mg SC daily,Diabetic diet. Good intake. HbA1c optimisation ongoing,Mobilising well — physio goals met,HR 95 | BP 128/62 | Temp 38.3°C | O2 95% | RR 20 | NEWS 3,Hb 118 | WCC 9.8 | Plt 195 | Na 137 | K 4.3 | Cr 95 | eGFR 72 | CRP 45↑ | INR 2.8,No lines in situ.,Port sites clean. Day 2 post-op. No concerns.,Examination unremarkable. Improving.,Wound soaking dressings — concern re infection,"Paracetamol 1g QDS
+Ibuprofen 400mg TDS
+Omeprazole 20mg OD
+Enoxaparin 40mg SC",Cognitive assessment incomplete,95,ok,128/62,ok,38.3,warn,95%,ok,20,ok,3,"Paracetamol 1g QDS
+Ibuprofen 400mg TDS
+Omeprazole 20mg OD
+Enoxaparin 40mg SC",Sulphonamides — rash,Omeprazole 20mg OD,3,20/02/2026,Hb 118 | WCC 9.8 | Plt 195 | Na 137 | K 4.3 | Cr 95 | eGFR 72 | CRP 45↑ | INR 2.8,"X-ray hip: implant in good position, no loosening",AF with fast ventricular response — rate controlled,Sputum: Strep pneumoniae — pen-sensitive,Independent. Drives own car. No mobility aids. Pre-op baseline excellent.,Wheelchair dependent,Not ready — awaiting physio milestones and wound review.,27/02/2026,Pharmacy,Mitral valve repair,29/01/2026,Day 19,P1b - Urgent - Procedure needed within 72 hours,MONITOR — wound concern. Erythema noted. TVN referral made.,CARDIAC SURGERY|MONITOR|DNACPR,Active,2026-02-17T13:38:03.424444,2026-02-17T13:38:03.424444,system
+KCH0027,Mr Mohammed Taylor,195 542 2582,27/02/1987,39 yrs,Male,Orthopaedic Ward,Bay 1,Bed C,King's College Hospital,Dr Gupta,Dr Brian Adams,Medicine,Medicine,05/02/2026,Sepsis (urinary source),12,Inpatient,urgent,escalate,Pending,,Enoxaparin 40mg SC daily,Low-sodium cardiac diet. Eating 80% meals,Sit in chair twice daily. Sternal precautions,HR 127 | BP 91/53 | Temp 39.3°C | O2 93% | RR 22 | NEWS 9,Hb 118 | WCC 9.8 | Plt 195 | Na 137 | K 4.3 | Cr 95 | eGFR 72 | CRP 45↑ | INR 2.8,No lines in situ.,Wound dehiscence — TVN referral made. Dressing daily.,Cool peripheries. JVP elevated. Bibasal creps.,No nursing concerns,"Heparin infusion (ACS protocol)
+Ticagrelor 90mg BD
+Aspirin 75mg OD
+GTN spray PRN
+Furosemide 40mg IV",Awaiting scan result before discharge,127,bad,91/53,bad,39.3,bad,93%,warn,22,warn,9,"Heparin infusion (ACS protocol)
+Ticagrelor 90mg BD
+Aspirin 75mg OD
+GTN spray PRN
+Furosemide 40mg IV",Latex — contact dermatitis,,,,Hb 118 | WCC 9.8 | Plt 195 | Na 137 | K 4.3 | Cr 95 | eGFR 72 | CRP 45↑ | INR 2.8,CXR: bilateral basal atelectasis — improving,"Normal sinus rhythm, LBBB — old",,Lives alone. Son visits daily. House has stairs — OT assessment pending.,Mobilising with frame,Not ready — awaiting physio milestones and wound review.,,,Sepsis (urinary source),,,P2a - Procedure can be deferred for up to 2 weeks,URGENT — sepsis suspected. Lactate elevated. Cultures pending. Sepsis 6 initiated.,MEDICINE|URGENT,Active,2026-02-17T13:38:03.424483,2026-02-17T13:38:03.424483,system
+KCH0028,Mrs Diane Turner,679 773 7566,28/03/1975,51 yrs,Female,Ward 5A,Bay 2,Bed D,King's College Hospital,Ms Williams,Dr Pauline King,Cardiac Surgery,Cardiac Surgery,11/02/2026,Aortic dissection type A repair,6,Surgery Admit,urgent,escalate,Pending,MRSA,Mechanical — TED stockings only,Free fluids — progressing well,"Mobilising with zimmer frame, physio BD",HR 109 | BP 93/50 | Temp 39.1°C | O2 92% | RR 23 | NEWS 7,Hb 98↓ | WCC 14.2↑ | Plt 210 | Na 136 | K 4.1 | Cr 98 | eGFR 68 | CRP 54↑ | INR 1.1,Chest drain removed day 2. Cannula only.,Port sites clean. Day 2 post-op. No concerns.,Chest clear. Abdomen soft. Calves non-tender.,Pressure area care — repositioning 2-hourly,"Metoprolol 25mg BD
+Furosemide 40mg OD
+Spironolactone 25mg OD
+Warfarin — INR target 2-3
+Digoxin 125mcg OD",No barriers identified,109,warn,93/50,bad,39.1,bad,92%,warn,23,warn,7,"Metoprolol 25mg BD
+Furosemide 40mg OD
+Spironolactone 25mg OD
+Warfarin — INR target 2-3
+Digoxin 125mcg OD",NSAID — GI intolerance,,,,Hb 98↓ | WCC 14.2↑ | Plt 210 | Na 136 | K 4.1 | Cr 98 | eGFR 68 | CRP 54↑ | INR 1.1,,"AF rate 88bpm, no ST changes",MSU: ESBL E.coli — sensitive to meropenem,Complex social situation. Homeless pre-admission. SW involved. Awaiting placement.,Fully mobile — independent,Nursing home placement in progress. Social worker involved.,,Complete,Aortic dissection type A repair,13/02/2026,Day 4,P2b - Procedure can be deferred for up to 1 month,CRITICAL — post-op deterioration. Surgical review now. Return to theatre possible.,CARDIAC SURGERY|URGENT|MRSA,Active,2026-02-17T13:38:03.424523,2026-02-17T13:38:03.424523,system
+KCH0029,Mr James Martin,882 361 5742,07/03/1960,66 yrs,Male,Medical Ward 3,Bay 2,Bed B,King's College Hospital,Ms Williams,Dr Grace Owusu,Gastroenterology,Gastroenterology,09/02/2026,Acute pancreatitis,8,Surgery Admit,green,None,Yes,MRSA,Apixaban 2.5mg BD,NBM — return to theatre possible,Mobilising well — physio goals met,HR 76 | BP 127/76 | Temp 36.3°C | O2 96% | RR 15 | NEWS 0,Hb 118 | WCC 9.8 | Plt 195 | Na 137 | K 4.3 | Cr 95 | eGFR 72 | CRP 45↑ | INR 2.8,Chest drain in situ — draining serosanguinous fluid.,Sternal wound — staple line intact. Clean and dry.,Chest clear. Abdomen soft. Calves non-tender.,Patient refusing medications at times,"Apixaban 5mg BD
+Atorvastatin 40mg ON
+Amlodipine 5mg OD
+Lisinopril 10mg OD",Awaiting physio discharge assessment,76,ok,127/76,ok,36.3,ok,96%,ok,15,ok,0,"Apixaban 5mg BD
+Atorvastatin 40mg ON
+Amlodipine 5mg OD
+Lisinopril 10mg OD",Penicillin — rash,,,,Hb 118 | WCC 9.8 | Plt 195 | Na 137 | K 4.3 | Cr 95 | eGFR 72 | CRP 45↑ | INR 2.8,"MRI spine: L4/5 disc prolapse, no cord compression",,Blood cultures: no growth at 48h,Lives alone. Sheltered accommodation. Warden on site. Low-level support needed.,Bed-bound — hoist transfers,Home tomorrow if clinically stable overnight.,20/02/2026,Complete,Acute pancreatitis,,,P1a - Emergency - Procedure needed within 24 hours,,GASTROENTEROLOGY|DNACPR|MRSA,Active,2026-02-17T13:38:03.424559,2026-02-17T13:38:03.424559,system
+KCH0030,Mr Harold Young,897 272 2251,08/06/1955,71 yrs,Male,Orthopaedic Ward,Bay 2,Bed C,King's College Hospital,Dr Patel,Dr Keith Robinson,Gynaecology,Gynaecology,13/02/2026,Ovarian cystectomy,4,Surgery Admit,green,None,No,CDiff,Enoxaparin 40mg SC daily,Low-sodium cardiac diet. Eating 80% meals,"Fully mobile, no restrictions",HR 68 | BP 116/70 | Temp 36.9°C | O2 96% | RR 13 | NEWS 2,Hb 144 | WCC 7.6 | Plt 210 | Na 139 | K 4.1 | Cr 78 | eGFR 84 | CRP 6 | All within normal limits,Chest drain removed day 2. Cannula only.,Wound dehiscence — TVN referral made. Dressing daily.,Chest clear. Abdomen soft. Calves non-tender.,Pressure area care — repositioning 2-hourly,"Apixaban 5mg BD
+Atorvastatin 40mg ON
+Amlodipine 5mg OD
+Lisinopril 10mg OD",No barriers identified,68,ok,116/70,ok,36.9,ok,96%,ok,13,ok,2,"Apixaban 5mg BD
+Atorvastatin 40mg ON
+Amlodipine 5mg OD
+Lisinopril 10mg OD",Codeine — nausea,,,,Hb 144 | WCC 7.6 | Plt 210 | Na 139 | K 4.1 | Cr 78 | eGFR 84 | CRP 6 | All within normal limits,,Sinus bradycardia 48bpm,Blood cultures: Staph aureus — MSSA,Lives with spouse (frail). Both need POC arranging. Carer's assessment requested.,Fully mobile — independent,Home with GP follow-up in 2 weeks. TTL written.,20/02/2026,Pharmacy,Ovarian cystectomy,14/02/2026,Day 3,P4 - Elective,,GYNAECOLOGY|CDIFF|DC PLAN,Active,2026-02-17T13:38:03.424604,2026-02-17T13:38:03.424604,system
+KCH0031,Mrs Barbara Nwosu,667 910 1672,15/10/1949,77 yrs,Female,Gynae Ward,Bay 2,Bed C,King's College Hospital,Ms Nwosu,Dr Brenda Adeyemi,Cardiology,Cardiology,12/02/2026,Heart failure exacerbation,5,Inpatient,amber,amber,Yes,,Contraindicated — haemorrhage risk,Diabetic diet. Good intake. HbA1c optimisation ongoing,"Mobilising with zimmer frame, physio BD",HR 81 | BP 128/63 | Temp 38.2°C | O2 95% | RR 21 | NEWS 2,Hb 144 | WCC 7.6 | Plt 210 | Na 139 | K 4.1 | Cr 78 | eGFR 84 | CRP 6 | All within normal limits,Chest drain removed day 2. Cannula only.,Wound clean and dry. Steristrips intact. NERDS 0.,Cool peripheries. JVP elevated. Bibasal creps.,Patient refusing medications at times,"Prednisolone 40mg OD
+Omeprazole 40mg OD
+Calcium + Vit D
+Enoxaparin 40mg SC
+Azathioprine 100mg OD",Awaiting scan result before discharge,81,ok,128/63,ok,38.2,warn,95%,ok,21,warn,2,"Prednisolone 40mg OD
+Omeprazole 40mg OD
+Calcium + Vit D
+Enoxaparin 40mg SC
+Azathioprine 100mg OD",Penicillin — anaphylaxis,Omeprazole 40mg OD,3,18/02/2026,Hb 144 | WCC 7.6 | Plt 210 | Na 139 | K 4.1 | Cr 78 | eGFR 84 | CRP 6 | All within normal limits,"CT abdomen: no free gas, no collection",Sinus tachycardia 104bpm,Blood cultures: Staph aureus — MSSA,Complex social situation. Homeless pre-admission. SW involved. Awaiting placement.,Walking with stick — improving,Home tomorrow if clinically stable overnight.,02/03/2026,,Heart failure exacerbation,,,P4 - Elective,MONITOR — persistent pyrexia. Source unclear. Repeat bloods today.,CARDIOLOGY|MONITOR|DNACPR,Active,2026-02-17T13:38:03.424651,2026-02-17T13:38:03.424651,system
+KCH0032,Mr Trevor Davies,771 815 7421,12/05/1980,46 yrs,Male,Ward 5A,Bay 3,Bed D,King's College Hospital,Dr Gupta,Dr Jennifer Thomas,Respiratory,Respiratory,26/01/2026,Community-acquired pneumonia,22,Inpatient,amber,amber,Pending,,Rivaroxaban 10mg OD,Full diet — eating and drinking well,Non-weight bearing R leg. Hoist transfers,HR 102 | BP 133/62 | Temp 38.0°C | O2 96% | RR 20 | NEWS 4,Hb 105↓ | WCC 22.1↑↑ | Plt 420↑ | Na 134↓ | K 3.6 | Cr 118↑ | eGFR 52 | CRP 180↑ | PCT 4.2↑,PICC line in situ. Arterial line R radial.,Wound — mild erythema 1cm. No exudate. Monitor.,Cool peripheries. JVP elevated. Bibasal creps.,Patient refusing medications at times,"Aspirin 75mg OD
+Atorvastatin 80mg ON
+Bisoprolol 2.5mg OD
+Ramipril 5mg OD
+Enoxaparin 40mg SC",Complex social situation — POC to arrange,102,warn,133/62,ok,38.0,warn,96%,ok,20,ok,4,"Aspirin 75mg OD
+Atorvastatin 80mg ON
+Bisoprolol 2.5mg OD
+Ramipril 5mg OD
+Enoxaparin 40mg SC",NKDA,,,,Hb 105↓ | WCC 22.1↑↑ | Plt 420↑ | Na 134↓ | K 3.6 | Cr 118↑ | eGFR 52 | CRP 180↑ | PCT 4.2↑,CT chest: no PE. Bilateral consolidation — improving,"Normal sinus rhythm, LBBB — old",Blood cultures: Staph aureus — MSSA,Residential care home. POC already in place. Ready to return when medically fit.,Mobilising with frame,Home tomorrow if clinically stable overnight.,21/02/2026,,Community-acquired pneumonia,,,P2a - Procedure can be deferred for up to 2 weeks,MONITOR — wound concern. Erythema noted. TVN referral made.,RESPIRATORY|MONITOR,Active,2026-02-17T13:38:03.424689,2026-02-17T13:38:03.424689,system
+KCH0033,Mr Albert Williams,836 343 8277,12/11/1946,80 yrs,Male,CCU,Bay 2,Bed B,King's College Hospital,Mr Adeyemi,Dr Brenda White,Thoracic Surgery,Thoracic Surgery,05/02/2026,Oesophagectomy,12,Inpatient,urgent,escalate,Yes,Droplet,Enoxaparin 40mg SC daily,Low-sodium cardiac diet. Eating 80% meals,"Mobilising with zimmer frame, physio BD",HR 130 | BP 88/54 | Temp 38.6°C | O2 90% | RR 28 | NEWS 11,Hb 78↓↓ | WCC 18.6↑ | Plt 88↓ | Na 131↓ | K 5.2↑ | Cr 210↑ | eGFR 28 | CRP 310↑ | Lactate 3.8↑,IDC in situ — UO monitoring. IV cannula.,Sternal wound — staple line intact. Clean and dry.,Cognitively improved. Chest clear. Mobile.,"Night-time confusion, falls risk HIGH","Prednisolone 40mg OD
+Omeprazole 40mg OD
+Calcium + Vit D
+Enoxaparin 40mg SC
+Azathioprine 100mg OD",NHS continuing healthcare assessment pending,130,bad,88/54,bad,38.6,bad,90%,bad,28,bad,11,"Prednisolone 40mg OD
+Omeprazole 40mg OD
+Calcium + Vit D
+Enoxaparin 40mg SC
+Azathioprine 100mg OD",Penicillin — anaphylaxis,Omeprazole 40mg OD,7,19/02/2026,Hb 78↓↓ | WCC 18.6↑ | Plt 88↓ | Na 131↓ | K 5.2↑ | Cr 210↑ | eGFR 28 | CRP 310↑ | Lactate 3.8↑,"Echo: EF 30%↓, dilated LV. Urgent cardiology review","Sinus rhythm 72bpm, normal axis, no ST changes",Sputum: Strep pneumoniae — pen-sensitive,Lives with spouse. Fully independent pre-admission. No care package needed.,Mobilising with frame,Step-down to ward from HDU — discharge planning to begin.,,Pharmacy,Oesophagectomy,15/02/2026,Day 2,P4 - Elective,CRITICAL — post-op deterioration. Surgical review now. Return to theatre possible.,THORACIC SURGERY|URGENT|DNACPR|DROPLET,Active,2026-02-17T13:38:03.424733,2026-02-17T13:38:03.424733,system
+KCH0034,Mr Ernest Brown,341 495 2337,17/06/1948,78 yrs,Male,Surgical Ward 2,Bay 1,Bed C,King's College Hospital,Dr Ali,Dr Keith Thomas,Medicine,Medicine,15/02/2026,Sepsis (urinary source),2,Inpatient,urgent,escalate,Yes,,Apixaban 2.5mg BD,Free fluids — progressing well,Wheelchair transfers only,HR 109 | BP 85/44 | Temp 39.1°C | O2 91% | RR 29 | NEWS 11,Hb 98↓ | WCC 14.2↑ | Plt 210 | Na 136 | K 4.1 | Cr 98 | eGFR 68 | CRP 54↑ | INR 1.1,Chest drain in situ — draining serosanguinous fluid.,Wound dehiscence — TVN referral made. Dressing daily.,Cognitively improved. Chest clear. Mobile.,Wound soaking dressings — concern re infection,"Aspirin 75mg OD
+Atorvastatin 80mg ON
+Bisoprolol 2.5mg OD
+Ramipril 5mg OD
+Enoxaparin 40mg SC",Awaiting physio discharge assessment,109,warn,85/44,bad,39.1,bad,91%,warn,29,bad,11,"Aspirin 75mg OD
+Atorvastatin 80mg ON
+Bisoprolol 2.5mg OD
+Ramipril 5mg OD
+Enoxaparin 40mg SC",Penicillin — rash,,,,Hb 98↓ | WCC 14.2↑ | Plt 210 | Na 136 | K 4.1 | Cr 98 | eGFR 68 | CRP 54↑ | INR 1.1,"Echo: EF 30%↓, dilated LV. Urgent cardiology review","Normal sinus rhythm, LBBB — old",,Lives with spouse (frail). Both need POC arranging. Carer's assessment requested.,Mobilising with crutches NWB,Awaiting cardiology outpatient slot before discharge.,,,Sepsis (urinary source),,,P1a - Emergency - Procedure needed within 24 hours,CRITICAL — haemodynamically unstable. NEWS 11. ICU review urgently.,MEDICINE|URGENT|DNACPR,Active,2026-02-17T13:38:03.424767,2026-02-17T13:38:03.424767,system
+KCH0035,Mr Andrew Lewis,461 346 7825,01/10/1944,82 yrs,Male,Ward 5A,Bay 3,Bed A,King's College Hospital,Dr Martinez,Dr Florence Adeyemi,General Surgery,General Surgery,31/01/2026,Elective lap cholecystectomy,17,Day Case,green,None,Yes,,Enoxaparin 40mg SC daily,NBM — return to theatre possible,Mobilising well — physio goals met,HR 60 | BP 122/80 | Temp 36.3°C | O2 99% | RR 14 | NEWS 1,Hb 112 | WCC 8.4 | Plt 340 | Na 138 | K 3.8 | Cr 72 | eGFR >90 | CRP 22 | Trop T neg,Chest drain in situ — draining serosanguinous fluid.,Port sites clean. Day 2 post-op. No concerns.,Examination unremarkable. Improving.,"Night-time confusion, falls risk HIGH","Aspirin 75mg OD
+Atorvastatin 80mg ON
+Bisoprolol 2.5mg OD
+Ramipril 5mg OD
+Enoxaparin 40mg SC",Complex social situation — POC to arrange,60,ok,122/80,ok,36.3,ok,99%,ok,14,ok,1,"Aspirin 75mg OD
+Atorvastatin 80mg ON
+Bisoprolol 2.5mg OD
+Ramipril 5mg OD
+Enoxaparin 40mg SC",NKDA,,,,Hb 112 | WCC 8.4 | Plt 340 | Na 138 | K 3.8 | Cr 72 | eGFR >90 | CRP 22 | Trop T neg,"CXR: cardiomegaly, upper lobe diversion","Normal sinus rhythm, LBBB — old",,Lives with spouse. Fully independent pre-admission. No care package needed.,Walking with stick — improving,Step-down to ward from HDU — discharge planning to begin.,21/02/2026,,Elective lap cholecystectomy,17/02/2026,Day 0,P2a - Procedure can be deferred for up to 2 weeks,,GENERAL SURGERY|DNACPR|DC PLAN,Active,2026-02-17T13:38:03.424820,2026-02-17T13:38:03.424820,system
+KCH0036,Mrs Angela Williams,627 507 9897,11/05/1993,33 yrs,Female,Cardiac HDU,Bay 3,Bed C,King's College Hospital,Ms Robertson,Dr John Nwosu,Urology,Urology,06/02/2026,Nephrectomy (renal Ca),11,Inpatient,amber,amber,Yes,,Contraindicated — haemorrhage risk,Soft diet — SALT assessment complete,Non-weight bearing R leg. Hoist transfers,HR 83 | BP 123/73 | Temp 38.3°C | O2 96% | RR 19 | NEWS 4,Hb 144 | WCC 7.6 | Plt 210 | Na 139 | K 4.1 | Cr 78 | eGFR 84 | CRP 6 | All within normal limits,Chest drain in situ — draining serosanguinous fluid.,Sternal wound — staple line intact. Clean and dry.,Chest clear. Mild abdominal tenderness — expected post-op.,Compliant and motivated. Good progress,"Metoprolol 25mg BD
+Furosemide 40mg OD
+Spironolactone 25mg OD
+Warfarin — INR target 2-3
+Digoxin 125mcg OD",NHS continuing healthcare assessment pending,83,ok,123/73,ok,38.3,warn,96%,ok,19,ok,4,"Metoprolol 25mg BD
+Furosemide 40mg OD
+Spironolactone 25mg OD
+Warfarin — INR target 2-3
+Digoxin 125mcg OD",Codeine — nausea,,,,Hb 144 | WCC 7.6 | Plt 210 | Na 139 | K 4.1 | Cr 78 | eGFR 84 | CRP 6 | All within normal limits,"CXR: cardiomegaly, upper lobe diversion",AF with fast ventricular response — rate controlled,,Residential care home. POC already in place. Ready to return when medically fit.,Walking with stick — improving,Step-down to ward from HDU — discharge planning to begin.,24/02/2026,Pharmacy,Nephrectomy (renal Ca),10/02/2026,Day 7,P2a - Procedure can be deferred for up to 2 weeks,MONITOR — wound concern. Erythema noted. TVN referral made.,UROLOGY|MONITOR|DNACPR,Active,2026-02-17T13:38:03.424895,2026-02-17T13:38:03.424895,system
+KCH0037,Ms Jennifer Agyei,910 158 2229,09/11/1943,83 yrs,Female,Ward 6C,Bay 1,Bed B,King's College Hospital,Ms Robertson,Dr Gladys Asante,Medicine,Medicine,02/02/2026,Cellulitis — IV antibiotics,15,Surgery Admit,green,None,Yes,CDiff,Enoxaparin 40mg SC daily,Nutritional supplements BD — poor intake,Non-weight bearing R leg. Hoist transfers,HR 61 | BP 114/67 | Temp 36.5°C | O2 98% | RR 14 | NEWS 1,Hb 78↓↓ | WCC 18.6↑ | Plt 88↓ | Na 131↓ | K 5.2↑ | Cr 210↑ | eGFR 28 | CRP 310↑ | Lactate 3.8↑,Chest drain in situ — draining serosanguinous fluid.,Sternal wound — staple line intact. Clean and dry.,Bibasal crepitations — improving. Abdomen soft.,Wound soaking dressings — concern re infection,"Heparin infusion (ACS protocol)
+Ticagrelor 90mg BD
+Aspirin 75mg OD
+GTN spray PRN
+Furosemide 40mg IV",Nil barriers — for discharge when medically fit,61,ok,114/67,ok,36.5,ok,98%,ok,14,ok,1,"Heparin infusion (ACS protocol)
+Ticagrelor 90mg BD
+Aspirin 75mg OD
+GTN spray PRN
+Furosemide 40mg IV",NKDA,,,,Hb 78↓↓ | WCC 18.6↑ | Plt 88↓ | Na 131↓ | K 5.2↑ | Cr 210↑ | eGFR 28 | CRP 310↑ | Lactate 3.8↑,,,Blood cultures: Staph aureus — MSSA,Residential care home. POC already in place. Ready to return when medically fit.,Bed-bound — hoist transfers,Awaiting cardiology outpatient slot before discharge.,18/02/2026,Complete,Cellulitis — IV antibiotics,,,P4 - Elective,,MEDICINE|DNACPR|CDIFF,Active,2026-02-17T13:38:03.424934,2026-02-17T13:38:03.424934,system
+KCH0038,Mr Colin Clark,392 810 9047,07/10/1941,85 yrs,Male,CCU,Bay 2,Bed D,King's College Hospital,Mr Harrington,Dr Mary Mensah,General Surgery,General Surgery,05/02/2026,Perforated appendix — appendicectomy,12,Surgery Admit,urgent,escalate,No,CDiff,Enoxaparin 40mg SC daily,Soft/purée — thin fluids safe with chin tuck,Bed rest — haemodynamically unstable,HR 102 | BP 87/57 | Temp 38.3°C | O2 90% | RR 24 | NEWS 12,Hb 132 | WCC 11.2 | Plt 280 | Na 140 | K 4.0 | Cr 85 | eGFR 78 | CRP 8 | HbA1c 52,PICC line in situ. Arterial line R radial.,Wound clean and dry. Steristrips intact. NERDS 0.,Chest clear. Abdomen soft. Calves non-tender.,Pressure area care — repositioning 2-hourly,"Metoprolol 25mg BD
+Furosemide 40mg OD
+Spironolactone 25mg OD
+Warfarin — INR target 2-3
+Digoxin 125mcg OD",NHS continuing healthcare assessment pending,102,warn,87/57,bad,38.3,warn,90%,bad,24,warn,12,"Metoprolol 25mg BD
+Furosemide 40mg OD
+Spironolactone 25mg OD
+Warfarin — INR target 2-3
+Digoxin 125mcg OD",NKDA,,,,Hb 132 | WCC 11.2 | Plt 280 | Na 140 | K 4.0 | Cr 85 | eGFR 78 | CRP 8 | HbA1c 52,CXR: bilateral basal atelectasis — improving,"Normal sinus rhythm, LBBB — old",,Lives with spouse (frail). Both need POC arranging. Carer's assessment requested.,Mobilising with crutches NWB,Complex social situation. Family meeting this week. Package of care to arrange.,,,Perforated appendix — appendicectomy,16/02/2026,Day 1,P4 - Elective,URGENT — sepsis suspected. Lactate elevated. Cultures pending. Sepsis 6 initiated.,GENERAL SURGERY|URGENT|CDIFF,Active,2026-02-17T13:38:03.424973,2026-02-17T13:38:03.424973,system
+KCH0039,Mrs Miriam Taylor,560 577 9476,21/02/1958,68 yrs,Female,Gynae Ward,Bay 2,Bed B,King's College Hospital,Ms Williams,Dr Tracey Brown,Medicine,Medicine,13/02/2026,AKI on CKD,4,Day Case,green,None,No,Droplet,Enoxaparin 40mg SC daily,NBM — return to theatre possible,Bed rest — haemodynamically unstable,HR 76 | BP 114/74 | Temp 36.4°C | O2 98% | RR 17 | NEWS 0,Hb 105↓ | WCC 22.1↑↑ | Plt 420↑ | Na 134↓ | K 3.6 | Cr 118↑ | eGFR 52 | CRP 180↑ | PCT 4.2↑,Chest drain in situ — draining serosanguinous fluid.,Wound dehiscence — TVN referral made. Dressing daily.,Examination unremarkable. Improving.,Family very anxious — need update today,"Co-amoxiclav 625mg TDS
+Paracetamol 1g QDS
+Oxycodone 5mg PRN
+Enoxaparin 40mg SC
+Omeprazole 20mg OD",Nil barriers — for discharge when medically fit,76,ok,114/74,ok,36.4,ok,98%,ok,17,ok,0,"Co-amoxiclav 625mg TDS
+Paracetamol 1g QDS
+Oxycodone 5mg PRN
+Enoxaparin 40mg SC
+Omeprazole 20mg OD",Penicillin — rash,Omeprazole 20mg OD,9,20/02/2026,Hb 105↓ | WCC 22.1↑↑ | Plt 420↑ | Na 134↓ | K 3.6 | Cr 118↑ | eGFR 52 | CRP 180↑ | PCT 4.2↑,"Echo: EF 45%, mild MR, no effusion",AF with fast ventricular response — rate controlled,,Lives alone. Son visits daily. House has stairs — OT assessment pending.,Fully mobile — independent,Home with GP follow-up in 2 weeks. TTL written.,22/02/2026,,AKI on CKD,,,P1b - Urgent - Procedure needed within 72 hours,,MEDICINE|DROPLET|DC PLAN,Active,2026-02-17T13:38:03.425022,2026-02-17T13:38:03.425022,system
+KCH0040,Ms Catherine Ahmed,658 396 5949,16/11/1995,31 yrs,Female,Medical Ward 3,Bay 3,Bed D,King's College Hospital,Mr Harrington,Dr George Johnson,Urology,Urology,02/02/2026,Nephrectomy (renal Ca),15,Surgery Admit,amber,amber,No,,Mechanical — TED stockings only,Nutritional supplements BD — poor intake,Wheelchair transfers only,HR 95 | BP 129/66 | Temp 37.5°C | O2 94% | RR 18 | NEWS 4,Hb 112 | WCC 8.4 | Plt 340 | Na 138 | K 3.8 | Cr 72 | eGFR >90 | CRP 22 | Trop T neg,IDC in situ — UO monitoring. IV cannula.,Wound — mild erythema 1cm. No exudate. Monitor.,Chest clear. Mild abdominal tenderness — expected post-op.,Family very anxious — need update today,"Co-amoxiclav 625mg TDS
+Paracetamol 1g QDS
+Oxycodone 5mg PRN
+Enoxaparin 40mg SC
+Omeprazole 20mg OD",Family not yet informed of diagnosis,95,ok,129/66,ok,37.5,ok,94%,warn,18,ok,4,"Co-amoxiclav 625mg TDS
+Paracetamol 1g QDS
+Oxycodone 5mg PRN
+Enoxaparin 40mg SC
+Omeprazole 20mg OD",NKDA,Omeprazole 20mg OD,7,19/02/2026,Hb 112 | WCC 8.4 | Plt 340 | Na 138 | K 3.8 | Cr 72 | eGFR >90 | CRP 22 | Trop T neg,"CXR: cardiomegaly, upper lobe diversion","Normal sinus rhythm, LBBB — old",Sputum: Strep pneumoniae — pen-sensitive,Residential care home. POC already in place. Ready to return when medically fit.,Bed-bound — hoist transfers,Awaiting cardiology outpatient slot before discharge.,21/02/2026,Complete,Nephrectomy (renal Ca),15/02/2026,Day 2,P1a - Emergency - Procedure needed within 24 hours,MONITOR — wound concern. Erythema noted. TVN referral made.,UROLOGY|MONITOR,Active,2026-02-17T13:38:03.425079,2026-02-17T13:38:03.425079,system
+KCH0041,Mrs Sandra Mensah,568 346 4524,13/09/1987,39 yrs,Female,CCU,Bay 4,Bed C,King's College Hospital,Dr Martinez,Dr Thomas Evans,Medicine,Medicine,03/02/2026,AKI on CKD,14,Inpatient,amber,amber,Yes,Droplet,Mechanical — TED stockings only,NBM — return to theatre possible,"Mobilising with zimmer frame, physio BD",HR 84 | BP 116/83 | Temp 37.5°C | O2 96% | RR 18 | NEWS 2,Hb 132 | WCC 11.2 | Plt 280 | Na 140 | K 4.0 | Cr 85 | eGFR 78 | CRP 8 | HbA1c 52,No lines in situ.,Sternal wound — staple line intact. Clean and dry.,Chest clear. Mild abdominal tenderness — expected post-op.,Family very anxious — need update today,"Morphine PCA
+Cyclizine 50mg TDS
+Paracetamol 1g QDS IV
+Metronidazole 500mg TDS IV
+Co-amoxiclav 1.2g TDS IV",Complex social situation — POC to arrange,84,ok,116/83,ok,37.5,ok,96%,ok,18,ok,2,"Morphine PCA
+Cyclizine 50mg TDS
+Paracetamol 1g QDS IV
+Metronidazole 500mg TDS IV
+Co-amoxiclav 1.2g TDS IV",Sulphonamides — rash,Metronidazole 500mg TDS IV,1,22/02/2026,Hb 132 | WCC 11.2 | Plt 280 | Na 140 | K 4.0 | Cr 85 | eGFR 78 | CRP 8 | HbA1c 52,"CXR: cardiomegaly, upper lobe diversion",AF with fast ventricular response — rate controlled,,Lives alone. Sheltered accommodation. Warden on site. Low-level support needed.,Mobilising with crutches NWB,Awaiting cardiology outpatient slot before discharge.,02/03/2026,Complete,AKI on CKD,,,P4 - Elective,AMBER — antibiotic review due. Cultures pending. Micro input requested.,MEDICINE|MONITOR|DNACPR|DROPLET,Active,2026-02-17T13:38:03.425136,2026-02-17T13:38:03.425136,system
+KCH0042,Mr Robert Williams,923 585 9508,23/06/1981,45 yrs,Male,Ward 6C,Bay 3,Bed C,King's College Hospital,Ms Osei,Dr Helen Gupta,Urology,Urology,24/01/2026,Transurethral resection prostate (TURP),24,Surgery Admit,green,None,No,MRSA,Apixaban 2.5mg BD,Free fluids — progressing well,"Fully mobile, no restrictions",HR 78 | BP 120/81 | Temp 37.2°C | O2 100% | RR 15 | NEWS 2,Hb 144 | WCC 7.6 | Plt 210 | Na 139 | K 4.1 | Cr 78 | eGFR 84 | CRP 6 | All within normal limits,PICC line in situ. Arterial line R radial.,Port sites clean. Day 2 post-op. No concerns.,Bibasal crepitations — improving. Abdomen soft.,Patient refusing medications at times,"Heparin infusion (ACS protocol)
+Ticagrelor 90mg BD
+Aspirin 75mg OD
+GTN spray PRN
+Furosemide 40mg IV",Complex social situation — POC to arrange,78,ok,120/81,ok,37.2,ok,100%,ok,15,ok,2,"Heparin infusion (ACS protocol)
+Ticagrelor 90mg BD
+Aspirin 75mg OD
+GTN spray PRN
+Furosemide 40mg IV",Latex — contact dermatitis,,,,Hb 144 | WCC 7.6 | Plt 210 | Na 139 | K 4.1 | Cr 78 | eGFR 84 | CRP 6 | All within normal limits,"CXR: clear lung fields, no pneumothorax",Sinus bradycardia 48bpm,Blood cultures: Staph aureus — MSSA,Lives alone. Sheltered accommodation. Warden on site. Low-level support needed.,Fully mobile — independent,Home tomorrow if clinically stable overnight.,21/02/2026,,Transurethral resection prostate (TURP),02/02/2026,Day 15,P2b - Procedure can be deferred for up to 1 month,,UROLOGY|MRSA,Active,2026-02-17T13:38:03.425176,2026-02-17T13:38:03.425176,system
+KCH0043,Mr Mark Jones,255 522 4340,11/07/1942,84 yrs,Male,Gynae Ward,Bay 4,Bed A,King's College Hospital,Mr Fraser,Dr Graham Patel,Medicine,Medicine,10/02/2026,DVT — anticoagulation,7,Surgery Admit,green,None,No,,Apixaban 2.5mg BD,Free fluids — progressing well,Mobilising well — physio goals met,HR 77 | BP 120/80 | Temp 36.8°C | O2 98% | RR 13 | NEWS 1,Hb 105↓ | WCC 22.1↑↑ | Plt 420↑ | Na 134↓ | K 3.6 | Cr 118↑ | eGFR 52 | CRP 180↑ | PCT 4.2↑,Chest drain removed day 2. Cannula only.,Port sites clean. Day 2 post-op. No concerns.,Chest clear. Mild abdominal tenderness — expected post-op.,Pressure area care — repositioning 2-hourly,"Prednisolone 40mg OD
+Omeprazole 40mg OD
+Calcium + Vit D
+Enoxaparin 40mg SC
+Azathioprine 100mg OD",Awaiting scan result before discharge,77,ok,120/80,ok,36.8,ok,98%,ok,13,ok,1,"Prednisolone 40mg OD
+Omeprazole 40mg OD
+Calcium + Vit D
+Enoxaparin 40mg SC
+Azathioprine 100mg OD",NKDA,Omeprazole 40mg OD,6,22/02/2026,Hb 105↓ | WCC 22.1↑↑ | Plt 420↑ | Na 134↓ | K 3.6 | Cr 118↑ | eGFR 52 | CRP 180↑ | PCT 4.2↑,"MRI spine: L4/5 disc prolapse, no cord compression",,,Lives with spouse. Fully independent pre-admission. No care package needed.,Mobilising with crutches NWB,Awaiting cardiology outpatient slot before discharge.,19/02/2026,Complete,DVT — anticoagulation,,,P4 - Elective,,MEDICINE,Active,2026-02-17T13:38:03.425215,2026-02-17T13:38:03.425215,system
+KCH0044,Ms Carol Roberts,180 454 8247,10/12/1993,33 yrs,Female,Cardiac HDU,Bay 2,Bed C,King's College Hospital,Dr Mensah,Dr Sunita Boateng,Thoracic Surgery,Thoracic Surgery,08/02/2026,VATS lobectomy (lung Ca),9,Inpatient,amber,amber,No,,Tinzaparin 3500u SC daily,Low-sodium cardiac diet. Eating 80% meals,Non-weight bearing R leg. Hoist transfers,HR 83 | BP 139/83 | Temp 37.9°C | O2 94% | RR 16 | NEWS 6,Hb 88↓ | WCC 6.2 | Plt 156 | Na 142 | K 3.9 | Cr 62 | eGFR >90 | CRP 12 | Albumin 28↓,Chest drain removed day 2. Cannula only.,Healing well. Sutures for removal day 10.,Chest clear. Abdomen soft. Calves non-tender.,Wound soaking dressings — concern re infection,"Amoxicillin 500mg TDS
+Metronidazole 400mg TDS
+Paracetamol 1g QDS
+Dalteparin 5000u SC",Family not yet informed of diagnosis,83,ok,139/83,ok,37.9,warn,94%,warn,16,ok,6,"Amoxicillin 500mg TDS
+Metronidazole 400mg TDS
+Paracetamol 1g QDS
+Dalteparin 5000u SC",Penicillin — rash,Amoxicillin 500mg TDS,4,18/02/2026,Hb 88↓ | WCC 6.2 | Plt 156 | Na 142 | K 3.9 | Cr 62 | eGFR >90 | CRP 12 | Albumin 28↓,"CXR: cardiomegaly, upper lobe diversion",,,Lives alone. Son visits daily. House has stairs — OT assessment pending.,Mobilising with frame,Complex social situation. Family meeting this week. Package of care to arrange.,27/02/2026,,VATS lobectomy (lung Ca),10/02/2026,Day 7,P4 - Elective,MONITOR — persistent pyrexia. Source unclear. Repeat bloods today.,THORACIC SURGERY|MONITOR,Active,2026-02-17T13:38:03.425274,2026-02-17T13:38:03.425274,system
+KCH0045,Mr Robert Green,993 396 1613,06/12/1935,91 yrs,Male,Gynae Ward,Bay 1,Bed C,King's College Hospital,Mr Adeyemi,Dr Pauline Nwosu,Cardiology,Cardiology,30/01/2026,NSTEMI,18,Surgery Admit,amber,amber,Yes,,Rivaroxaban 10mg OD,Diabetic diet. Good intake. HbA1c optimisation ongoing,"Mobilising with zimmer frame, physio BD",HR 96 | BP 131/64 | Temp 38.3°C | O2 96% | RR 18 | NEWS 3,Hb 105↓ | WCC 22.1↑↑ | Plt 420↑ | Na 134↓ | K 3.6 | Cr 118↑ | eGFR 52 | CRP 180↑ | PCT 4.2↑,No lines in situ.,Healing well. Sutures for removal day 10.,Chest clear. Abdomen soft. Calves non-tender.,"Night-time confusion, falls risk HIGH","Paracetamol 1g QDS
+Ibuprofen 400mg TDS
+Omeprazole 20mg OD
+Enoxaparin 40mg SC",Complex social situation — POC to arrange,96,warn,131/64,ok,38.3,warn,96%,ok,18,ok,3,"Paracetamol 1g QDS
+Ibuprofen 400mg TDS
+Omeprazole 20mg OD
+Enoxaparin 40mg SC",Codeine — nausea,Omeprazole 20mg OD,6,19/02/2026,Hb 105↓ | WCC 22.1↑↑ | Plt 420↑ | Na 134↓ | K 3.6 | Cr 118↑ | eGFR 52 | CRP 180↑ | PCT 4.2↑,,Sinus tachycardia 104bpm,,Lives with spouse (frail). Both need POC arranging. Carer's assessment requested.,Wheelchair dependent,Nursing home placement in progress. Social worker involved.,02/03/2026,,NSTEMI,,,P2b - Procedure can be deferred for up to 1 month,MONITOR — wound concern. Erythema noted. TVN referral made.,CARDIOLOGY|MONITOR|DNACPR,Active,2026-02-17T13:38:03.425318,2026-02-17T13:38:03.425318,system
+KCH0046,Ms Tracey Robinson,696 840 1187,11/05/1964,62 yrs,Female,Cardiac HDU,Bay 1,Bed A,King's College Hospital,Mr Thompson,Dr Patrick Johnson,Thoracic Surgery,Thoracic Surgery,04/02/2026,VATS lobectomy (lung Ca),13,Surgery Admit,amber,amber,Pending,Droplet,Rivaroxaban 10mg OD,Diabetic diet. Good intake. HbA1c optimisation ongoing,"Mobilising with zimmer frame, physio BD",HR 96 | BP 119/82 | Temp 37.2°C | O2 95% | RR 18 | NEWS 6,Hb 78↓↓ | WCC 18.6↑ | Plt 88↓ | Na 131↓ | K 5.2↑ | Cr 210↑ | eGFR 28 | CRP 310↑ | Lactate 3.8↑,PICC line in situ. Arterial line R radial.,Wound clean and dry. Steristrips intact. NERDS 0.,Chest clear. Abdomen soft. Calves non-tender.,IDC in situ — monitoring UO. IV access secure,"Amoxicillin 500mg TDS
+Metronidazole 400mg TDS
+Paracetamol 1g QDS
+Dalteparin 5000u SC",Complex social situation — POC to arrange,96,warn,119/82,ok,37.2,ok,95%,ok,18,ok,6,"Amoxicillin 500mg TDS
+Metronidazole 400mg TDS
+Paracetamol 1g QDS
+Dalteparin 5000u SC",Codeine — nausea,Amoxicillin 500mg TDS,4,19/02/2026,Hb 78↓↓ | WCC 18.6↑ | Plt 88↓ | Na 131↓ | K 5.2↑ | Cr 210↑ | eGFR 28 | CRP 310↑ | Lactate 3.8↑,"CT abdomen: no free gas, no collection",Sinus bradycardia 48bpm,Wound swab: pending,Residential care home. POC already in place. Ready to return when medically fit.,Wheelchair dependent,Awaiting cardiology outpatient slot before discharge.,21/02/2026,Complete,VATS lobectomy (lung Ca),14/02/2026,Day 3,P4 - Elective,MONITOR — wound concern. Erythema noted. TVN referral made.,THORACIC SURGERY|MONITOR|DROPLET,Active,2026-02-17T13:38:03.425362,2026-02-17T13:38:03.425362,system
+KCH0047,Mr Alan Owusu,556 928 1911,03/09/1936,90 yrs,Male,CCU,Bay 1,Bed D,King's College Hospital,Dr Gupta,Dr Patrick Agyei,Urology,Urology,16/02/2026,Transurethral resection prostate (TURP),1,Day Case,green,None,No,MRSA,Tinzaparin 3500u SC daily,Nutritional supplements BD — poor intake,Non-weight bearing R leg. Hoist transfers,HR 68 | BP 136/65 | Temp 37.1°C | O2 100% | RR 12 | NEWS 0,Hb 98↓ | WCC 14.2↑ | Plt 210 | Na 136 | K 4.1 | Cr 98 | eGFR 68 | CRP 54↑ | INR 1.1,No lines in situ.,Port sites clean. Day 2 post-op. No concerns.,Cognitively improved. Chest clear. Mobile.,Patient refusing medications at times,"Morphine PCA
+Cyclizine 50mg TDS
+Paracetamol 1g QDS IV
+Metronidazole 500mg TDS IV
+Co-amoxiclav 1.2g TDS IV",Awaiting physio discharge assessment,68,ok,136/65,ok,37.1,ok,100%,ok,12,ok,0,"Morphine PCA
+Cyclizine 50mg TDS
+Paracetamol 1g QDS IV
+Metronidazole 500mg TDS IV
+Co-amoxiclav 1.2g TDS IV",Sulphonamides — rash,Metronidazole 500mg TDS IV,6,18/02/2026,Hb 98↓ | WCC 14.2↑ | Plt 210 | Na 136 | K 4.1 | Cr 98 | eGFR 68 | CRP 54↑ | INR 1.1,CXR: bilateral basal atelectasis — improving,,,Residential care home. POC already in place. Ready to return when medically fit.,Walking with stick — improving,Discharge today if bloods acceptable. TTL with pharmacy.,22/02/2026,,Transurethral resection prostate (TURP),17/02/2026,Day 0,P4 - Elective,,UROLOGY|MRSA,Active,2026-02-17T13:38:03.425409,2026-02-17T13:38:03.425409,system
+KCH0048,Mr Kwame Green,954 103 1372,24/04/1982,44 yrs,Male,Orthopaedic Ward,Bay 4,Bed D,King's College Hospital,Ms Robertson,Dr Frederick Robinson,Gastroenterology,Gastroenterology,02/02/2026,GI bleed (upper) — OGD + banding,15,Surgery Admit,urgent,escalate,No,CDiff,Enoxaparin 40mg SC daily,Free fluids — progressing well,Sit in chair twice daily. Sternal precautions,HR 111 | BP 74/48 | Temp 38.1°C | O2 93% | RR 23 | NEWS 7,Hb 132 | WCC 11.2 | Plt 280 | Na 140 | K 4.0 | Cr 85 | eGFR 78 | CRP 8 | HbA1c 52,No drains. Peripheral cannula in situ.,Wound — mild erythema 1cm. No exudate. Monitor.,Cool peripheries. JVP elevated. Bibasal creps.,Pressure area care — repositioning 2-hourly,"Morphine PCA
+Cyclizine 50mg TDS
+Paracetamol 1g QDS IV
+Metronidazole 500mg TDS IV
+Co-amoxiclav 1.2g TDS IV",Family not yet informed of diagnosis,111,warn,74/48,bad,38.1,warn,93%,warn,23,warn,7,"Morphine PCA
+Cyclizine 50mg TDS
+Paracetamol 1g QDS IV
+Metronidazole 500mg TDS IV
+Co-amoxiclav 1.2g TDS IV",Penicillin — anaphylaxis,Metronidazole 500mg TDS IV,10,18/02/2026,Hb 132 | WCC 11.2 | Plt 280 | Na 140 | K 4.0 | Cr 85 | eGFR 78 | CRP 8 | HbA1c 52,CXR: bilateral basal atelectasis — improving,"AF rate 88bpm, no ST changes",Blood cultures: no growth at 48h,Lives with family. Good support network. Daughter is main carer.,Mobilising with crutches NWB,Home tomorrow if clinically stable overnight.,,,GI bleed (upper) — OGD + banding,,,P2b - Procedure can be deferred for up to 1 month,CRITICAL — haemodynamically unstable. NEWS 7. ICU review urgently.,GASTROENTEROLOGY|URGENT|CDIFF,Active,2026-02-17T13:38:03.425452,2026-02-17T13:38:03.425452,system
+KCH0049,Mrs Janet Young,381 162 3869,14/05/1970,56 yrs,Female,Ward 4B,Bay 3,Bed D,King's College Hospital,Dr Ali,Dr Amina Harris,Cardiology,Cardiology,25/01/2026,Atrial fibrillation — rate control,23,Surgery Admit,amber,amber,No,Droplet,Contraindicated — haemorrhage risk,Free fluids — progressing well,Weight-bearing as tolerated with crutches,HR 93 | BP 126/64 | Temp 37.4°C | O2 94% | RR 22 | NEWS 6,Hb 132 | WCC 11.2 | Plt 280 | Na 140 | K 4.0 | Cr 85 | eGFR 78 | CRP 8 | HbA1c 52,IDC in situ — UO monitoring. IV cannula.,Sternal wound — staple line intact. Clean and dry.,Examination unremarkable. Improving.,Wound soaking dressings — concern re infection,"Apixaban 5mg BD
+Atorvastatin 40mg ON
+Amlodipine 5mg OD
+Lisinopril 10mg OD",No barriers identified,93,ok,126/64,ok,37.4,ok,94%,warn,22,warn,6,"Apixaban 5mg BD
+Atorvastatin 40mg ON
+Amlodipine 5mg OD
+Lisinopril 10mg OD",Penicillin — anaphylaxis,,,,Hb 132 | WCC 11.2 | Plt 280 | Na 140 | K 4.0 | Cr 85 | eGFR 78 | CRP 8 | HbA1c 52,"Echo: EF 30%↓, dilated LV. Urgent cardiology review",Sinus tachycardia 104bpm,Sputum: Strep pneumoniae — pen-sensitive,Lives with family. Good support network. Daughter is main carer.,Fully mobile — independent,Awaiting cardiology outpatient slot before discharge.,28/02/2026,,Atrial fibrillation — rate control,,,P1b - Urgent - Procedure needed within 72 hours,MONITOR — persistent pyrexia. Source unclear. Repeat bloods today.,CARDIOLOGY|MONITOR|DROPLET,Active,2026-02-17T13:38:03.425501,2026-02-17T13:38:03.425501,system
+KCH0050,Mr David Hall,717 140 2192,22/10/1950,76 yrs,Male,Gynae Ward,Bay 2,Bed D,King's College Hospital,Dr Chen,Dr Jennifer Young,General Surgery,General Surgery,16/02/2026,Perforated appendix — appendicectomy,1,Day Case,urgent,escalate,Yes,CDiff,Not indicated — fully mobile low risk,Soft/purée — thin fluids safe with chin tuck,Mobilising well — physio goals met,HR 129 | BP 76/43 | Temp 39.1°C | O2 91% | RR 25 | NEWS 12,Hb 88↓ | WCC 6.2 | Plt 156 | Na 142 | K 3.9 | Cr 62 | eGFR >90 | CRP 12 | Albumin 28↓,No drains. Peripheral cannula in situ.,Healing well. Sutures for removal day 10.,Cognitively improved. Chest clear. Mobile.,Family very anxious — need update today,"Heparin infusion (ACS protocol)
+Ticagrelor 90mg BD
+Aspirin 75mg OD
+GTN spray PRN
+Furosemide 40mg IV",Family not yet informed of diagnosis,129,bad,76/43,bad,39.1,bad,91%,warn,25,warn,12,"Heparin infusion (ACS protocol)
+Ticagrelor 90mg BD
+Aspirin 75mg OD
+GTN spray PRN
+Furosemide 40mg IV",Penicillin — anaphylaxis,,,,Hb 88↓ | WCC 6.2 | Plt 156 | Na 142 | K 3.9 | Cr 62 | eGFR >90 | CRP 12 | Albumin 28↓,"Echo: EF 45%, mild MR, no effusion",Sinus bradycardia 48bpm,MSU: ESBL E.coli — sensitive to meropenem,Lives with family. Good support network. Daughter is main carer.,Wheelchair dependent,Complex social situation. Family meeting this week. Package of care to arrange.,,,Perforated appendix — appendicectomy,16/02/2026,Day 1,P2a - Procedure can be deferred for up to 2 weeks,URGENT — sepsis suspected. Lactate elevated. Cultures pending. Sepsis 6 initiated.,GENERAL SURGERY|URGENT|DNACPR|CDIFF,Active,2026-02-17T13:38:03.425549,2026-02-17T13:38:03.425549,system
+KCH0051,Mr Andrew Jones,693 837 7841,18/10/1965,61 yrs,Male,Cardiac HDU,Bay 4,Bed B,King's College Hospital,Mr Thompson,Dr Priya Nwosu,Thoracic Surgery,Thoracic Surgery,26/01/2026,Oesophagectomy,22,Day Case,green,None,No,,Enoxaparin 40mg SC daily,Free fluids — progressing well,"Mobilising with zimmer frame, physio BD",HR 68 | BP 134/80 | Temp 37.4°C | O2 99% | RR 15 | NEWS 0,Hb 144 | WCC 7.6 | Plt 210 | Na 139 | K 4.1 | Cr 78 | eGFR 84 | CRP 6 | All within normal limits,Chest drain in situ — draining serosanguinous fluid.,Wound — mild erythema 1cm. No exudate. Monitor.,Chest clear. Abdomen soft. Calves non-tender.,IDC in situ — monitoring UO. IV access secure,"Co-amoxiclav 625mg TDS
+Paracetamol 1g QDS
+Oxycodone 5mg PRN
+Enoxaparin 40mg SC
+Omeprazole 20mg OD",No barriers identified,68,ok,134/80,ok,37.4,ok,99%,ok,15,ok,0,"Co-amoxiclav 625mg TDS
+Paracetamol 1g QDS
+Oxycodone 5mg PRN
+Enoxaparin 40mg SC
+Omeprazole 20mg OD",Sulphonamides — rash,Omeprazole 20mg OD,3,19/02/2026,Hb 144 | WCC 7.6 | Plt 210 | Na 139 | K 4.1 | Cr 78 | eGFR 84 | CRP 6 | All within normal limits,CT chest: no PE. Bilateral consolidation — improving,"Sinus rhythm 72bpm, normal axis, no ST changes",C.diff toxin: negative,Lives with family. Good support network. Daughter is main carer.,Fully mobile — independent,Home tomorrow if clinically stable overnight.,20/02/2026,,Oesophagectomy,05/02/2026,Day 12,P1b - Urgent - Procedure needed within 72 hours,,THORACIC SURGERY,Active,2026-02-17T13:38:03.425604,2026-02-17T13:38:03.425604,system
+KCH0052,Mrs Sunita Jones,642 839 5501,01/01/1946,80 yrs,Female,Ward 4B,Bay 4,Bed B,King's College Hospital,Mr Harrington,Dr Mark Patel,Cardiology,Cardiology,12/02/2026,Permanent pacemaker implant,5,Day Case,green,None,No,,Enoxaparin 40mg SC daily,Soft/purée — thin fluids safe with chin tuck,"Fully mobile, no restrictions",HR 66 | BP 129/81 | Temp 36.5°C | O2 98% | RR 14 | NEWS 1,Hb 132 | WCC 11.2 | Plt 280 | Na 140 | K 4.0 | Cr 85 | eGFR 78 | CRP 8 | HbA1c 52,Chest drain in situ — draining serosanguinous fluid.,Wound clean and dry. Steristrips intact. NERDS 0.,Examination unremarkable. Improving.,"Night-time confusion, falls risk HIGH","Paracetamol 1g QDS
+Ibuprofen 400mg TDS
+Omeprazole 20mg OD
+Enoxaparin 40mg SC",Awaiting physio discharge assessment,66,ok,129/81,ok,36.5,ok,98%,ok,14,ok,1,"Paracetamol 1g QDS
+Ibuprofen 400mg TDS
+Omeprazole 20mg OD
+Enoxaparin 40mg SC",Codeine — nausea,Omeprazole 20mg OD,6,21/02/2026,Hb 132 | WCC 11.2 | Plt 280 | Na 140 | K 4.0 | Cr 85 | eGFR 78 | CRP 8 | HbA1c 52,,"Normal sinus rhythm, LBBB — old",MSU: ESBL E.coli — sensitive to meropenem,Lives with spouse (frail). Both need POC arranging. Carer's assessment requested.,Bed-bound — hoist transfers,Discharge today if bloods acceptable. TTL with pharmacy.,20/02/2026,,Permanent pacemaker implant,13/02/2026,Day 4,P2b - Procedure can be deferred for up to 1 month,,CARDIOLOGY,Active,2026-02-17T13:38:03.425666,2026-02-17T13:38:03.425666,system
+KCH0053,Mr Omar Williams,680 586 5441,07/12/1969,57 yrs,Male,Thoracic Ward,Bay 1,Bed B,King's College Hospital,Dr Mensah,Dr Mary Jones,Cardiac Surgery,Cardiac Surgery,10/02/2026,Aortic valve replacement,7,Day Case,amber,amber,Yes,,Enoxaparin 40mg SC daily,Nutritional supplements BD — poor intake,Non-weight bearing R leg. Hoist transfers,HR 104 | BP 125/62 | Temp 37.4°C | O2 97% | RR 17 | NEWS 6,Hb 78↓↓ | WCC 18.6↑ | Plt 88↓ | Na 131↓ | K 5.2↑ | Cr 210↑ | eGFR 28 | CRP 310↑ | Lactate 3.8↑,No drains. Peripheral cannula in situ.,Healing well. Sutures for removal day 10.,Chest clear. Mild abdominal tenderness — expected post-op.,Compliant and motivated. Good progress,"Morphine PCA
+Cyclizine 50mg TDS
+Paracetamol 1g QDS IV
+Metronidazole 500mg TDS IV
+Co-amoxiclav 1.2g TDS IV",No barriers identified,104,warn,125/62,ok,37.4,ok,97%,ok,17,ok,6,"Morphine PCA
+Cyclizine 50mg TDS
+Paracetamol 1g QDS IV
+Metronidazole 500mg TDS IV
+Co-amoxiclav 1.2g TDS IV",NKDA,Metronidazole 500mg TDS IV,9,20/02/2026,Hb 78↓↓ | WCC 18.6↑ | Plt 88↓ | Na 131↓ | K 5.2↑ | Cr 210↑ | eGFR 28 | CRP 310↑ | Lactate 3.8↑,,"AF rate 88bpm, no ST changes",C.diff toxin: negative,Lives alone. Sheltered accommodation. Warden on site. Low-level support needed.,Wheelchair dependent,Awaiting cardiology outpatient slot before discharge.,21/02/2026,Complete,Aortic valve replacement,12/02/2026,Day 5,P2a - Procedure can be deferred for up to 2 weeks,MONITOR — persistent pyrexia. Source unclear. Repeat bloods today.,CARDIAC SURGERY|MONITOR|DNACPR,Active,2026-02-17T13:38:03.425724,2026-02-17T13:38:03.425724,system
+KCH0054,Miss Elizabeth Asante,402 917 5037,03/10/1950,76 yrs,Female,Medical Ward 3,Bay 2,Bed D,King's College Hospital,Dr Patel,Dr Susan Evans,Cardiac Surgery,Cardiac Surgery,14/02/2026,Aortic dissection type A repair,3,Surgery Admit,amber,amber,No,,Not indicated — fully mobile low risk,Nutritional supplements BD — poor intake,"Fully mobile, no restrictions",HR 89 | BP 128/71 | Temp 38.1°C | O2 93% | RR 17 | NEWS 2,Hb 144 | WCC 7.6 | Plt 210 | Na 139 | K 4.1 | Cr 78 | eGFR 84 | CRP 6 | All within normal limits,Chest drain removed day 2. Cannula only.,Port sites clean. Day 2 post-op. No concerns.,Cognitively improved. Chest clear. Mobile.,Wound soaking dressings — concern re infection,"Metoprolol 25mg BD
+Furosemide 40mg OD
+Spironolactone 25mg OD
+Warfarin — INR target 2-3
+Digoxin 125mcg OD",Family not yet informed of diagnosis,89,ok,128/71,ok,38.1,warn,93%,warn,17,ok,2,"Metoprolol 25mg BD
+Furosemide 40mg OD
+Spironolactone 25mg OD
+Warfarin — INR target 2-3
+Digoxin 125mcg OD",NKDA,,,,Hb 144 | WCC 7.6 | Plt 210 | Na 139 | K 4.1 | Cr 78 | eGFR 84 | CRP 6 | All within normal limits,"USS abdomen: gallstones, CBD 4mm — normal",,,Residential care home. POC already in place. Ready to return when medically fit.,Walking with stick — improving,Complex social situation. Family meeting this week. Package of care to arrange.,01/03/2026,Written,Aortic dissection type A repair,14/02/2026,Day 3,P4 - Elective,AMBER — NEWS 2. Increased monitoring. Senior review today.,CARDIAC SURGERY|MONITOR,Active,2026-02-17T13:38:03.425767,2026-02-17T13:38:03.425767,system
+KCH0055,Mr Graham Young,164 271 8121,16/03/1964,62 yrs,Male,CCU,Bay 1,Bed C,King's College Hospital,Mr Adeyemi,Dr Ahmed Agyei,Thoracic Surgery,Thoracic Surgery,27/01/2026,Thoracotomy + decortication,21,Day Case,amber,amber,Pending,Contact,Contraindicated — haemorrhage risk,Free fluids — progressing well,Mobilising well — physio goals met,HR 95 | BP 138/79 | Temp 37.3°C | O2 93% | RR 17 | NEWS 4,Hb 118 | WCC 9.8 | Plt 195 | Na 137 | K 4.3 | Cr 95 | eGFR 72 | CRP 45↑ | INR 2.8,Chest drain removed day 2. Cannula only.,Wound — mild erythema 1cm. No exudate. Monitor.,Cognitively improved. Chest clear. Mobile.,Family very anxious — need update today,"Aspirin 75mg OD
+Atorvastatin 80mg ON
+Bisoprolol 2.5mg OD
+Ramipril 5mg OD
+Enoxaparin 40mg SC",Awaiting scan result before discharge,95,ok,138/79,ok,37.3,ok,93%,warn,17,ok,4,"Aspirin 75mg OD
+Atorvastatin 80mg ON
+Bisoprolol 2.5mg OD
+Ramipril 5mg OD
+Enoxaparin 40mg SC",NKDA,,,,Hb 118 | WCC 9.8 | Plt 195 | Na 137 | K 4.3 | Cr 95 | eGFR 72 | CRP 45↑ | INR 2.8,"MRI spine: L4/5 disc prolapse, no cord compression",,Blood cultures: Staph aureus — MSSA,Lives with spouse (frail). Both need POC arranging. Carer's assessment requested.,Mobilising with crutches NWB,Nursing home placement in progress. Social worker involved.,25/02/2026,Pharmacy,Thoracotomy + decortication,,,P4 - Elective,MONITOR — wound concern. Erythema noted. TVN referral made.,THORACIC SURGERY|MONITOR|CONTACT,Active,2026-02-17T13:38:03.425808,2026-02-17T13:38:03.425808,system
+KCH0056,Ms Joyce Green,706 658 3947,19/04/1984,42 yrs,Female,CCU,Bay 2,Bed D,King's College Hospital,Dr Ali,Dr Samuel Boateng,Cardiology,Cardiology,14/02/2026,STEMI + primary PCI,3,Surgery Admit,urgent,escalate,Yes,Droplet,Contraindicated — haemorrhage risk,Soft diet — SALT assessment complete,"Mobilising with zimmer frame, physio BD",HR 126 | BP 95/53 | Temp 38.9°C | O2 89% | RR 26 | NEWS 8,Hb 112 | WCC 8.4 | Plt 340 | Na 138 | K 3.8 | Cr 72 | eGFR >90 | CRP 22 | Trop T neg,IDC in situ — UO monitoring. IV cannula.,Healing well. Sutures for removal day 10.,Examination unremarkable. Improving.,Family very anxious — need update today,"Meropenem 1g TDS IV
+Vancomycin IV — levels
+Furosemide 80mg BD
+Enoxaparin 40mg SC
+Insulin sliding scale",Complex social situation — POC to arrange,126,bad,95/53,bad,38.9,bad,89%,bad,26,bad,8,"Meropenem 1g TDS IV
+Vancomycin IV — levels
+Furosemide 80mg BD
+Enoxaparin 40mg SC
+Insulin sliding scale",NKDA,Meropenem 1g TDS IV,3,21/02/2026,Hb 112 | WCC 8.4 | Plt 340 | Na 138 | K 3.8 | Cr 72 | eGFR >90 | CRP 22 | Trop T neg,"CT abdomen: no free gas, no collection",,Blood cultures: no growth at 48h,Lives alone. Son visits daily. House has stairs — OT assessment pending.,Mobilising with crutches NWB,Complex social situation. Family meeting this week. Package of care to arrange.,,,STEMI + primary PCI,,,P4 - Elective,CRITICAL — post-op deterioration. Surgical review now. Return to theatre possible.,CARDIOLOGY|URGENT|DNACPR|DROPLET,Active,2026-02-17T13:38:03.425885,2026-02-17T13:38:03.425885,system
+KCH0057,Mrs Amina Evans,622 864 9499,09/04/1986,40 yrs,Female,Medical Ward 3,Bay 4,Bed B,King's College Hospital,Dr Patel,Dr David Osei,General Surgery,General Surgery,13/02/2026,Anterior resection (colorectal Ca),4,Day Case,amber,amber,Pending,CDiff,Not indicated — fully mobile low risk,Soft diet — SALT assessment complete,"Fully mobile, no restrictions",HR 93 | BP 105/63 | Temp 38.2°C | O2 94% | RR 18 | NEWS 4,Hb 144 | WCC 7.6 | Plt 210 | Na 139 | K 4.1 | Cr 78 | eGFR 84 | CRP 6 | All within normal limits,Chest drain removed day 2. Cannula only.,Healing well. Sutures for removal day 10.,Chest clear. Abdomen soft. Calves non-tender.,"Night-time confusion, falls risk HIGH","Co-amoxiclav 625mg TDS
+Paracetamol 1g QDS
+Oxycodone 5mg PRN
+Enoxaparin 40mg SC
+Omeprazole 20mg OD",Family not yet informed of diagnosis,93,ok,105/63,warn,38.2,warn,94%,warn,18,ok,4,"Co-amoxiclav 625mg TDS
+Paracetamol 1g QDS
+Oxycodone 5mg PRN
+Enoxaparin 40mg SC
+Omeprazole 20mg OD",Sulphonamides — rash,Omeprazole 20mg OD,8,19/02/2026,Hb 144 | WCC 7.6 | Plt 210 | Na 139 | K 4.1 | Cr 78 | eGFR 84 | CRP 6 | All within normal limits,"CXR: cardiomegaly, upper lobe diversion",,,Residential care home. POC already in place. Ready to return when medically fit.,Mobilising with crutches NWB,Rehab unit transfer pending — OT assessment complete.,20/02/2026,Pharmacy,Anterior resection (colorectal Ca),15/02/2026,Day 2,P4 - Elective,AMBER — NEWS 4. Increased monitoring. Senior review today.,GENERAL SURGERY|MONITOR|CDIFF,Active,2026-02-17T13:38:03.425937,2026-02-17T13:38:03.425937,system
+KCH0058,Ms Florence Thompson,773 542 7481,06/11/1975,51 yrs,Female,Cardiac HDU,Bay 4,Bed D,King's College Hospital,Ms Williams,Dr James Owusu,Cardiology,Cardiology,10/02/2026,STEMI + primary PCI,7,Surgery Admit,urgent,escalate,Yes,MRSA,Contraindicated — haemorrhage risk,Soft/purée — thin fluids safe with chin tuck,Bed rest — haemodynamically unstable,HR 106 | BP 78/42 | Temp 38.8°C | O2 92% | RR 24 | NEWS 9,Hb 105↓ | WCC 22.1↑↑ | Plt 420↑ | Na 134↓ | K 3.6 | Cr 118↑ | eGFR 52 | CRP 180↑ | PCT 4.2↑,Chest drain in situ — draining serosanguinous fluid.,Healing well. Sutures for removal day 10.,Chest clear. Mild abdominal tenderness — expected post-op.,Wound soaking dressings — concern re infection,"Co-amoxiclav 625mg TDS
+Paracetamol 1g QDS
+Oxycodone 5mg PRN
+Enoxaparin 40mg SC
+Omeprazole 20mg OD",Complex social situation — POC to arrange,106,warn,78/42,bad,38.8,bad,92%,warn,24,warn,9,"Co-amoxiclav 625mg TDS
+Paracetamol 1g QDS
+Oxycodone 5mg PRN
+Enoxaparin 40mg SC
+Omeprazole 20mg OD",Penicillin — rash,Omeprazole 20mg OD,4,21/02/2026,Hb 105↓ | WCC 22.1↑↑ | Plt 420↑ | Na 134↓ | K 3.6 | Cr 118↑ | eGFR 52 | CRP 180↑ | PCT 4.2↑,,,C.diff toxin: negative,Lives with family. Good support network. Daughter is main carer.,Fully mobile — independent,Nursing home placement in progress. Social worker involved.,,Pharmacy,STEMI + primary PCI,,,P2a - Procedure can be deferred for up to 2 weeks,CRITICAL — post-op deterioration. Surgical review now. Return to theatre possible.,CARDIOLOGY|URGENT|DNACPR|MRSA,Active,2026-02-17T13:38:03.425976,2026-02-17T13:38:03.425976,system
+KCH0059,Mr Paul Scott,528 710 3258,17/07/1980,46 yrs,Male,CCU,Bay 2,Bed B,King's College Hospital,Mr Thompson,Dr Emmanuel Thomas,Medicine,Medicine,11/02/2026,Delirium + fall,6,Inpatient,amber,amber,Pending,MRSA,Mechanical — TED stockings only,Free fluids — progressing well,Weight-bearing as tolerated with crutches,HR 90 | BP 128/79 | Temp 37.1°C | O2 95% | RR 16 | NEWS 5,Hb 88↓ | WCC 6.2 | Plt 156 | Na 142 | K 3.9 | Cr 62 | eGFR >90 | CRP 12 | Albumin 28↓,No drains. Peripheral cannula in situ.,Sternal wound — staple line intact. Clean and dry.,Bibasal crepitations — improving. Abdomen soft.,Pressure area care — repositioning 2-hourly,"Metoprolol 25mg BD
+Furosemide 40mg OD
+Spironolactone 25mg OD
+Warfarin — INR target 2-3
+Digoxin 125mcg OD",Complex social situation — POC to arrange,90,ok,128/79,ok,37.1,ok,95%,ok,16,ok,5,"Metoprolol 25mg BD
+Furosemide 40mg OD
+Spironolactone 25mg OD
+Warfarin — INR target 2-3
+Digoxin 125mcg OD",Penicillin — anaphylaxis,,,,Hb 88↓ | WCC 6.2 | Plt 156 | Na 142 | K 3.9 | Cr 62 | eGFR >90 | CRP 12 | Albumin 28↓,"USS abdomen: gallstones, CBD 4mm — normal",,Wound swab: pending,Lives with spouse (frail). Both need POC arranging. Carer's assessment requested.,Mobilising with crutches NWB,Step-down to ward from HDU — discharge planning to begin.,21/02/2026,,Delirium + fall,,,P4 - Elective,MONITOR — persistent pyrexia. Source unclear. Repeat bloods today.,MEDICINE|MONITOR|MRSA,Active,2026-02-17T13:38:03.426022,2026-02-17T13:38:03.426022,system
+KCH0060,Mr Emmanuel Wilson,943 475 9880,25/09/1964,62 yrs,Male,CCU,Bay 2,Bed D,King's College Hospital,Mr Harrington,Dr Ahmed Young,Cardiac Surgery,Cardiac Surgery,15/02/2026,Aortic valve replacement,2,Surgery Admit,amber,amber,No,,Not indicated — fully mobile low risk,Low-sodium cardiac diet. Eating 80% meals,Weight-bearing as tolerated with crutches,HR 88 | BP 122/62 | Temp 37.7°C | O2 93% | RR 22 | NEWS 3,Hb 78↓↓ | WCC 18.6↑ | Plt 88↓ | Na 131↓ | K 5.2↑ | Cr 210↑ | eGFR 28 | CRP 310↑ | Lactate 3.8↑,PICC line in situ. Arterial line R radial.,Sternal wound — staple line intact. Clean and dry.,Cool peripheries. JVP elevated. Bibasal creps.,Wound soaking dressings — concern re infection,"Amoxicillin 500mg TDS
+Metronidazole 400mg TDS
+Paracetamol 1g QDS
+Dalteparin 5000u SC",Complex social situation — POC to arrange,88,ok,122/62,ok,37.7,ok,93%,warn,22,warn,3,"Amoxicillin 500mg TDS
+Metronidazole 400mg TDS
+Paracetamol 1g QDS
+Dalteparin 5000u SC",NKDA,Amoxicillin 500mg TDS,10,20/02/2026,Hb 78↓↓ | WCC 18.6↑ | Plt 88↓ | Na 131↓ | K 5.2↑ | Cr 210↑ | eGFR 28 | CRP 310↑ | Lactate 3.8↑,"MRI spine: L4/5 disc prolapse, no cord compression",Sinus tachycardia 104bpm,,Independent. Drives own car. No mobility aids. Pre-op baseline excellent.,Fully mobile — independent,Not ready — awaiting physio milestones and wound review.,28/02/2026,,Aortic valve replacement,16/02/2026,Day 1,P1b - Urgent - Procedure needed within 72 hours,AMBER — antibiotic review due. Cultures pending. Micro input requested.,CARDIAC SURGERY|MONITOR,Active,2026-02-17T13:38:03.426081,2026-02-17T13:38:03.426081,system
+KCH0061,Mr Peter Robinson,948 353 7434,23/06/1980,46 yrs,Male,Medical Ward 3,Bay 4,Bed D,King's College Hospital,Mr Harrington,Dr Paul Green,Gynaecology,Gynaecology,31/01/2026,Hysterectomy (fibroid uterus),17,Inpatient,amber,amber,Pending,,Not indicated — fully mobile low risk,Soft/purée — thin fluids safe with chin tuck,Non-weight bearing R leg. Hoist transfers,HR 102 | BP 123/74 | Temp 38.4°C | O2 95% | RR 20 | NEWS 2,Hb 88↓ | WCC 6.2 | Plt 156 | Na 142 | K 3.9 | Cr 62 | eGFR >90 | CRP 12 | Albumin 28↓,Chest drain in situ — draining serosanguinous fluid.,Wound clean and dry. Steristrips intact. NERDS 0.,Chest clear. Abdomen soft. Calves non-tender.,Wound soaking dressings — concern re infection,"Paracetamol 1g QDS
+Ibuprofen 400mg TDS
+Omeprazole 20mg OD
+Enoxaparin 40mg SC",No barriers identified,102,warn,123/74,ok,38.4,warn,95%,ok,20,ok,2,"Paracetamol 1g QDS
+Ibuprofen 400mg TDS
+Omeprazole 20mg OD
+Enoxaparin 40mg SC",Penicillin — rash,Omeprazole 20mg OD,8,20/02/2026,Hb 88↓ | WCC 6.2 | Plt 156 | Na 142 | K 3.9 | Cr 62 | eGFR >90 | CRP 12 | Albumin 28↓,"Echo: EF 45%, mild MR, no effusion",,,Lives alone. Son visits daily. House has stairs — OT assessment pending.,Fully mobile — independent,Rehab unit transfer pending — OT assessment complete.,28/02/2026,Complete,Hysterectomy (fibroid uterus),08/02/2026,Day 9,P4 - Elective,AMBER — antibiotic review due. Cultures pending. Micro input requested.,GYNAECOLOGY|MONITOR,Active,2026-02-17T13:38:03.426136,2026-02-17T13:38:03.426136,system
+KCH0062,Mrs Mary Nelson,262 995 5489,21/05/1982,44 yrs,Female,Thoracic Ward,Bay 1,Bed C,King's College Hospital,Dr Gupta,Dr Trevor Brown,Orthopaedics,Orthopaedics,04/02/2026,Elective hip replacement (R NOF #),13,Surgery Admit,green,None,No,Droplet,Mechanical — TED stockings only,Soft diet — SALT assessment complete,Wheelchair transfers only,HR 69 | BP 133/72 | Temp 36.7°C | O2 96% | RR 17 | NEWS 0,Hb 144 | WCC 7.6 | Plt 210 | Na 139 | K 4.1 | Cr 78 | eGFR 84 | CRP 6 | All within normal limits,Chest drain in situ — draining serosanguinous fluid.,Wound — mild erythema 1cm. No exudate. Monitor.,Cognitively improved. Chest clear. Mobile.,Wound soaking dressings — concern re infection,"Aspirin 75mg OD
+Atorvastatin 80mg ON
+Bisoprolol 2.5mg OD
+Ramipril 5mg OD
+Enoxaparin 40mg SC",Family not yet informed of diagnosis,69,ok,133/72,ok,36.7,ok,96%,ok,17,ok,0,"Aspirin 75mg OD
+Atorvastatin 80mg ON
+Bisoprolol 2.5mg OD
+Ramipril 5mg OD
+Enoxaparin 40mg SC",Penicillin — anaphylaxis,,,,Hb 144 | WCC 7.6 | Plt 210 | Na 139 | K 4.1 | Cr 78 | eGFR 84 | CRP 6 | All within normal limits,CXR: bilateral basal atelectasis — improving,Sinus tachycardia 104bpm,Blood cultures: no growth at 48h,Independent. Drives own car. No mobility aids. Pre-op baseline excellent.,Fully mobile — independent,Home with community nursing for wound care. Outpatient review booked.,17/02/2026,,Elective hip replacement (R NOF #),14/02/2026,Day 3,P4 - Elective,,ORTHOPAEDICS|DROPLET,Active,2026-02-17T13:38:03.426175,2026-02-17T13:38:03.426175,system
+KCH0063,Mrs Sharon Young,756 793 3340,25/03/1950,76 yrs,Female,Ward 4B,Bay 2,Bed D,King's College Hospital,Dr Patel,Dr Norman Okafor,Cardiac Surgery,Cardiac Surgery,24/01/2026,Aortic dissection type A repair,24,Day Case,urgent,escalate,No,,Apixaban 2.5mg BD,Low-sodium cardiac diet. Eating 80% meals,"Fully mobile, no restrictions",HR 129 | BP 83/59 | Temp 39.0°C | O2 89% | RR 23 | NEWS 7,Hb 88↓ | WCC 6.2 | Plt 156 | Na 142 | K 3.9 | Cr 62 | eGFR >90 | CRP 12 | Albumin 28↓,Chest drain in situ — draining serosanguinous fluid.,Sternal wound — staple line intact. Clean and dry.,Bibasal crepitations — improving. Abdomen soft.,IDC in situ — monitoring UO. IV access secure,"Metoprolol 25mg BD
+Furosemide 40mg OD
+Spironolactone 25mg OD
+Warfarin — INR target 2-3
+Digoxin 125mcg OD",NHS continuing healthcare assessment pending,129,bad,83/59,bad,39.0,bad,89%,bad,23,warn,7,"Metoprolol 25mg BD
+Furosemide 40mg OD
+Spironolactone 25mg OD
+Warfarin — INR target 2-3
+Digoxin 125mcg OD",Penicillin — rash,,,,Hb 88↓ | WCC 6.2 | Plt 156 | Na 142 | K 3.9 | Cr 62 | eGFR >90 | CRP 12 | Albumin 28↓,"CXR: cardiomegaly, upper lobe diversion",,Blood cultures: Staph aureus — MSSA,Complex social situation. Homeless pre-admission. SW involved. Awaiting placement.,Walking with stick — improving,Home with GP follow-up in 2 weeks. TTL written.,,,Aortic dissection type A repair,28/01/2026,Day 20,P1b - Urgent - Procedure needed within 72 hours,CRITICAL — post-op deterioration. Surgical review now. Return to theatre possible.,CARDIAC SURGERY|URGENT,Active,2026-02-17T13:38:03.426220,2026-02-17T13:38:03.426220,system
+KCH0064,Mr Ahmed Baker,753 708 2163,08/08/1984,42 yrs,Male,Ward 4B,Bay 3,Bed C,King's College Hospital,Ms Osei,Dr Karen Ahmed,Cardiac Surgery,Cardiac Surgery,03/02/2026,Mitral valve repair,14,Day Case,amber,amber,No,Droplet,Contraindicated — haemorrhage risk,NBM — return to theatre possible,Weight-bearing as tolerated with crutches,HR 97 | BP 111/84 | Temp 37.7°C | O2 93% | RR 16 | NEWS 6,Hb 98↓ | WCC 14.2↑ | Plt 210 | Na 136 | K 4.1 | Cr 98 | eGFR 68 | CRP 54↑ | INR 1.1,No drains. Peripheral cannula in situ.,Sternal wound — staple line intact. Clean and dry.,Chest clear. Abdomen soft. Calves non-tender.,IDC in situ — monitoring UO. IV access secure,"Paracetamol 1g QDS
+Ibuprofen 400mg TDS
+Omeprazole 20mg OD
+Enoxaparin 40mg SC",Complex social situation — POC to arrange,97,warn,111/84,ok,37.7,ok,93%,warn,16,ok,6,"Paracetamol 1g QDS
+Ibuprofen 400mg TDS
+Omeprazole 20mg OD
+Enoxaparin 40mg SC",Penicillin — anaphylaxis,Omeprazole 20mg OD,1,20/02/2026,Hb 98↓ | WCC 14.2↑ | Plt 210 | Na 136 | K 4.1 | Cr 98 | eGFR 68 | CRP 54↑ | INR 1.1,"CXR: clear lung fields, no pneumothorax",,C.diff toxin: negative,Lives with family. Good support network. Daughter is main carer.,Bed-bound — hoist transfers,Home tomorrow if clinically stable overnight.,21/02/2026,,Mitral valve repair,08/02/2026,Day 9,P4 - Elective,MONITOR — persistent pyrexia. Source unclear. Repeat bloods today.,CARDIAC SURGERY|MONITOR|DROPLET,Active,2026-02-17T13:38:03.426276,2026-02-17T13:38:03.426276,system
+KCH0065,Mr Nigel Boateng,159 350 2412,24/04/1943,83 yrs,Male,Gynae Ward,Bay 1,Bed C,King's College Hospital,Dr Gupta,Dr Philip Wilson,Cardiology,Cardiology,16/02/2026,Atrial fibrillation — rate control,1,Day Case,green,None,Yes,MRSA,Apixaban 2.5mg BD,Soft diet — SALT assessment complete,Mobilising well — physio goals met,HR 82 | BP 114/65 | Temp 36.4°C | O2 98% | RR 16 | NEWS 2,Hb 105↓ | WCC 22.1↑↑ | Plt 420↑ | Na 134↓ | K 3.6 | Cr 118↑ | eGFR 52 | CRP 180↑ | PCT 4.2↑,No lines in situ.,Wound dehiscence — TVN referral made. Dressing daily.,Chest clear. Mild abdominal tenderness — expected post-op.,No nursing concerns,"Meropenem 1g TDS IV
+Vancomycin IV — levels
+Furosemide 80mg BD
+Enoxaparin 40mg SC
+Insulin sliding scale",No barriers identified,82,ok,114/65,ok,36.4,ok,98%,ok,16,ok,2,"Meropenem 1g TDS IV
+Vancomycin IV — levels
+Furosemide 80mg BD
+Enoxaparin 40mg SC
+Insulin sliding scale",NSAID — GI intolerance,Meropenem 1g TDS IV,3,20/02/2026,Hb 105↓ | WCC 22.1↑↑ | Plt 420↑ | Na 134↓ | K 3.6 | Cr 118↑ | eGFR 52 | CRP 180↑ | PCT 4.2↑,,"AF rate 88bpm, no ST changes",,Residential care home. POC already in place. Ready to return when medically fit.,Wheelchair dependent,Rehab unit transfer pending — OT assessment complete.,17/02/2026,Pharmacy,Atrial fibrillation — rate control,,,P2a - Procedure can be deferred for up to 2 weeks,,CARDIOLOGY|DNACPR|MRSA|DC PLAN,Active,2026-02-17T13:38:03.426334,2026-02-17T13:38:03.426334,system
+KCH0066,Mr Emmanuel Asante,621 102 1721,08/12/1984,42 yrs,Male,CCU,Bay 3,Bed D,King's College Hospital,Dr Mensah,Dr Nigel Walker,Cardiology,Cardiology,15/02/2026,NSTEMI,2,Surgery Admit,amber,amber,No,Droplet,Enoxaparin 40mg SC daily,Low-sodium cardiac diet. Eating 80% meals,Non-weight bearing R leg. Hoist transfers,HR 97 | BP 126/67 | Temp 37.5°C | O2 96% | RR 21 | NEWS 4,Hb 112 | WCC 8.4 | Plt 340 | Na 138 | K 3.8 | Cr 72 | eGFR >90 | CRP 22 | Trop T neg,No drains. Peripheral cannula in situ.,Wound dehiscence — TVN referral made. Dressing daily.,Cognitively improved. Chest clear. Mobile.,No nursing concerns,"Meropenem 1g TDS IV
+Vancomycin IV — levels
+Furosemide 80mg BD
+Enoxaparin 40mg SC
+Insulin sliding scale",Cognitive assessment incomplete,97,warn,126/67,ok,37.5,ok,96%,ok,21,warn,4,"Meropenem 1g TDS IV
+Vancomycin IV — levels
+Furosemide 80mg BD
+Enoxaparin 40mg SC
+Insulin sliding scale",NKDA,Meropenem 1g TDS IV,2,22/02/2026,Hb 112 | WCC 8.4 | Plt 340 | Na 138 | K 3.8 | Cr 72 | eGFR >90 | CRP 22 | Trop T neg,"USS abdomen: gallstones, CBD 4mm — normal","Sinus rhythm 72bpm, normal axis, no ST changes",,Lives alone. Sheltered accommodation. Warden on site. Low-level support needed.,Wheelchair dependent,Home tomorrow if clinically stable overnight.,27/02/2026,,NSTEMI,,,P4 - Elective,MONITOR — persistent pyrexia. Source unclear. Repeat bloods today.,CARDIOLOGY|MONITOR|DROPLET,Active,2026-02-17T13:38:03.426389,2026-02-17T13:38:03.426389,system
+KCH0067,Ms Vera Robinson,891 894 4201,19/08/1951,75 yrs,Female,Cardiac HDU,Bay 2,Bed A,King's College Hospital,Dr Mensah,Dr Angela Jones,Cardiology,Cardiology,09/02/2026,Permanent pacemaker implant,8,Day Case,green,None,No,,Enoxaparin 40mg SC daily,Nutritional supplements BD — poor intake,Non-weight bearing R leg. Hoist transfers,HR 71 | BP 130/65 | Temp 37.3°C | O2 96% | RR 18 | NEWS 2,Hb 132 | WCC 11.2 | Plt 280 | Na 140 | K 4.0 | Cr 85 | eGFR 78 | CRP 8 | HbA1c 52,No lines in situ.,Healing well. Sutures for removal day 10.,Chest clear. Abdomen soft. Calves non-tender.,Wound soaking dressings — concern re infection,"Morphine PCA
+Cyclizine 50mg TDS
+Paracetamol 1g QDS IV
+Metronidazole 500mg TDS IV
+Co-amoxiclav 1.2g TDS IV",Complex social situation — POC to arrange,71,ok,130/65,ok,37.3,ok,96%,ok,18,ok,2,"Morphine PCA
+Cyclizine 50mg TDS
+Paracetamol 1g QDS IV
+Metronidazole 500mg TDS IV
+Co-amoxiclav 1.2g TDS IV",Penicillin — anaphylaxis,Metronidazole 500mg TDS IV,5,18/02/2026,Hb 132 | WCC 11.2 | Plt 280 | Na 140 | K 4.0 | Cr 85 | eGFR 78 | CRP 8 | HbA1c 52,"X-ray hip: implant in good position, no loosening",,,Independent. Drives own car. No mobility aids. Pre-op baseline excellent.,Fully mobile — independent,Home tomorrow if clinically stable overnight.,18/02/2026,,Permanent pacemaker implant,17/02/2026,Day 0,P4 - Elective,,CARDIOLOGY,Active,2026-02-17T13:38:03.426440,2026-02-17T13:38:03.426440,system
+KCH0068,Mr Norman Mensah,367 971 6161,08/05/1982,44 yrs,Male,Surgical Ward 2,Bay 3,Bed D,King's College Hospital,Mr Adeyemi,Dr Frederick Taylor,Medicine,Medicine,10/02/2026,Cellulitis — IV antibiotics,7,Inpatient,green,None,Pending,,Mechanical — TED stockings only,Low-sodium cardiac diet. Eating 80% meals,"Fully mobile, no restrictions",HR 64 | BP 134/83 | Temp 36.3°C | O2 96% | RR 13 | NEWS 1,Hb 88↓ | WCC 6.2 | Plt 156 | Na 142 | K 3.9 | Cr 62 | eGFR >90 | CRP 12 | Albumin 28↓,IDC in situ — UO monitoring. IV cannula.,Sternal wound — staple line intact. Clean and dry.,Bibasal crepitations — improving. Abdomen soft.,Wound soaking dressings — concern re infection,"Apixaban 5mg BD
+Atorvastatin 40mg ON
+Amlodipine 5mg OD
+Lisinopril 10mg OD",Family not yet informed of diagnosis,64,ok,134/83,ok,36.3,ok,96%,ok,13,ok,1,"Apixaban 5mg BD
+Atorvastatin 40mg ON
+Amlodipine 5mg OD
+Lisinopril 10mg OD",NKDA,,,,Hb 88↓ | WCC 6.2 | Plt 156 | Na 142 | K 3.9 | Cr 62 | eGFR >90 | CRP 12 | Albumin 28↓,CXR: bilateral basal atelectasis — improving,Sinus bradycardia 48bpm,,Lives with family. Good support network. Daughter is main carer.,Bed-bound — hoist transfers,Awaiting cardiology outpatient slot before discharge.,17/02/2026,,Cellulitis — IV antibiotics,,,P1a - Emergency - Procedure needed within 24 hours,,MEDICINE,Active,2026-02-17T13:38:03.426478,2026-02-17T13:38:03.426478,system
+KCH0069,Mrs Anne Walker,669 866 5093,28/08/1947,79 yrs,Female,Ward 6C,Bay 1,Bed A,King's College Hospital,Dr Shah,Dr Albert Thomas,Orthopaedics,Orthopaedics,10/02/2026,Hip hemiarthroplasty (NOF #),7,Day Case,amber,amber,No,Contact,Enoxaparin 40mg SC daily,Nutritional supplements BD — poor intake,Wheelchair transfers only,HR 92 | BP 123/81 | Temp 37.9°C | O2 93% | RR 20 | NEWS 6,Hb 132 | WCC 11.2 | Plt 280 | Na 140 | K 4.0 | Cr 85 | eGFR 78 | CRP 8 | HbA1c 52,No lines in situ.,Wound clean and dry. Steristrips intact. NERDS 0.,Cognitively improved. Chest clear. Mobile.,Patient refusing medications at times,"Meropenem 1g TDS IV
+Vancomycin IV — levels
+Furosemide 80mg BD
+Enoxaparin 40mg SC
+Insulin sliding scale",Complex social situation — POC to arrange,92,ok,123/81,ok,37.9,warn,93%,warn,20,ok,6,"Meropenem 1g TDS IV
+Vancomycin IV — levels
+Furosemide 80mg BD
+Enoxaparin 40mg SC
+Insulin sliding scale",Penicillin — rash,Meropenem 1g TDS IV,2,18/02/2026,Hb 132 | WCC 11.2 | Plt 280 | Na 140 | K 4.0 | Cr 85 | eGFR 78 | CRP 8 | HbA1c 52,,,,Lives with family. Good support network. Daughter is main carer.,Mobilising with frame,Rehab unit transfer pending — OT assessment complete.,20/02/2026,Pharmacy,Hip hemiarthroplasty (NOF #),,,P1b - Urgent - Procedure needed within 72 hours,AMBER — NEWS 6. Increased monitoring. Senior review today.,ORTHOPAEDICS|MONITOR|CONTACT,Active,2026-02-17T13:38:03.426522,2026-02-17T13:38:03.426522,system
+KCH0070,Mrs Grace Roberts,610 521 8848,21/05/1967,59 yrs,Female,Ward 6C,Bay 4,Bed B,King's College Hospital,Dr Gupta,Dr Amina Robinson,Cardiac Surgery,Cardiac Surgery,27/01/2026,CABG x3,21,Surgery Admit,green,None,No,Contact,Rivaroxaban 10mg OD,Diabetic diet. Good intake. HbA1c optimisation ongoing,Sit in chair twice daily. Sternal precautions,HR 85 | BP 110/77 | Temp 37.1°C | O2 98% | RR 15 | NEWS 2,Hb 118 | WCC 9.8 | Plt 195 | Na 137 | K 4.3 | Cr 95 | eGFR 72 | CRP 45↑ | INR 2.8,IDC in situ — UO monitoring. IV cannula.,Wound clean and dry. Steristrips intact. NERDS 0.,Bibasal crepitations — improving. Abdomen soft.,IDC in situ — monitoring UO. IV access secure,"Apixaban 5mg BD
+Atorvastatin 40mg ON
+Amlodipine 5mg OD
+Lisinopril 10mg OD",Awaiting scan result before discharge,85,ok,110/77,ok,37.1,ok,98%,ok,15,ok,2,"Apixaban 5mg BD
+Atorvastatin 40mg ON
+Amlodipine 5mg OD
+Lisinopril 10mg OD",NKDA,,,,Hb 118 | WCC 9.8 | Plt 195 | Na 137 | K 4.3 | Cr 95 | eGFR 72 | CRP 45↑ | INR 2.8,"X-ray hip: implant in good position, no loosening",AF with fast ventricular response — rate controlled,,Lives alone. Son visits daily. House has stairs — OT assessment pending.,Mobilising with frame,Home tomorrow if clinically stable overnight.,19/02/2026,,CABG x3,13/02/2026,Day 4,P1a - Emergency - Procedure needed within 24 hours,,CARDIAC SURGERY|CONTACT,Active,2026-02-17T13:38:03.426571,2026-02-17T13:38:03.426571,system
+KCH0071,Mrs Carol Walker,925 855 6878,19/06/1968,58 yrs,Female,Surgical Ward 2,Bay 2,Bed B,King's College Hospital,Ms Robertson,Dr Sharon Singh,Cardiology,Cardiology,07/02/2026,STEMI + primary PCI,10,Day Case,urgent,escalate,No,Contact,Enoxaparin 40mg SC daily,NBM — return to theatre possible,"Mobilising with zimmer frame, physio BD",HR 105 | BP 85/41 | Temp 38.0°C | O2 89% | RR 25 | NEWS 7,Hb 132 | WCC 11.2 | Plt 280 | Na 140 | K 4.0 | Cr 85 | eGFR 78 | CRP 8 | HbA1c 52,PICC line in situ. Arterial line R radial.,Sternal wound — staple line intact. Clean and dry.,Chest clear. Abdomen soft. Calves non-tender.,Family very anxious — need update today,"Prednisolone 40mg OD
+Omeprazole 40mg OD
+Calcium + Vit D
+Enoxaparin 40mg SC
+Azathioprine 100mg OD",NHS continuing healthcare assessment pending,105,warn,85/41,bad,38.0,warn,89%,bad,25,warn,7,"Prednisolone 40mg OD
+Omeprazole 40mg OD
+Calcium + Vit D
+Enoxaparin 40mg SC
+Azathioprine 100mg OD",NKDA,Omeprazole 40mg OD,8,18/02/2026,Hb 132 | WCC 11.2 | Plt 280 | Na 140 | K 4.0 | Cr 85 | eGFR 78 | CRP 8 | HbA1c 52,,Sinus tachycardia 104bpm,Blood cultures: Staph aureus — MSSA,Lives with spouse. Fully independent pre-admission. No care package needed.,Wheelchair dependent,Not ready — awaiting physio milestones and wound review.,,Pharmacy,STEMI + primary PCI,,,P4 - Elective,CRITICAL — haemodynamically unstable. NEWS 7. ICU review urgently.,CARDIOLOGY|URGENT|CONTACT,Active,2026-02-17T13:38:03.426624,2026-02-17T13:38:03.426624,system
+KCH0072,Mr Stephen Agyei,598 764 6198,26/11/1943,83 yrs,Male,Orthopaedic Ward,Bay 3,Bed B,King's College Hospital,Dr Gupta,Dr Ngozi Walker,General Surgery,General Surgery,04/02/2026,Elective lap cholecystectomy,13,Inpatient,green,None,No,CDiff,Tinzaparin 3500u SC daily,Diabetic diet. Good intake. HbA1c optimisation ongoing,Non-weight bearing R leg. Hoist transfers,HR 83 | BP 132/74 | Temp 36.4°C | O2 96% | RR 17 | NEWS 2,Hb 118 | WCC 9.8 | Plt 195 | Na 137 | K 4.3 | Cr 95 | eGFR 72 | CRP 45↑ | INR 2.8,IDC in situ — UO monitoring. IV cannula.,Healing well. Sutures for removal day 10.,Chest clear. Abdomen soft. Calves non-tender.,Family very anxious — need update today,"Morphine PCA
+Cyclizine 50mg TDS
+Paracetamol 1g QDS IV
+Metronidazole 500mg TDS IV
+Co-amoxiclav 1.2g TDS IV",No barriers identified,83,ok,132/74,ok,36.4,ok,96%,ok,17,ok,2,"Morphine PCA
+Cyclizine 50mg TDS
+Paracetamol 1g QDS IV
+Metronidazole 500mg TDS IV
+Co-amoxiclav 1.2g TDS IV",NSAID — GI intolerance,Metronidazole 500mg TDS IV,10,18/02/2026,Hb 118 | WCC 9.8 | Plt 195 | Na 137 | K 4.3 | Cr 95 | eGFR 72 | CRP 45↑ | INR 2.8,,"Normal sinus rhythm, LBBB — old",Blood cultures: no growth at 48h,Lives alone. Son visits daily. House has stairs — OT assessment pending.,Wheelchair dependent,Nursing home placement in progress. Social worker involved.,22/02/2026,Written,Elective lap cholecystectomy,08/02/2026,Day 9,P1a - Emergency - Procedure needed within 24 hours,,GENERAL SURGERY|CDIFF|DC PLAN,Active,2026-02-17T13:38:03.426669,2026-02-17T13:38:03.426669,system
+KCH0073,Mr Philip Clark,149 495 8179,24/01/1985,41 yrs,Male,Medical Ward 3,Bay 4,Bed D,King's College Hospital,Dr Patel,Dr Florence Baker,Medicine,Medicine,13/02/2026,DVT — anticoagulation,4,Day Case,green,None,Yes,,Contraindicated — haemorrhage risk,Soft diet — SALT assessment complete,Non-weight bearing R leg. Hoist transfers,HR 75 | BP 135/83 | Temp 37.0°C | O2 97% | RR 13 | NEWS 1,Hb 118 | WCC 9.8 | Plt 195 | Na 137 | K 4.3 | Cr 95 | eGFR 72 | CRP 45↑ | INR 2.8,PICC line in situ. Arterial line R radial.,Wound dehiscence — TVN referral made. Dressing daily.,Cognitively improved. Chest clear. Mobile.,No nursing concerns,"Paracetamol 1g QDS
+Ibuprofen 400mg TDS
+Omeprazole 20mg OD
+Enoxaparin 40mg SC",NHS continuing healthcare assessment pending,75,ok,135/83,ok,37.0,ok,97%,ok,13,ok,1,"Paracetamol 1g QDS
+Ibuprofen 400mg TDS
+Omeprazole 20mg OD
+Enoxaparin 40mg SC",NKDA,Omeprazole 20mg OD,1,20/02/2026,Hb 118 | WCC 9.8 | Plt 195 | Na 137 | K 4.3 | Cr 95 | eGFR 72 | CRP 45↑ | INR 2.8,"Echo: EF 30%↓, dilated LV. Urgent cardiology review","AF rate 88bpm, no ST changes",,Residential care home. POC already in place. Ready to return when medically fit.,Mobilising with crutches NWB,Complex social situation. Family meeting this week. Package of care to arrange.,22/02/2026,Written,DVT — anticoagulation,,,P1a - Emergency - Procedure needed within 24 hours,,MEDICINE|DNACPR,Active,2026-02-17T13:38:03.426717,2026-02-17T13:38:03.426717,system
+KCH0074,Mr John King,813 667 9849,07/07/1972,54 yrs,Male,Thoracic Ward,Bay 2,Bed A,King's College Hospital,Dr Shah,Dr Helen Ahmed,Thoracic Surgery,Thoracic Surgery,30/01/2026,VATS lobectomy (lung Ca),18,Surgery Admit,amber,amber,No,,Mechanical — TED stockings only,Low-sodium cardiac diet. Eating 80% meals,"Mobilising with zimmer frame, physio BD",HR 84 | BP 103/71 | Temp 37.0°C | O2 93% | RR 18 | NEWS 6,Hb 112 | WCC 8.4 | Plt 340 | Na 138 | K 3.8 | Cr 72 | eGFR >90 | CRP 22 | Trop T neg,Chest drain in situ — draining serosanguinous fluid.,Wound dehiscence — TVN referral made. Dressing daily.,Cognitively improved. Chest clear. Mobile.,"Night-time confusion, falls risk HIGH","Apixaban 5mg BD
+Atorvastatin 40mg ON
+Amlodipine 5mg OD
+Lisinopril 10mg OD",Cognitive assessment incomplete,84,ok,103/71,warn,37.0,ok,93%,warn,18,ok,6,"Apixaban 5mg BD
+Atorvastatin 40mg ON
+Amlodipine 5mg OD
+Lisinopril 10mg OD",Penicillin — anaphylaxis,,,,Hb 112 | WCC 8.4 | Plt 340 | Na 138 | K 3.8 | Cr 72 | eGFR >90 | CRP 22 | Trop T neg,"CXR: clear lung fields, no pneumothorax","Normal sinus rhythm, LBBB — old",,Independent. Drives own car. No mobility aids. Pre-op baseline excellent.,Wheelchair dependent,Rehab unit transfer pending — OT assessment complete.,26/02/2026,Complete,VATS lobectomy (lung Ca),14/02/2026,Day 3,P2b - Procedure can be deferred for up to 1 month,AMBER — NEWS 6. Increased monitoring. Senior review today.,THORACIC SURGERY|MONITOR,Active,2026-02-17T13:38:03.426755,2026-02-17T13:38:03.426755,system
+KCH0075,Mr Colin Carter,957 375 2009,09/04/1939,87 yrs,Male,Ward 5A,Bay 1,Bed C,King's College Hospital,Dr Ali,Dr Florence Adams,Respiratory,Respiratory,23/01/2026,COPD exacerbation,25,Inpatient,amber,amber,No,Droplet,Tinzaparin 3500u SC daily,Free fluids — progressing well,Bed rest — haemodynamically unstable,HR 98 | BP 114/77 | Temp 37.1°C | O2 96% | RR 22 | NEWS 6,Hb 144 | WCC 7.6 | Plt 210 | Na 139 | K 4.1 | Cr 78 | eGFR 84 | CRP 6 | All within normal limits,No drains. Peripheral cannula in situ.,Port sites clean. Day 2 post-op. No concerns.,Chest clear. Abdomen soft. Calves non-tender.,Patient refusing medications at times,"Morphine PCA
+Cyclizine 50mg TDS
+Paracetamol 1g QDS IV
+Metronidazole 500mg TDS IV
+Co-amoxiclav 1.2g TDS IV",Family not yet informed of diagnosis,98,warn,114/77,ok,37.1,ok,96%,ok,22,warn,6,"Morphine PCA
+Cyclizine 50mg TDS
+Paracetamol 1g QDS IV
+Metronidazole 500mg TDS IV
+Co-amoxiclav 1.2g TDS IV",Penicillin — anaphylaxis,Metronidazole 500mg TDS IV,9,21/02/2026,Hb 144 | WCC 7.6 | Plt 210 | Na 139 | K 4.1 | Cr 78 | eGFR 84 | CRP 6 | All within normal limits,"Echo: EF 30%↓, dilated LV. Urgent cardiology review","AF rate 88bpm, no ST changes",Wound swab: pending,Residential care home. POC already in place. Ready to return when medically fit.,Mobilising with crutches NWB,Not ready — awaiting physio milestones and wound review.,22/02/2026,Pharmacy,COPD exacerbation,,,P1b - Urgent - Procedure needed within 72 hours,AMBER — NEWS 6. Increased monitoring. Senior review today.,RESPIRATORY|MONITOR|DROPLET,Active,2026-02-17T13:38:03.426797,2026-02-17T13:38:03.426797,system
+KCH0076,Mr William Baker,977 382 9514,18/06/1948,78 yrs,Male,Ward 4B,Bay 4,Bed A,King's College Hospital,Ms Williams,Dr Nigel Roberts,Urology,Urology,29/01/2026,Transurethral resection prostate (TURP),19,Day Case,green,None,Pending,,Tinzaparin 3500u SC daily,Nutritional supplements BD — poor intake,"Fully mobile, no restrictions",HR 78 | BP 134/68 | Temp 37.3°C | O2 100% | RR 18 | NEWS 0,Hb 105↓ | WCC 22.1↑↑ | Plt 420↑ | Na 134↓ | K 3.6 | Cr 118↑ | eGFR 52 | CRP 180↑ | PCT 4.2↑,No lines in situ.,Sternal wound — staple line intact. Clean and dry.,Examination unremarkable. Improving.,IDC in situ — monitoring UO. IV access secure,"Meropenem 1g TDS IV
+Vancomycin IV — levels
+Furosemide 80mg BD
+Enoxaparin 40mg SC
+Insulin sliding scale",Nil barriers — for discharge when medically fit,78,ok,134/68,ok,37.3,ok,100%,ok,18,ok,0,"Meropenem 1g TDS IV
+Vancomycin IV — levels
+Furosemide 80mg BD
+Enoxaparin 40mg SC
+Insulin sliding scale",NKDA,Meropenem 1g TDS IV,9,20/02/2026,Hb 105↓ | WCC 22.1↑↑ | Plt 420↑ | Na 134↓ | K 3.6 | Cr 118↑ | eGFR 52 | CRP 180↑ | PCT 4.2↑,"X-ray hip: implant in good position, no loosening",,Blood cultures: no growth at 48h,Lives with spouse (frail). Both need POC arranging. Carer's assessment requested.,Wheelchair dependent,Discharge today if bloods acceptable. TTL with pharmacy.,20/02/2026,,Transurethral resection prostate (TURP),16/02/2026,Day 1,P1b - Urgent - Procedure needed within 72 hours,,UROLOGY,Active,2026-02-17T13:38:03.426899,2026-02-17T13:38:03.426899,system
+KCH0077,Ms Sandra Young,801 200 4734,28/12/1936,90 yrs,Female,CCU,Bay 3,Bed C,King's College Hospital,Mr Fraser,Dr Catherine Sharma,Respiratory,Respiratory,27/01/2026,Community-acquired pneumonia,21,Inpatient,amber,amber,Yes,,Enoxaparin 40mg SC daily,Free fluids — progressing well,"Fully mobile, no restrictions",HR 82 | BP 112/74 | Temp 37.3°C | O2 96% | RR 21 | NEWS 5,Hb 78↓↓ | WCC 18.6↑ | Plt 88↓ | Na 131↓ | K 5.2↑ | Cr 210↑ | eGFR 28 | CRP 310↑ | Lactate 3.8↑,No lines in situ.,Wound clean and dry. Steristrips intact. NERDS 0.,Chest clear. Mild abdominal tenderness — expected post-op.,IDC in situ — monitoring UO. IV access secure,"Prednisolone 40mg OD
+Omeprazole 40mg OD
+Calcium + Vit D
+Enoxaparin 40mg SC
+Azathioprine 100mg OD",Awaiting scan result before discharge,82,ok,112/74,ok,37.3,ok,96%,ok,21,warn,5,"Prednisolone 40mg OD
+Omeprazole 40mg OD
+Calcium + Vit D
+Enoxaparin 40mg SC
+Azathioprine 100mg OD",Sulphonamides — rash,Omeprazole 40mg OD,6,18/02/2026,Hb 78↓↓ | WCC 18.6↑ | Plt 88↓ | Na 131↓ | K 5.2↑ | Cr 210↑ | eGFR 28 | CRP 310↑ | Lactate 3.8↑,CXR: bilateral basal atelectasis — improving,AF with fast ventricular response — rate controlled,C.diff toxin: negative,Lives with family. Good support network. Daughter is main carer.,Bed-bound — hoist transfers,Awaiting cardiology outpatient slot before discharge.,23/02/2026,Complete,Community-acquired pneumonia,,,P4 - Elective,MONITOR — wound concern. Erythema noted. TVN referral made.,RESPIRATORY|MONITOR|DNACPR,Active,2026-02-17T13:38:03.426955,2026-02-17T13:38:03.426955,system
+KCH0078,Mr Thomas Robinson,556 281 8775,16/10/1951,75 yrs,Male,Thoracic Ward,Bay 1,Bed C,King's College Hospital,Dr Shah,Dr Karen Brown,Medicine,Medicine,11/02/2026,AKI on CKD,6,Surgery Admit,amber,amber,No,,Apixaban 2.5mg BD,Soft/purée — thin fluids safe with chin tuck,Weight-bearing as tolerated with crutches,HR 98 | BP 113/67 | Temp 38.0°C | O2 94% | RR 18 | NEWS 5,Hb 78↓↓ | WCC 18.6↑ | Plt 88↓ | Na 131↓ | K 5.2↑ | Cr 210↑ | eGFR 28 | CRP 310↑ | Lactate 3.8↑,IDC in situ — UO monitoring. IV cannula.,Port sites clean. Day 2 post-op. No concerns.,Chest clear. Mild abdominal tenderness — expected post-op.,Patient refusing medications at times,"Prednisolone 40mg OD
+Omeprazole 40mg OD
+Calcium + Vit D
+Enoxaparin 40mg SC
+Azathioprine 100mg OD",Awaiting physio discharge assessment,98,warn,113/67,ok,38.0,warn,94%,warn,18,ok,5,"Prednisolone 40mg OD
+Omeprazole 40mg OD
+Calcium + Vit D
+Enoxaparin 40mg SC
+Azathioprine 100mg OD",Codeine — nausea,Omeprazole 40mg OD,1,18/02/2026,Hb 78↓↓ | WCC 18.6↑ | Plt 88↓ | Na 131↓ | K 5.2↑ | Cr 210↑ | eGFR 28 | CRP 310↑ | Lactate 3.8↑,,Sinus tachycardia 104bpm,Blood cultures: no growth at 48h,Lives alone. Son visits daily. House has stairs — OT assessment pending.,Mobilising with crutches NWB,Discharge today if bloods acceptable. TTL with pharmacy.,26/02/2026,,AKI on CKD,,,P2b - Procedure can be deferred for up to 1 month,AMBER — antibiotic review due. Cultures pending. Micro input requested.,MEDICINE|MONITOR,Active,2026-02-17T13:38:03.427001,2026-02-17T13:38:03.427001,system
+KCH0079,Mrs Sandra Asante,383 755 6327,03/06/1937,89 yrs,Female,Thoracic Ward,Bay 2,Bed B,King's College Hospital,Dr Martinez,Dr Mohammed Brown,Thoracic Surgery,Thoracic Surgery,28/01/2026,Thoracotomy + decortication,20,Inpatient,amber,amber,No,Contact,Rivaroxaban 10mg OD,NBM — return to theatre possible,Weight-bearing as tolerated with crutches,HR 92 | BP 120/81 | Temp 37.2°C | O2 93% | RR 21 | NEWS 5,Hb 88↓ | WCC 6.2 | Plt 156 | Na 142 | K 3.9 | Cr 62 | eGFR >90 | CRP 12 | Albumin 28↓,No drains. Peripheral cannula in situ.,Port sites clean. Day 2 post-op. No concerns.,Bibasal crepitations — improving. Abdomen soft.,Pressure area care — repositioning 2-hourly,"Meropenem 1g TDS IV
+Vancomycin IV — levels
+Furosemide 80mg BD
+Enoxaparin 40mg SC
+Insulin sliding scale",Complex social situation — POC to arrange,92,ok,120/81,ok,37.2,ok,93%,warn,21,warn,5,"Meropenem 1g TDS IV
+Vancomycin IV — levels
+Furosemide 80mg BD
+Enoxaparin 40mg SC
+Insulin sliding scale",NKDA,Meropenem 1g TDS IV,5,21/02/2026,Hb 88↓ | WCC 6.2 | Plt 156 | Na 142 | K 3.9 | Cr 62 | eGFR >90 | CRP 12 | Albumin 28↓,,"Sinus rhythm 72bpm, normal axis, no ST changes",Blood cultures: no growth at 48h,Lives with family. Good support network. Daughter is main carer.,Walking with stick — improving,Home with community nursing for wound care. Outpatient review booked.,28/02/2026,Written,Thoracotomy + decortication,,,P2a - Procedure can be deferred for up to 2 weeks,MONITOR — persistent pyrexia. Source unclear. Repeat bloods today.,THORACIC SURGERY|MONITOR|CONTACT,Active,2026-02-17T13:38:03.427041,2026-02-17T13:38:03.427041,system
+KCH0080,Ms Christine Darko,480 366 5817,26/06/1945,81 yrs,Female,CCU,Bay 1,Bed A,King's College Hospital,Mr Thompson,Dr Arthur Adeyemi,Urology,Urology,13/02/2026,Transurethral resection prostate (TURP),4,Inpatient,green,None,Pending,Contact,Tinzaparin 3500u SC daily,Soft/purée — thin fluids safe with chin tuck,Weight-bearing as tolerated with crutches,HR 76 | BP 119/78 | Temp 36.3°C | O2 97% | RR 13 | NEWS 0,Hb 78↓↓ | WCC 18.6↑ | Plt 88↓ | Na 131↓ | K 5.2↑ | Cr 210↑ | eGFR 28 | CRP 310↑ | Lactate 3.8↑,IDC in situ — UO monitoring. IV cannula.,Wound — mild erythema 1cm. No exudate. Monitor.,Cool peripheries. JVP elevated. Bibasal creps.,"Night-time confusion, falls risk HIGH","Co-amoxiclav 625mg TDS
+Paracetamol 1g QDS
+Oxycodone 5mg PRN
+Enoxaparin 40mg SC
+Omeprazole 20mg OD",No barriers identified,76,ok,119/78,ok,36.3,ok,97%,ok,13,ok,0,"Co-amoxiclav 625mg TDS
+Paracetamol 1g QDS
+Oxycodone 5mg PRN
+Enoxaparin 40mg SC
+Omeprazole 20mg OD",Codeine — nausea,Omeprazole 20mg OD,7,22/02/2026,Hb 78↓↓ | WCC 18.6↑ | Plt 88↓ | Na 131↓ | K 5.2↑ | Cr 210↑ | eGFR 28 | CRP 310↑ | Lactate 3.8↑,"CXR: cardiomegaly, upper lobe diversion",Sinus tachycardia 104bpm,,Lives with spouse. Fully independent pre-admission. No care package needed.,Mobilising with frame,Home tomorrow if clinically stable overnight.,22/02/2026,Complete,Transurethral resection prostate (TURP),16/02/2026,Day 1,P1a - Emergency - Procedure needed within 24 hours,,UROLOGY|CONTACT|DC PLAN,Active,2026-02-17T13:38:03.427104,2026-02-17T13:38:03.427104,system
+KCH0081,Ms Beverley Nelson,646 304 7112,01/01/1949,77 yrs,Female,Orthopaedic Ward,Bay 2,Bed A,King's College Hospital,Dr Gupta,Dr James Okafor,Cardiology,Cardiology,24/01/2026,NSTEMI,24,Surgery Admit,amber,amber,No,CDiff,Not indicated — fully mobile low risk,Free fluids — progressing well,Bed rest — haemodynamically unstable,HR 87 | BP 114/82 | Temp 38.3°C | O2 95% | RR 17 | NEWS 2,Hb 78↓↓ | WCC 18.6↑ | Plt 88↓ | Na 131↓ | K 5.2↑ | Cr 210↑ | eGFR 28 | CRP 310↑ | Lactate 3.8↑,No lines in situ.,Wound clean and dry. Steristrips intact. NERDS 0.,Bibasal crepitations — improving. Abdomen soft.,IDC in situ — monitoring UO. IV access secure,"Morphine PCA
+Cyclizine 50mg TDS
+Paracetamol 1g QDS IV
+Metronidazole 500mg TDS IV
+Co-amoxiclav 1.2g TDS IV",Complex social situation — POC to arrange,87,ok,114/82,ok,38.3,warn,95%,ok,17,ok,2,"Morphine PCA
+Cyclizine 50mg TDS
+Paracetamol 1g QDS IV
+Metronidazole 500mg TDS IV
+Co-amoxiclav 1.2g TDS IV",Latex — contact dermatitis,Metronidazole 500mg TDS IV,9,22/02/2026,Hb 78↓↓ | WCC 18.6↑ | Plt 88↓ | Na 131↓ | K 5.2↑ | Cr 210↑ | eGFR 28 | CRP 310↑ | Lactate 3.8↑,CXR: bilateral basal atelectasis — improving,"Sinus rhythm 72bpm, normal axis, no ST changes",MSU: ESBL E.coli — sensitive to meropenem,Lives alone. Sheltered accommodation. Warden on site. Low-level support needed.,Walking with stick — improving,Home with GP follow-up in 2 weeks. TTL written.,25/02/2026,,NSTEMI,,,P2b - Procedure can be deferred for up to 1 month,MONITOR — persistent pyrexia. Source unclear. Repeat bloods today.,CARDIOLOGY|MONITOR|CDIFF,Active,2026-02-17T13:38:03.427870,2026-02-17T13:38:03.427870,system
+KCH0082,Mr George Scott,361 889 9761,13/11/1994,32 yrs,Male,Ward 4B,Bay 1,Bed A,King's College Hospital,Dr Shah,Dr Kevin Adams,Cardiac Surgery,Cardiac Surgery,02/02/2026,CABG x3,15,Inpatient,amber,amber,No,Droplet,Enoxaparin 40mg SC daily,Free fluids — progressing well,Weight-bearing as tolerated with crutches,HR 83 | BP 135/68 | Temp 37.7°C | O2 94% | RR 17 | NEWS 2,Hb 105↓ | WCC 22.1↑↑ | Plt 420↑ | Na 134↓ | K 3.6 | Cr 118↑ | eGFR 52 | CRP 180↑ | PCT 4.2↑,PICC line in situ. Arterial line R radial.,Wound — mild erythema 1cm. No exudate. Monitor.,Chest clear. Mild abdominal tenderness — expected post-op.,Patient refusing medications at times,"Meropenem 1g TDS IV
+Vancomycin IV — levels
+Furosemide 80mg BD
+Enoxaparin 40mg SC
+Insulin sliding scale",Awaiting scan result before discharge,83,ok,135/68,ok,37.7,ok,94%,warn,17,ok,2,"Meropenem 1g TDS IV
+Vancomycin IV — levels
+Furosemide 80mg BD
+Enoxaparin 40mg SC
+Insulin sliding scale",Sulphonamides — rash,Meropenem 1g TDS IV,7,18/02/2026,Hb 105↓ | WCC 22.1↑↑ | Plt 420↑ | Na 134↓ | K 3.6 | Cr 118↑ | eGFR 52 | CRP 180↑ | PCT 4.2↑,"MRI spine: L4/5 disc prolapse, no cord compression",Sinus tachycardia 104bpm,Wound swab: pending,Residential care home. POC already in place. Ready to return when medically fit.,Fully mobile — independent,Awaiting cardiology outpatient slot before discharge.,21/02/2026,Complete,CABG x3,14/02/2026,Day 3,P2b - Procedure can be deferred for up to 1 month,AMBER — antibiotic review due. Cultures pending. Micro input requested.,CARDIAC SURGERY|MONITOR|DROPLET,Active,2026-02-17T13:38:03.427965,2026-02-17T13:38:03.427965,system
+KCH0083,Mr Mohammed King,787 191 2809,01/01/1968,58 yrs,Male,Orthopaedic Ward,Bay 1,Bed A,King's College Hospital,Dr Mensah,Dr Ali Nwosu,Gynaecology,Gynaecology,09/02/2026,Hysterectomy (fibroid uterus),8,Surgery Admit,urgent,escalate,No,,Not indicated — fully mobile low risk,Soft diet — SALT assessment complete,Non-weight bearing R leg. Hoist transfers,HR 109 | BP 78/54 | Temp 37.9°C | O2 89% | RR 22 | NEWS 9,Hb 112 | WCC 8.4 | Plt 340 | Na 138 | K 3.8 | Cr 72 | eGFR >90 | CRP 22 | Trop T neg,Chest drain removed day 2. Cannula only.,Wound — mild erythema 1cm. No exudate. Monitor.,Chest clear. Abdomen soft. Calves non-tender.,Patient refusing medications at times,"Co-amoxiclav 625mg TDS
+Paracetamol 1g QDS
+Oxycodone 5mg PRN
+Enoxaparin 40mg SC
+Omeprazole 20mg OD",NHS continuing healthcare assessment pending,109,warn,78/54,bad,37.9,warn,89%,bad,22,warn,9,"Co-amoxiclav 625mg TDS
+Paracetamol 1g QDS
+Oxycodone 5mg PRN
+Enoxaparin 40mg SC
+Omeprazole 20mg OD",Penicillin — rash,Omeprazole 20mg OD,6,21/02/2026,Hb 112 | WCC 8.4 | Plt 340 | Na 138 | K 3.8 | Cr 72 | eGFR >90 | CRP 22 | Trop T neg,,"Sinus rhythm 72bpm, normal axis, no ST changes",,Lives with spouse (frail). Both need POC arranging. Carer's assessment requested.,Wheelchair dependent,Complex social situation. Family meeting this week. Package of care to arrange.,,,Hysterectomy (fibroid uterus),16/02/2026,Day 1,P4 - Elective,URGENT — sepsis suspected. Lactate elevated. Cultures pending. Sepsis 6 initiated.,GYNAECOLOGY|URGENT,Active,2026-02-17T13:38:03.428048,2026-02-17T13:38:03.428048,system
+KCH0084,Mrs Fatima Nwosu,843 160 3611,05/12/1984,42 yrs,Female,Gynae Ward,Bay 4,Bed D,King's College Hospital,Ms Osei,Dr Edith Baker,Orthopaedics,Orthopaedics,23/01/2026,Hip hemiarthroplasty (NOF #),25,Day Case,amber,amber,No,Contact,Enoxaparin 40mg SC daily,Nutritional supplements BD — poor intake,Bed rest — haemodynamically unstable,HR 91 | BP 139/60 | Temp 38.3°C | O2 94% | RR 19 | NEWS 5,Hb 112 | WCC 8.4 | Plt 340 | Na 138 | K 3.8 | Cr 72 | eGFR >90 | CRP 22 | Trop T neg,PICC line in situ. Arterial line R radial.,Wound dehiscence — TVN referral made. Dressing daily.,Chest clear. Abdomen soft. Calves non-tender.,No nursing concerns,"Paracetamol 1g QDS
+Ibuprofen 400mg TDS
+Omeprazole 20mg OD
+Enoxaparin 40mg SC",Complex social situation — POC to arrange,91,ok,139/60,ok,38.3,warn,94%,warn,19,ok,5,"Paracetamol 1g QDS
+Ibuprofen 400mg TDS
+Omeprazole 20mg OD
+Enoxaparin 40mg SC",NKDA,Omeprazole 20mg OD,7,21/02/2026,Hb 112 | WCC 8.4 | Plt 340 | Na 138 | K 3.8 | Cr 72 | eGFR >90 | CRP 22 | Trop T neg,"Echo: EF 30%↓, dilated LV. Urgent cardiology review",Sinus bradycardia 48bpm,,Lives with spouse (frail). Both need POC arranging. Carer's assessment requested.,Bed-bound — hoist transfers,Rehab unit transfer pending — OT assessment complete.,27/02/2026,,Hip hemiarthroplasty (NOF #),,,P2a - Procedure can be deferred for up to 2 weeks,MONITOR — persistent pyrexia. Source unclear. Repeat bloods today.,ORTHOPAEDICS|MONITOR|CONTACT,Active,2026-02-17T13:38:03.428108,2026-02-17T13:38:03.428108,system
+KCH0085,Ms Brenda Robinson,328 663 7203,02/09/1963,63 yrs,Female,Ward 5A,Bay 4,Bed D,King's College Hospital,Dr Ali,Dr Aisha Carter,Medicine,Medicine,14/02/2026,Cellulitis — IV antibiotics,3,Day Case,green,None,No,,Apixaban 2.5mg BD,Soft/purée — thin fluids safe with chin tuck,Non-weight bearing R leg. Hoist transfers,HR 75 | BP 124/75 | Temp 36.3°C | O2 99% | RR 17 | NEWS 2,Hb 88↓ | WCC 6.2 | Plt 156 | Na 142 | K 3.9 | Cr 62 | eGFR >90 | CRP 12 | Albumin 28↓,Chest drain removed day 2. Cannula only.,Wound clean and dry. Steristrips intact. NERDS 0.,Bibasal crepitations — improving. Abdomen soft.,Compliant and motivated. Good progress,"Aspirin 75mg OD
+Atorvastatin 80mg ON
+Bisoprolol 2.5mg OD
+Ramipril 5mg OD
+Enoxaparin 40mg SC",Cognitive assessment incomplete,75,ok,124/75,ok,36.3,ok,99%,ok,17,ok,2,"Aspirin 75mg OD
+Atorvastatin 80mg ON
+Bisoprolol 2.5mg OD
+Ramipril 5mg OD
+Enoxaparin 40mg SC",Penicillin — rash,,,,Hb 88↓ | WCC 6.2 | Plt 156 | Na 142 | K 3.9 | Cr 62 | eGFR >90 | CRP 12 | Albumin 28↓,"X-ray hip: implant in good position, no loosening","Sinus rhythm 72bpm, normal axis, no ST changes",C.diff toxin: negative,Lives with spouse (frail). Both need POC arranging. Carer's assessment requested.,Walking with stick — improving,Discharge today if bloods acceptable. TTL with pharmacy.,21/02/2026,,Cellulitis — IV antibiotics,,,P1b - Urgent - Procedure needed within 72 hours,,MEDICINE|DC PLAN,Active,2026-02-17T13:38:03.428156,2026-02-17T13:38:03.428156,system
+KCH0086,Miss Dorothy Evans,463 949 5783,01/06/1970,56 yrs,Female,Ward 5A,Bay 1,Bed B,King's College Hospital,Mr Thompson,Dr Graham Owusu,Cardiac Surgery,Cardiac Surgery,24/01/2026,Mitral valve repair,24,Day Case,amber,amber,No,CDiff,Mechanical — TED stockings only,Full diet — eating and drinking well,Wheelchair transfers only,HR 93 | BP 106/68 | Temp 37.9°C | O2 94% | RR 16 | NEWS 5,Hb 112 | WCC 8.4 | Plt 340 | Na 138 | K 3.8 | Cr 72 | eGFR >90 | CRP 22 | Trop T neg,PICC line in situ. Arterial line R radial.,Port sites clean. Day 2 post-op. No concerns.,Cool peripheries. JVP elevated. Bibasal creps.,"Night-time confusion, falls risk HIGH","Amoxicillin 500mg TDS
+Metronidazole 400mg TDS
+Paracetamol 1g QDS
+Dalteparin 5000u SC",Complex social situation — POC to arrange,93,ok,106/68,warn,37.9,warn,94%,warn,16,ok,5,"Amoxicillin 500mg TDS
+Metronidazole 400mg TDS
+Paracetamol 1g QDS
+Dalteparin 5000u SC",NKDA,Amoxicillin 500mg TDS,8,19/02/2026,Hb 112 | WCC 8.4 | Plt 340 | Na 138 | K 3.8 | Cr 72 | eGFR >90 | CRP 22 | Trop T neg,,,,Residential care home. POC already in place. Ready to return when medically fit.,Fully mobile — independent,Complex social situation. Family meeting this week. Package of care to arrange.,20/02/2026,,Mitral valve repair,16/02/2026,Day 1,P4 - Elective,MONITOR — wound concern. Erythema noted. TVN referral made.,CARDIAC SURGERY|MONITOR|CDIFF,Active,2026-02-17T13:38:03.428223,2026-02-17T13:38:03.428223,system
+KCH0087,Ms Lakshmi Baker,451 401 8419,09/07/1967,59 yrs,Female,Orthopaedic Ward,Bay 3,Bed C,King's College Hospital,Mr Fraser,Dr Priya Okafor,Respiratory,Respiratory,10/02/2026,Community-acquired pneumonia,7,Inpatient,green,None,Pending,MRSA,Apixaban 2.5mg BD,Full diet — eating and drinking well,Wheelchair transfers only,HR 66 | BP 116/84 | Temp 37.1°C | O2 98% | RR 17 | NEWS 0,Hb 118 | WCC 9.8 | Plt 195 | Na 137 | K 4.3 | Cr 95 | eGFR 72 | CRP 45↑ | INR 2.8,IDC in situ — UO monitoring. IV cannula.,Wound clean and dry. Steristrips intact. NERDS 0.,Examination unremarkable. Improving.,No nursing concerns,"Metoprolol 25mg BD
+Furosemide 40mg OD
+Spironolactone 25mg OD
+Warfarin — INR target 2-3
+Digoxin 125mcg OD",Family not yet informed of diagnosis,66,ok,116/84,ok,37.1,ok,98%,ok,17,ok,0,"Metoprolol 25mg BD
+Furosemide 40mg OD
+Spironolactone 25mg OD
+Warfarin — INR target 2-3
+Digoxin 125mcg OD",Sulphonamides — rash,,,,Hb 118 | WCC 9.8 | Plt 195 | Na 137 | K 4.3 | Cr 95 | eGFR 72 | CRP 45↑ | INR 2.8,,"AF rate 88bpm, no ST changes",Blood cultures: Staph aureus — MSSA,Complex social situation. Homeless pre-admission. SW involved. Awaiting placement.,Mobilising with frame,Not ready — awaiting physio milestones and wound review.,17/02/2026,,Community-acquired pneumonia,,,P4 - Elective,,RESPIRATORY|MRSA,Active,2026-02-17T13:38:03.428277,2026-02-17T13:38:03.428277,system
+KCH0088,Miss Karen Brown,133 467 8415,07/09/1961,65 yrs,Female,Orthopaedic Ward,Bay 2,Bed D,King's College Hospital,Dr Chen,Dr Beverley Boateng,Orthopaedics,Orthopaedics,07/02/2026,Hip hemiarthroplasty (NOF #),10,Day Case,amber,amber,Yes,Droplet,Rivaroxaban 10mg OD,Soft diet — SALT assessment complete,Bed rest — haemodynamically unstable,HR 102 | BP 103/72 | Temp 37.6°C | O2 95% | RR 20 | NEWS 2,Hb 132 | WCC 11.2 | Plt 280 | Na 140 | K 4.0 | Cr 85 | eGFR 78 | CRP 8 | HbA1c 52,IDC in situ — UO monitoring. IV cannula.,Healing well. Sutures for removal day 10.,Cool peripheries. JVP elevated. Bibasal creps.,Wound soaking dressings — concern re infection,"Aspirin 75mg OD
+Atorvastatin 80mg ON
+Bisoprolol 2.5mg OD
+Ramipril 5mg OD
+Enoxaparin 40mg SC",NHS continuing healthcare assessment pending,102,warn,103/72,warn,37.6,ok,95%,ok,20,ok,2,"Aspirin 75mg OD
+Atorvastatin 80mg ON
+Bisoprolol 2.5mg OD
+Ramipril 5mg OD
+Enoxaparin 40mg SC",Latex — contact dermatitis,,,,Hb 132 | WCC 11.2 | Plt 280 | Na 140 | K 4.0 | Cr 85 | eGFR 78 | CRP 8 | HbA1c 52,"MRI spine: L4/5 disc prolapse, no cord compression",,,Lives alone. Son visits daily. House has stairs — OT assessment pending.,Bed-bound — hoist transfers,Not ready — awaiting physio milestones and wound review.,27/02/2026,,Hip hemiarthroplasty (NOF #),,,P1b - Urgent - Procedure needed within 72 hours,MONITOR — wound concern. Erythema noted. TVN referral made.,ORTHOPAEDICS|MONITOR|DNACPR|DROPLET,Active,2026-02-17T13:38:03.428319,2026-02-17T13:38:03.428319,system
+KCH0089,Miss Sarah Johnson,577 826 3536,01/06/1966,60 yrs,Female,Gynae Ward,Bay 1,Bed C,King's College Hospital,Mr Thompson,Dr Aisha Khan,Cardiac Surgery,Cardiac Surgery,05/02/2026,Aortic valve replacement,12,Day Case,green,None,No,Contact,Not indicated — fully mobile low risk,Soft/purée — thin fluids safe with chin tuck,"Fully mobile, no restrictions",HR 85 | BP 132/75 | Temp 36.8°C | O2 97% | RR 16 | NEWS 0,Hb 88↓ | WCC 6.2 | Plt 156 | Na 142 | K 3.9 | Cr 62 | eGFR >90 | CRP 12 | Albumin 28↓,No drains. Peripheral cannula in situ.,Healing well. Sutures for removal day 10.,Chest clear. Mild abdominal tenderness — expected post-op.,Compliant and motivated. Good progress,"Prednisolone 40mg OD
+Omeprazole 40mg OD
+Calcium + Vit D
+Enoxaparin 40mg SC
+Azathioprine 100mg OD",Family not yet informed of diagnosis,85,ok,132/75,ok,36.8,ok,97%,ok,16,ok,0,"Prednisolone 40mg OD
+Omeprazole 40mg OD
+Calcium + Vit D
+Enoxaparin 40mg SC
+Azathioprine 100mg OD",Sulphonamides — rash,Omeprazole 40mg OD,3,21/02/2026,Hb 88↓ | WCC 6.2 | Plt 156 | Na 142 | K 3.9 | Cr 62 | eGFR >90 | CRP 12 | Albumin 28↓,CXR: bilateral basal atelectasis — improving,Sinus bradycardia 48bpm,,Lives alone. Sheltered accommodation. Warden on site. Low-level support needed.,Fully mobile — independent,Discharge today if bloods acceptable. TTL with pharmacy.,19/02/2026,Complete,Aortic valve replacement,06/02/2026,Day 11,P1b - Urgent - Procedure needed within 72 hours,,CARDIAC SURGERY|CONTACT|DC PLAN,Active,2026-02-17T13:38:03.428368,2026-02-17T13:38:03.428368,system
+KCH0090,Mr Arthur Clark,941 888 7143,01/09/1962,64 yrs,Male,CCU,Bay 4,Bed A,King's College Hospital,Mr Adeyemi,Dr Arthur Harris,Gynaecology,Gynaecology,31/01/2026,Ovarian cystectomy,17,Inpatient,green,None,No,CDiff,Not indicated — fully mobile low risk,NBM — return to theatre possible,Weight-bearing as tolerated with crutches,HR 63 | BP 115/82 | Temp 36.8°C | O2 96% | RR 13 | NEWS 2,Hb 88↓ | WCC 6.2 | Plt 156 | Na 142 | K 3.9 | Cr 62 | eGFR >90 | CRP 12 | Albumin 28↓,PICC line in situ. Arterial line R radial.,Wound clean and dry. Steristrips intact. NERDS 0.,Cool peripheries. JVP elevated. Bibasal creps.,IDC in situ — monitoring UO. IV access secure,"Amoxicillin 500mg TDS
+Metronidazole 400mg TDS
+Paracetamol 1g QDS
+Dalteparin 5000u SC",Awaiting scan result before discharge,63,ok,115/82,ok,36.8,ok,96%,ok,13,ok,2,"Amoxicillin 500mg TDS
+Metronidazole 400mg TDS
+Paracetamol 1g QDS
+Dalteparin 5000u SC",Penicillin — anaphylaxis,Amoxicillin 500mg TDS,7,18/02/2026,Hb 88↓ | WCC 6.2 | Plt 156 | Na 142 | K 3.9 | Cr 62 | eGFR >90 | CRP 12 | Albumin 28↓,,"AF rate 88bpm, no ST changes",,Independent. Drives own car. No mobility aids. Pre-op baseline excellent.,Bed-bound — hoist transfers,Step-down to ward from HDU — discharge planning to begin.,17/02/2026,,Ovarian cystectomy,02/02/2026,Day 15,P1a - Emergency - Procedure needed within 24 hours,,GYNAECOLOGY|CDIFF,Active,2026-02-17T13:38:03.428421,2026-02-17T13:38:03.428421,system
+KCH0091,Mrs Amina Harris,647 106 2036,22/02/1949,77 yrs,Female,Ward 5A,Bay 3,Bed A,King's College Hospital,Mr Adeyemi,Dr Daniel Sharma,Cardiac Surgery,Cardiac Surgery,14/02/2026,Aortic valve replacement,3,Day Case,amber,amber,Yes,,Tinzaparin 3500u SC daily,Nutritional supplements BD — poor intake,"Mobilising with zimmer frame, physio BD",HR 104 | BP 128/72 | Temp 37.6°C | O2 93% | RR 19 | NEWS 3,Hb 105↓ | WCC 22.1↑↑ | Plt 420↑ | Na 134↓ | K 3.6 | Cr 118↑ | eGFR 52 | CRP 180↑ | PCT 4.2↑,Chest drain removed day 2. Cannula only.,Wound — mild erythema 1cm. No exudate. Monitor.,Examination unremarkable. Improving.,Family very anxious — need update today,"Prednisolone 40mg OD
+Omeprazole 40mg OD
+Calcium + Vit D
+Enoxaparin 40mg SC
+Azathioprine 100mg OD",Family not yet informed of diagnosis,104,warn,128/72,ok,37.6,ok,93%,warn,19,ok,3,"Prednisolone 40mg OD
+Omeprazole 40mg OD
+Calcium + Vit D
+Enoxaparin 40mg SC
+Azathioprine 100mg OD",NKDA,Omeprazole 40mg OD,4,19/02/2026,Hb 105↓ | WCC 22.1↑↑ | Plt 420↑ | Na 134↓ | K 3.6 | Cr 118↑ | eGFR 52 | CRP 180↑ | PCT 4.2↑,,Sinus tachycardia 104bpm,MSU: ESBL E.coli — sensitive to meropenem,Independent. Drives own car. No mobility aids. Pre-op baseline excellent.,Walking with stick — improving,Awaiting cardiology outpatient slot before discharge.,20/02/2026,Written,Aortic valve replacement,16/02/2026,Day 1,P4 - Elective,AMBER — NEWS 3. Increased monitoring. Senior review today.,CARDIAC SURGERY|MONITOR|DNACPR,Active,2026-02-17T13:38:03.428485,2026-02-17T13:38:03.428485,system
+KCH0092,Mr Paul Thompson,285 787 1891,07/02/1966,60 yrs,Male,Ward 5A,Bay 3,Bed A,King's College Hospital,Mr Adeyemi,Dr Mark White,Urology,Urology,24/01/2026,Transurethral resection prostate (TURP),24,Surgery Admit,green,None,Yes,,Tinzaparin 3500u SC daily,Nutritional supplements BD — poor intake,Bed rest — haemodynamically unstable,HR 75 | BP 140/75 | Temp 36.6°C | O2 97% | RR 12 | NEWS 1,Hb 132 | WCC 11.2 | Plt 280 | Na 140 | K 4.0 | Cr 85 | eGFR 78 | CRP 8 | HbA1c 52,No drains. Peripheral cannula in situ.,Sternal wound — staple line intact. Clean and dry.,Bibasal crepitations — improving. Abdomen soft.,IDC in situ — monitoring UO. IV access secure,"Heparin infusion (ACS protocol)
+Ticagrelor 90mg BD
+Aspirin 75mg OD
+GTN spray PRN
+Furosemide 40mg IV",NHS continuing healthcare assessment pending,75,ok,140/75,ok,36.6,ok,97%,ok,12,ok,1,"Heparin infusion (ACS protocol)
+Ticagrelor 90mg BD
+Aspirin 75mg OD
+GTN spray PRN
+Furosemide 40mg IV",Penicillin — rash,,,,Hb 132 | WCC 11.2 | Plt 280 | Na 140 | K 4.0 | Cr 85 | eGFR 78 | CRP 8 | HbA1c 52,"CXR: cardiomegaly, upper lobe diversion",,Sputum: Strep pneumoniae — pen-sensitive,Complex social situation. Homeless pre-admission. SW involved. Awaiting placement.,Wheelchair dependent,Rehab unit transfer pending — OT assessment complete.,21/02/2026,,Transurethral resection prostate (TURP),11/02/2026,Day 6,P2a - Procedure can be deferred for up to 2 weeks,,UROLOGY|DNACPR,Active,2026-02-17T13:38:03.428527,2026-02-17T13:38:03.428527,system
+KCH0093,Ms Priya Mitchell,598 664 2783,25/05/1953,73 yrs,Female,Ward 5A,Bay 3,Bed B,King's College Hospital,Dr Mensah,Dr Grace White,General Surgery,General Surgery,08/02/2026,Elective lap cholecystectomy,9,Day Case,green,None,Pending,,Not indicated — fully mobile low risk,Low-sodium cardiac diet. Eating 80% meals,Bed rest — haemodynamically unstable,HR 83 | BP 112/65 | Temp 37.2°C | O2 96% | RR 18 | NEWS 2,Hb 132 | WCC 11.2 | Plt 280 | Na 140 | K 4.0 | Cr 85 | eGFR 78 | CRP 8 | HbA1c 52,No lines in situ.,Wound dehiscence — TVN referral made. Dressing daily.,Cool peripheries. JVP elevated. Bibasal creps.,Wound soaking dressings — concern re infection,"Heparin infusion (ACS protocol)
+Ticagrelor 90mg BD
+Aspirin 75mg OD
+GTN spray PRN
+Furosemide 40mg IV",NHS continuing healthcare assessment pending,83,ok,112/65,ok,37.2,ok,96%,ok,18,ok,2,"Heparin infusion (ACS protocol)
+Ticagrelor 90mg BD
+Aspirin 75mg OD
+GTN spray PRN
+Furosemide 40mg IV",NKDA,,,,Hb 132 | WCC 11.2 | Plt 280 | Na 140 | K 4.0 | Cr 85 | eGFR 78 | CRP 8 | HbA1c 52,"CXR: clear lung fields, no pneumothorax",AF with fast ventricular response — rate controlled,C.diff toxin: negative,Lives with family. Good support network. Daughter is main carer.,Mobilising with crutches NWB,Home with GP follow-up in 2 weeks. TTL written.,18/02/2026,,Elective lap cholecystectomy,09/02/2026,Day 8,P4 - Elective,,GENERAL SURGERY,Active,2026-02-17T13:38:03.428569,2026-02-17T13:38:03.428569,system
+KCH0094,Mr Patrick Asante,243 556 3608,25/09/1977,49 yrs,Male,Gynae Ward,Bay 2,Bed D,King's College Hospital,Dr Patel,Dr William Thompson,General Surgery,General Surgery,23/01/2026,Elective lap cholecystectomy,25,Day Case,green,None,No,Droplet,Apixaban 2.5mg BD,NBM — return to theatre possible,Wheelchair transfers only,HR 67 | BP 112/73 | Temp 36.6°C | O2 96% | RR 17 | NEWS 0,Hb 144 | WCC 7.6 | Plt 210 | Na 139 | K 4.1 | Cr 78 | eGFR 84 | CRP 6 | All within normal limits,Chest drain in situ — draining serosanguinous fluid.,Port sites clean. Day 2 post-op. No concerns.,Chest clear. Mild abdominal tenderness — expected post-op.,Wound soaking dressings — concern re infection,"Prednisolone 40mg OD
+Omeprazole 40mg OD
+Calcium + Vit D
+Enoxaparin 40mg SC
+Azathioprine 100mg OD",Awaiting scan result before discharge,67,ok,112/73,ok,36.6,ok,96%,ok,17,ok,0,"Prednisolone 40mg OD
+Omeprazole 40mg OD
+Calcium + Vit D
+Enoxaparin 40mg SC
+Azathioprine 100mg OD",Codeine — nausea,Omeprazole 40mg OD,6,21/02/2026,Hb 144 | WCC 7.6 | Plt 210 | Na 139 | K 4.1 | Cr 78 | eGFR 84 | CRP 6 | All within normal limits,"CXR: clear lung fields, no pneumothorax","Sinus rhythm 72bpm, normal axis, no ST changes",Blood cultures: Staph aureus — MSSA,Independent. Drives own car. No mobility aids. Pre-op baseline excellent.,Mobilising with frame,Awaiting cardiology outpatient slot before discharge.,21/02/2026,Complete,Elective lap cholecystectomy,07/02/2026,Day 10,P4 - Elective,,GENERAL SURGERY|DROPLET,Active,2026-02-17T13:38:03.428614,2026-02-17T13:38:03.428614,system
+KCH0095,Ms Carol Mensah,550 269 4768,17/03/1998,28 yrs,Female,Thoracic Ward,Bay 2,Bed B,King's College Hospital,Ms Osei,Dr Derek Scott,Cardiac Surgery,Cardiac Surgery,28/01/2026,Aortic dissection type A repair,20,Inpatient,urgent,escalate,No,,Enoxaparin 40mg SC daily,NBM — return to theatre possible,"Fully mobile, no restrictions",HR 121 | BP 77/53 | Temp 39.2°C | O2 93% | RR 23 | NEWS 10,Hb 132 | WCC 11.2 | Plt 280 | Na 140 | K 4.0 | Cr 85 | eGFR 78 | CRP 8 | HbA1c 52,PICC line in situ. Arterial line R radial.,Wound — mild erythema 1cm. No exudate. Monitor.,Chest clear. Abdomen soft. Calves non-tender.,"Night-time confusion, falls risk HIGH","Apixaban 5mg BD
+Atorvastatin 40mg ON
+Amlodipine 5mg OD
+Lisinopril 10mg OD",Awaiting scan result before discharge,121,bad,77/53,bad,39.2,bad,93%,warn,23,warn,10,"Apixaban 5mg BD
+Atorvastatin 40mg ON
+Amlodipine 5mg OD
+Lisinopril 10mg OD",Codeine — nausea,,,,Hb 132 | WCC 11.2 | Plt 280 | Na 140 | K 4.0 | Cr 85 | eGFR 78 | CRP 8 | HbA1c 52,"MRI spine: L4/5 disc prolapse, no cord compression",Sinus tachycardia 104bpm,Wound swab: pending,Residential care home. POC already in place. Ready to return when medically fit.,Mobilising with crutches NWB,Complex social situation. Family meeting this week. Package of care to arrange.,,,Aortic dissection type A repair,31/01/2026,Day 17,P4 - Elective,CRITICAL — haemodynamically unstable. NEWS 10. ICU review urgently.,CARDIAC SURGERY|URGENT,Active,2026-02-17T13:38:03.428654,2026-02-17T13:38:03.428654,system
+KCH0096,Mr Keith Davies,582 988 8891,15/10/1971,55 yrs,Male,Medical Ward 3,Bay 2,Bed B,King's College Hospital,Ms Nwosu,Dr Beverley Clark,Respiratory,Respiratory,11/02/2026,Pulmonary embolism,6,Inpatient,amber,amber,No,,Mechanical — TED stockings only,Soft diet — SALT assessment complete,Mobilising well — physio goals met,HR 103 | BP 121/74 | Temp 37.9°C | O2 93% | RR 17 | NEWS 5,Hb 132 | WCC 11.2 | Plt 280 | Na 140 | K 4.0 | Cr 85 | eGFR 78 | CRP 8 | HbA1c 52,Chest drain in situ — draining serosanguinous fluid.,Wound — mild erythema 1cm. No exudate. Monitor.,Cool peripheries. JVP elevated. Bibasal creps.,No nursing concerns,"Morphine PCA
+Cyclizine 50mg TDS
+Paracetamol 1g QDS IV
+Metronidazole 500mg TDS IV
+Co-amoxiclav 1.2g TDS IV",NHS continuing healthcare assessment pending,103,warn,121/74,ok,37.9,warn,93%,warn,17,ok,5,"Morphine PCA
+Cyclizine 50mg TDS
+Paracetamol 1g QDS IV
+Metronidazole 500mg TDS IV
+Co-amoxiclav 1.2g TDS IV",NKDA,Metronidazole 500mg TDS IV,3,18/02/2026,Hb 132 | WCC 11.2 | Plt 280 | Na 140 | K 4.0 | Cr 85 | eGFR 78 | CRP 8 | HbA1c 52,"USS abdomen: gallstones, CBD 4mm — normal",,,Independent. Drives own car. No mobility aids. Pre-op baseline excellent.,Wheelchair dependent,Home with GP follow-up in 2 weeks. TTL written.,28/02/2026,,Pulmonary embolism,,,P4 - Elective,AMBER — NEWS 5. Increased monitoring. Senior review today.,RESPIRATORY|MONITOR,Active,2026-02-17T13:38:03.428700,2026-02-17T13:38:03.428700,system
+KCH0097,Ms Christine Osei,879 957 2600,19/12/1954,72 yrs,Female,Cardiac HDU,Bay 1,Bed C,King's College Hospital,Ms Nwosu,Dr Florence Adams,Cardiology,Cardiology,08/02/2026,Atrial fibrillation — rate control,9,Surgery Admit,green,None,No,,Contraindicated — haemorrhage risk,Nutritional supplements BD — poor intake,Sit in chair twice daily. Sternal precautions,HR 66 | BP 110/65 | Temp 36.9°C | O2 96% | RR 16 | NEWS 0,Hb 118 | WCC 9.8 | Plt 195 | Na 137 | K 4.3 | Cr 95 | eGFR 72 | CRP 45↑ | INR 2.8,No lines in situ.,Wound dehiscence — TVN referral made. Dressing daily.,Cool peripheries. JVP elevated. Bibasal creps.,Compliant and motivated. Good progress,"Morphine PCA
+Cyclizine 50mg TDS
+Paracetamol 1g QDS IV
+Metronidazole 500mg TDS IV
+Co-amoxiclav 1.2g TDS IV",Complex social situation — POC to arrange,66,ok,110/65,ok,36.9,ok,96%,ok,16,ok,0,"Morphine PCA
+Cyclizine 50mg TDS
+Paracetamol 1g QDS IV
+Metronidazole 500mg TDS IV
+Co-amoxiclav 1.2g TDS IV",NKDA,Metronidazole 500mg TDS IV,4,20/02/2026,Hb 118 | WCC 9.8 | Plt 195 | Na 137 | K 4.3 | Cr 95 | eGFR 72 | CRP 45↑ | INR 2.8,CXR: bilateral basal atelectasis — improving,Sinus tachycardia 104bpm,Wound swab: pending,Lives with family. Good support network. Daughter is main carer.,Mobilising with crutches NWB,Awaiting cardiology outpatient slot before discharge.,19/02/2026,Complete,Atrial fibrillation — rate control,,,P4 - Elective,,CARDIOLOGY,Active,2026-02-17T13:38:03.428745,2026-02-17T13:38:03.428745,system
+KCH0098,Ms Sandra Ahmed,975 984 2951,24/03/1948,78 yrs,Female,Ward 6C,Bay 1,Bed B,King's College Hospital,Dr Martinez,Dr Elizabeth King,General Surgery,General Surgery,30/01/2026,Anterior resection (colorectal Ca),18,Day Case,amber,amber,Yes,,Enoxaparin 40mg SC daily,Low-sodium cardiac diet. Eating 80% meals,"Fully mobile, no restrictions",HR 85 | BP 124/80 | Temp 37.0°C | O2 93% | RR 22 | NEWS 3,Hb 112 | WCC 8.4 | Plt 340 | Na 138 | K 3.8 | Cr 72 | eGFR >90 | CRP 22 | Trop T neg,IDC in situ — UO monitoring. IV cannula.,Healing well. Sutures for removal day 10.,Cognitively improved. Chest clear. Mobile.,Compliant and motivated. Good progress,"Apixaban 5mg BD
+Atorvastatin 40mg ON
+Amlodipine 5mg OD
+Lisinopril 10mg OD",Nil barriers — for discharge when medically fit,85,ok,124/80,ok,37.0,ok,93%,warn,22,warn,3,"Apixaban 5mg BD
+Atorvastatin 40mg ON
+Amlodipine 5mg OD
+Lisinopril 10mg OD",NKDA,,,,Hb 112 | WCC 8.4 | Plt 340 | Na 138 | K 3.8 | Cr 72 | eGFR >90 | CRP 22 | Trop T neg,CXR: bilateral basal atelectasis — improving,AF with fast ventricular response — rate controlled,,Lives alone. Sheltered accommodation. Warden on site. Low-level support needed.,Walking with stick — improving,Awaiting cardiology outpatient slot before discharge.,01/03/2026,Pharmacy,Anterior resection (colorectal Ca),31/01/2026,Day 17,P4 - Elective,MONITOR — persistent pyrexia. Source unclear. Repeat bloods today.,GENERAL SURGERY|MONITOR|DNACPR,Active,2026-02-17T13:38:03.428787,2026-02-17T13:38:03.428787,system
+KCH0099,Mr Robert Sharma,790 136 6893,20/03/1969,57 yrs,Male,Ward 6C,Bay 1,Bed C,King's College Hospital,Dr Ali,Dr Elizabeth Turner,General Surgery,General Surgery,26/01/2026,Inguinal hernia repair,22,Inpatient,green,None,No,CDiff,Contraindicated — haemorrhage risk,Nutritional supplements BD — poor intake,"Mobilising with zimmer frame, physio BD",HR 72 | BP 128/71 | Temp 36.8°C | O2 96% | RR 12 | NEWS 2,Hb 118 | WCC 9.8 | Plt 195 | Na 137 | K 4.3 | Cr 95 | eGFR 72 | CRP 45↑ | INR 2.8,PICC line in situ. Arterial line R radial.,Wound clean and dry. Steristrips intact. NERDS 0.,Cool peripheries. JVP elevated. Bibasal creps.,Pressure area care — repositioning 2-hourly,"Meropenem 1g TDS IV
+Vancomycin IV — levels
+Furosemide 80mg BD
+Enoxaparin 40mg SC
+Insulin sliding scale",Cognitive assessment incomplete,72,ok,128/71,ok,36.8,ok,96%,ok,12,ok,2,"Meropenem 1g TDS IV
+Vancomycin IV — levels
+Furosemide 80mg BD
+Enoxaparin 40mg SC
+Insulin sliding scale",NKDA,Meropenem 1g TDS IV,9,22/02/2026,Hb 118 | WCC 9.8 | Plt 195 | Na 137 | K 4.3 | Cr 95 | eGFR 72 | CRP 45↑ | INR 2.8,"Echo: EF 30%↓, dilated LV. Urgent cardiology review","Normal sinus rhythm, LBBB — old",Blood cultures: no growth at 48h,Lives with spouse. Fully independent pre-admission. No care package needed.,Mobilising with crutches NWB,Not ready — awaiting physio milestones and wound review.,17/02/2026,,Inguinal hernia repair,07/02/2026,Day 10,P2a - Procedure can be deferred for up to 2 weeks,,GENERAL SURGERY|CDIFF,Active,2026-02-17T13:38:03.428886,2026-02-17T13:38:03.428886,system
+KCH0100,Miss Grace Baker,875 447 8517,25/04/1937,89 yrs,Female,Ward 4B,Bay 4,Bed A,King's College Hospital,Mr Adeyemi,Dr Peter Baker,Urology,Urology,27/01/2026,Transurethral resection prostate (TURP),21,Inpatient,green,None,No,Droplet,Tinzaparin 3500u SC daily,Low-sodium cardiac diet. Eating 80% meals,Bed rest — haemodynamically unstable,HR 81 | BP 132/72 | Temp 37.2°C | O2 99% | RR 14 | NEWS 2,Hb 105↓ | WCC 22.1↑↑ | Plt 420↑ | Na 134↓ | K 3.6 | Cr 118↑ | eGFR 52 | CRP 180↑ | PCT 4.2↑,Chest drain in situ — draining serosanguinous fluid.,Healing well. Sutures for removal day 10.,Bibasal crepitations — improving. Abdomen soft.,Compliant and motivated. Good progress,"Prednisolone 40mg OD
+Omeprazole 40mg OD
+Calcium + Vit D
+Enoxaparin 40mg SC
+Azathioprine 100mg OD",Family not yet informed of diagnosis,81,ok,132/72,ok,37.2,ok,99%,ok,14,ok,2,"Prednisolone 40mg OD
+Omeprazole 40mg OD
+Calcium + Vit D
+Enoxaparin 40mg SC
+Azathioprine 100mg OD",Penicillin — anaphylaxis,Omeprazole 40mg OD,1,20/02/2026,Hb 105↓ | WCC 22.1↑↑ | Plt 420↑ | Na 134↓ | K 3.6 | Cr 118↑ | eGFR 52 | CRP 180↑ | PCT 4.2↑,CXR: bilateral basal atelectasis — improving,,Blood cultures: Staph aureus — MSSA,Lives alone. Sheltered accommodation. Warden on site. Low-level support needed.,Walking with stick — improving,Nursing home placement in progress. Social worker involved.,19/02/2026,,Transurethral resection prostate (TURP),03/02/2026,Day 14,P2a - Procedure can be deferred for up to 2 weeks,,UROLOGY|DROPLET|DC PLAN,Active,2026-02-17T13:38:03.428931,2026-02-17T13:38:03.428931,system

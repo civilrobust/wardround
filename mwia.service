@@ -1,0 +1,19 @@
+[Unit]
+Description=MWIA v2 - Modern Ward Round Intelligence Advisor
+After=network.target
+
+[Service]
+Type=simple
+User=www-data
+WorkingDirectory=/opt/mwia
+Environment="OPENAI_API_KEY=YOUR_KEY_HERE"
+Environment="MWIA_PASS_ADMIN=YOUR_ADMIN_PASSWORD"
+Environment="MWIA_PASS_DOCTOR=YOUR_DOCTOR_PASSWORD"
+Environment="MWIA_PASS_NURSE=YOUR_NURSE_PASSWORD"
+Environment="MWIA_PASS_DEMO=YOUR_DEMO_PASSWORD"
+ExecStart=/usr/bin/python3 -m uvicorn mwia_backend_v2:app --host 0.0.0.0 --port 8001 --workers 2
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

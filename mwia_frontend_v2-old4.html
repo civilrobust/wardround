@@ -1,0 +1,2235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MWIA v2 — Modern Ward Round Intelligence Advisor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════════════════════════════════════════
+   MWIA v2 — NHS Professional Design
+   Blue/White clinical aesthetic, large clear fonts
+   Beautiful animated talking face
+═══════════════════════════════════════════════════════ */
+
+:root {
+  /* NHS Color Palette */
+  --nhs-blue: #005EB8;
+  --nhs-dark-blue: #003087;
+  --nhs-bright-blue: #0072CE;
+  --nhs-light-blue: #41B6E6;
+  --nhs-pale-blue: #E8EDEE;
+  
+  --nhs-green: #00A499;
+  --nhs-dark-green: #006747;
+  --nhs-purple: #330072;
+  --nhs-pink: #AE2573;
+  --nhs-red: #DA291C;
+  --nhs-orange: #ED8B00;
+  --nhs-warm-yellow: #FFB81C;
+  --nhs-yellow: #FAE100;
+  
+  /* Semantic colors */
+  --bg: #FAFAFA;
+  --surface: #FFFFFF;
+  --surface-2: #F5F8FA;
+  --border: #D8DDE6;
+  --border-strong: #B0B8C1;
+  
+  --text: #212B32;
+  --text-mid: #425563;
+  --text-soft: #768692;
+  
+  --success: var(--nhs-green);
+  --warning: var(--nhs-orange);
+  --danger: var(--nhs-red);
+  --info: var(--nhs-bright-blue);
+  
+  /* Typography */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Consolas', monospace;
+  
+  /* Spacing & Sizing */
+  --header-height: 72px;
+  --sidebar-width: 320px;
+  --panel-width: 380px;
+}
+
+body.dark {
+  --bg: #0F1419;
+  --surface: #1A1F29;
+  --surface-2: #242B38;
+  --border: #2D3748;
+  --border-strong: #4A5568;
+  --text: #E2E8F0;
+  --text-mid: #A0AEC0;
+  --text-soft: #718096;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.6;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ═══════════════════════════════════════════════════════
+   CRITICAL ALERTS BAR
+═══════════════════════════════════════════════════════ */
+.alerts-bar {
+  background: linear-gradient(135deg, var(--nhs-red) 0%, #C41E3A 100%);
+  color: white;
+  padding: 0;
+  border-bottom: 2px solid #8B0000;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: none;
+}
+
+.alerts-bar.visible {
+  display: block;
+}
+
+.alerts-bar.collapsed .alerts-list {
+  display: none;
+}
+
+.alerts-bar:not(.collapsed) .alerts-list {
+  display: grid;
+}
+
+.alerts-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 32px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.alerts-header:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.alerts-icon {
+  font-size: 20px;
+  animation: pulse-alert 2s infinite;
+}
+
+@keyframes pulse-alert {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.7; transform: scale(1.1); }
+}
+
+.alerts-title {
+  flex: 1;
+  margin-left: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.alerts-count {
+  background: white;
+  color: var(--nhs-red);
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 800;
+  font-family: var(--font-mono);
+}
+
+.alerts-toggle {
+  font-size: 12px;
+  opacity: 0.9;
+  transition: all 0.2s;
+}
+
+.alerts-bar.collapsed .alerts-toggle::after {
+  content: ' ▼';
+}
+
+.alerts-bar:not(.collapsed) .alerts-toggle::after {
+  content: ' ▲';
+}
+
+.alerts-list {
+  padding: 16px 32px;
+  display: none;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 12px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.alerts-list::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+
+.alerts-list::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.5);
+  border-radius: 3px;
+}
+
+.alert-item {
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 6px;
+  padding: 12px 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+  backdrop-filter: blur(10px);
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.alert-item:hover {
+  background: rgba(255,255,255,0.25);
+  transform: translateX(4px);
+}
+
+.alert-item-patient {
+  font-weight: 700;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.alert-item-reason {
+  font-size: 12px;
+  opacity: 0.95;
+  line-height: 1.4;
+}
+
+.alert-item-meta {
+  font-size: 11px;
+  opacity: 0.8;
+  margin-top: 4px;
+  font-family: var(--font-mono);
+}
+
+/* ═══════════════════════════════════════════════════════
+   HEADER
+═══════════════════════════════════════════════════════ */
+.header {
+  height: var(--header-height);
+  background: var(--surface);
+  border-bottom: 2px solid var(--nhs-blue);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  position: relative;
+  z-index: 100;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nhs-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nhs-badge {
+  background: var(--nhs-blue);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+}
+
+.app-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.5px;
+}
+
+.app-subtitle {
+  font-size: 13px;
+  color: var(--text-soft);
+  font-weight: 500;
+}
+
+.header-center {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.status-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-mid);
+  font-family: var(--font-mono);
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.status-dot.live {
+  background: var(--nhs-green);
+  box-shadow: 0 0 0 3px rgba(0,164,153,0.2);
+  animation: pulse-dot 2s infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: var(--font-sans);
+}
+
+.btn-primary {
+  background: var(--nhs-blue);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: var(--nhs-dark-blue);
+}
+
+.btn-ghost {
+  background: transparent;
+  border: 1px solid var(--border-strong);
+  color: var(--text);
+}
+
+.btn-ghost:hover {
+  background: var(--surface-2);
+}
+
+.btn-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.2s;
+}
+
+.btn-icon:hover {
+  background: var(--surface);
+  border-color: var(--border-strong);
+}
+
+/* ═══════════════════════════════════════════════════════
+   MAIN LAYOUT
+═══════════════════════════════════════════════════════ */
+.main {
+  height: calc(100vh - var(--header-height));
+  display: flex;
+  overflow: hidden;
+}
+
+/* ═══════════════════════════════════════════════════════
+   SIDEBAR - Patient Roster
+═══════════════════════════════════════════════════════ */
+.sidebar {
+  width: var(--sidebar-width);
+  background: var(--surface);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.sidebar-header {
+  padding: 20px;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface-2);
+}
+
+.sidebar-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.stat-box {
+  text-align: center;
+  padding: 8px;
+  background: var(--surface);
+  border-radius: 6px;
+  border: 1px solid var(--border);
+}
+
+.stat-value {
+  font-size: 20px;
+  font-weight: 800;
+  font-family: var(--font-mono);
+}
+
+.stat-value.sick { color: var(--nhs-red); }
+.stat-value.out { color: var(--nhs-green); }
+.stat-value.rest { color: var(--nhs-bright-blue); }
+
+.stat-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-soft);
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+.search-box {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 12px 10px 36px;
+  border: 1px solid var(--border-strong);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 14px;
+  font-family: var(--font-sans);
+  outline: none;
+}
+
+.search-input:focus {
+  border-color: var(--nhs-blue);
+  box-shadow: 0 0 0 3px rgba(0,94,184,0.1);
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-soft);
+  font-size: 16px;
+}
+
+.toolbar {
+  display: flex;
+  gap: 6px;
+}
+
+.toolbar-btn {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.toolbar-btn:hover {
+  background: var(--nhs-pale-blue);
+  border-color: var(--nhs-blue);
+  color: var(--nhs-blue);
+}
+
+.patient-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 8px;
+}
+
+.patient-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.patient-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.patient-list::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 3px;
+}
+
+.patient-card {
+  padding: 16px;
+  margin-bottom: 6px;
+  background: var(--surface);
+  border: 2px solid var(--border);
+  border-left: 4px solid var(--nhs-blue);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.patient-card:hover {
+  background: var(--surface-2);
+  transform: translateX(2px);
+}
+
+.patient-card.active {
+  background: #F0F7FF;
+  border-left-color: var(--nhs-blue);
+  border-color: var(--nhs-blue);
+}
+
+body.dark .patient-card.active {
+  background: rgba(0,94,184,0.15);
+}
+
+.patient-card.sort-sick {
+  border-left-color: var(--nhs-red);
+}
+
+.patient-card.sort-out {
+  border-left-color: var(--nhs-green);
+}
+
+.patient-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.patient-meta {
+  font-size: 13px;
+  color: var(--text-mid);
+  font-family: var(--font-mono);
+  margin-bottom: 4px;
+}
+
+.patient-reason {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-top: 6px;
+  line-height: 1.4;
+}
+
+.patient-tags {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.tag {
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  font-family: var(--font-mono);
+  letter-spacing: 0.3px;
+}
+
+.tag.sick { background: #FEE; color: #C00; }
+.tag.out { background: #DFD; color: #060; }
+.tag.urgent { background: #FDD; color: #900; }
+.tag.dnacpr { background: #333; color: #FFF; }
+.tag.isolation { background: #FFE0B2; color: #E65100; }
+
+/* ═══════════════════════════════════════════════════════
+   CENTER - AI Advisor
+═══════════════════════════════════════════════════════ */
+.center {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  overflow: hidden;
+}
+
+.advisor-zone {
+  padding: 32px;
+  background: linear-gradient(180deg, var(--surface) 0%, var(--bg) 100%);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Beautiful Animated Face */
+.face-container {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  cursor: pointer;
+}
+
+.face-glow {
+  position: absolute;
+  inset: -20px;
+  background: radial-gradient(circle, rgba(0,94,184,0.15) 0%, transparent 70%);
+  border-radius: 50%;
+  animation: glow-pulse 3s ease-in-out infinite;
+}
+
+@keyframes glow-pulse {
+  0%, 100% { opacity: 0.5; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.1); }
+}
+
+.face-svg {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 4px 16px rgba(0,94,184,0.3));
+}
+
+.face-svg.speaking .face-glow {
+  background: radial-gradient(circle, rgba(0,164,153,0.2) 0%, transparent 70%);
+  animation: glow-speak 0.8s ease-in-out infinite;
+}
+
+@keyframes glow-speak {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.15); }
+}
+
+.face-svg.listening .face-glow {
+  background: radial-gradient(circle, rgba(218,41,28,0.2) 0%, transparent 70%);
+  animation: glow-listen 1.2s ease-in-out infinite;
+}
+
+@keyframes glow-listen {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+.advisor-label {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-soft);
+}
+
+.advisor-status {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-mid);
+  text-align: center;
+  min-height: 24px;
+}
+
+.quick-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.quick-btn {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid var(--border-strong);
+  background: var(--surface);
+  color: var(--text-mid);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.quick-btn:hover {
+  background: var(--nhs-blue);
+  color: white;
+  border-color: var(--nhs-blue);
+}
+
+.transcript {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.transcript::-webkit-scrollbar {
+  width: 6px;
+}
+
+.transcript::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 3px;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  animation: msg-in 0.3s ease;
+  max-width: 90%;
+}
+
+@keyframes msg-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.message.user {
+  align-self: flex-end;
+}
+
+.message-author {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-soft);
+  font-family: var(--font-mono);
+}
+
+.message-bubble {
+  padding: 14px 18px;
+  border-radius: 12px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.message.user .message-bubble {
+  background: var(--nhs-blue);
+  color: white;
+  border-bottom-right-radius: 4px;
+}
+
+.message.assistant .message-bubble {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-bottom-left-radius: 4px;
+}
+
+.message.system .message-bubble {
+  background: var(--nhs-pale-blue);
+  border: 1px solid var(--nhs-light-blue);
+  color: var(--text-mid);
+  font-size: 14px;
+  font-style: italic;
+}
+
+.typing-indicator {
+  display: none;
+  align-items: center;
+  gap: 6px;
+  padding: 14px 18px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  width: fit-content;
+}
+
+.typing-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--nhs-blue);
+  animation: typing 1.4s infinite;
+}
+
+.typing-dot:nth-child(2) { animation-delay: 0.2s; }
+.typing-dot:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes typing {
+  0%, 60%, 100% { opacity: 0.3; transform: scale(0.8); }
+  30% { opacity: 1; transform: scale(1.2); }
+}
+
+.input-area {
+  padding: 20px 24px;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  display: flex;
+  gap: 12px;
+}
+
+.input-box {
+  flex: 1;
+  padding: 14px 18px;
+  border: 2px solid var(--border-strong);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 15px;
+  font-family: var(--font-sans);
+  outline: none;
+  resize: none;
+}
+
+.input-box:focus {
+  border-color: var(--nhs-blue);
+  box-shadow: 0 0 0 3px rgba(0,94,184,0.1);
+}
+
+/* ═══════════════════════════════════════════════════════
+   RIGHT PANEL - Patient Data / Tasks / Safety
+═══════════════════════════════════════════════════════ */
+.panel {
+  width: var(--panel-width);
+  background: var(--surface);
+  border-left: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.panel-tabs {
+  display: flex;
+  background: var(--surface-2);
+  border-bottom: 1px solid var(--border);
+}
+
+.panel-tab {
+  flex: 1;
+  padding: 14px 8px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-soft);
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s;
+}
+
+.panel-tab:hover {
+  color: var(--text);
+  background: var(--surface);
+}
+
+.panel-tab.active {
+  color: var(--nhs-blue);
+  border-bottom-color: var(--nhs-blue);
+  background: var(--surface);
+}
+
+.panel-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.panel-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.panel-content::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 3px;
+}
+
+.no-selection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  color: var(--text-soft);
+  padding: 40px;
+}
+
+.no-selection-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+  opacity: 0.3;
+}
+
+.section {
+  margin-bottom: 24px;
+}
+
+.section-title {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-soft);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.section-title::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.info-box {
+  padding: 12px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.info-label {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-soft);
+  margin-bottom: 4px;
+}
+
+.info-value {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+  font-family: var(--font-mono);
+}
+
+.obs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.obs-box {
+  padding: 10px;
+  background: var(--surface-2);
+  border: 2px solid var(--border);
+  border-radius: 6px;
+  text-align: center;
+}
+
+.obs-value {
+  font-size: 18px;
+  font-weight: 800;
+  font-family: var(--font-mono);
+  color: var(--text);
+}
+
+.obs-value.ok { color: var(--nhs-green); }
+.obs-value.warn { color: var(--nhs-orange); }
+.obs-value.bad { color: var(--nhs-red); }
+
+.obs-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-soft);
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+/* ═══════════════════════════════════════════════════════
+   MODAL / LOGIN
+═══════════════════════════════════════════════════════ */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.modal-overlay.open {
+  display: flex;
+}
+
+.modal {
+  background: var(--surface);
+  border-radius: 12px;
+  width: 100%;
+  max-width: 480px;
+  overflow: hidden;
+  animation: modal-in 0.3s ease;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+
+@keyframes modal-in {
+  from { opacity: 0; transform: scale(0.95) translateY(20px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.modal-header {
+  padding: 24px;
+  background: var(--nhs-blue);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.modal-close:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+.modal-body {
+  padding: 32px 24px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid var(--border-strong);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 15px;
+  font-family: var(--font-sans);
+  outline: none;
+}
+
+.form-input:focus {
+  border-color: var(--nhs-blue);
+  box-shadow: 0 0 0 3px rgba(0,94,184,0.1);
+}
+
+.login-hint {
+  font-size: 12px;
+  color: var(--text-soft);
+  margin-top: 16px;
+  text-align: center;
+  line-height: 1.6;
+  font-family: var(--font-mono);
+}
+
+.error-msg {
+  background: #FEE;
+  border: 1px solid #F99;
+  color: #C00;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  margin-top: 16px;
+  display: none;
+}
+
+/* ═══════════════════════════════════════════════════════
+   UTILITIES
+═══════════════════════════════════════════════════════ */
+.hidden { display: none !important; }
+
+/* Toast notifications */
+.toast-container {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.toast {
+  background: var(--surface);
+  border: 1px solid var(--border-strong);
+  border-left: 4px solid var(--nhs-blue);
+  border-radius: 8px;
+  padding: 16px 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  min-width: 300px;
+  animation: toast-in 0.3s ease, toast-out 0.3s ease 2.7s forwards;
+}
+
+@keyframes toast-in {
+  from { opacity: 0; transform: translateX(100px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes toast-out {
+  to { opacity: 0; transform: translateX(100px); }
+}
+
+.toast.success { border-left-color: var(--nhs-green); }
+.toast.error { border-left-color: var(--nhs-red); }
+.toast.info { border-left-color: var(--nhs-bright-blue); }
+
+</style>
+</head>
+<body>
+
+<!-- Login Modal -->
+<div class="modal-overlay open" id="loginModal">
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-title">🏥 MWIA Login</div>
+    </div>
+    <div class="modal-body">
+      <div class="form-group">
+        <label class="form-label">Username</label>
+        <input type="text" class="form-input" id="loginUser" autocomplete="username" />
+      </div>
+      <div class="form-group">
+        <label class="form-label">Password</label>
+        <input type="password" class="form-input" id="loginPass" autocomplete="current-password" />
+      </div>
+      <button class="btn btn-primary" style="width:100%" onclick="doLogin()">
+        Access Ward Round System
+      </button>
+      <div class="error-msg" id="loginError"></div>
+      <div class="login-hint">
+        <strong style="color:var(--nhs-red)">⚠️ PROTOTYPE — SYNTHETIC DATA ONLY</strong><br>
+        This is a demonstration system. Not for clinical use.<br>
+        Contact ICT AI Services for access credentials.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Main App (hidden until login) -->
+<div id="appWrap" class="hidden">
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-left">
+      <div class="nhs-logo">
+        <div class="nhs-badge">NHS</div>
+        <div>
+          <div class="app-title">MWIA v2 <span style="font-size:11px;color:var(--nhs-red);font-weight:800;letter-spacing:1px;margin-left:8px">PROTOTYPE</span></div>
+          <div class="app-subtitle">Modern Ward Round Intelligence Advisor — Synthetic Data Demo</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="header-center">
+      <div style="text-align:center">
+        <div style="font-size:18px;font-weight:700;font-family:var(--font-mono);color:var(--text)" id="clock">--:--:--</div>
+        <div style="font-size:12px;color:var(--text-soft)" id="dateLabel"></div>
+      </div>
+    </div>
+    
+    <div class="header-right">
+      <div class="status-badge">
+        <div class="status-dot live"></div>
+        <span id="aiStatus">Connecting…</span>
+      </div>
+      <button class="btn-icon" onclick="openCSVModal()" title="Import/Export CSV">📋</button>
+      <button class="btn-icon" onclick="toggleTheme()" title="Toggle theme" id="themeBtn">🌙</button>
+    </div>
+  </header>
+
+  <!-- Critical Alerts Bar -->
+  <div class="alerts-bar collapsed" id="alertsBar">
+    <div class="alerts-header" onclick="toggleAlertsBar()">
+      <div class="alerts-icon">🚨</div>
+      <div class="alerts-title">
+        <span id="alertsTitle">CRITICAL ALERTS</span>
+        <span class="alerts-count" id="alertsCount">0</span>
+      </div>
+      <div class="alerts-toggle">Click to expand</div>
+    </div>
+    <div class="alerts-list" id="alertsList">
+      <!-- Alert items populated by JS -->
+    </div>
+  </div>
+
+  <!-- Main Layout -->
+  <div class="main">
+    
+    <!-- Sidebar - Patient Roster -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-title">
+          <span id="rosterWardLabel">Ward Roster</span>
+        </div>
+        
+        <div class="stats-grid">
+          <div class="stat-box">
+            <div class="stat-value" id="statTotal">0</div>
+            <div class="stat-label">Total</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-value sick" id="statSick">0</div>
+            <div class="stat-label">Sick</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-value out" id="statOut">0</div>
+            <div class="stat-label">Out</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-value rest" id="statRest">0</div>
+            <div class="stat-label">Rest</div>
+          </div>
+        </div>
+        
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input class="search-input" id="rosterSearch" placeholder="Search patients…" oninput="filterRoster()" />
+        </div>
+        
+        <div class="toolbar">
+          <button class="toolbar-btn" onclick="openAddPatient()">+ New</button>
+          <button class="toolbar-btn" onclick="openCSVModal()">📋 CSV</button>
+          <button class="toolbar-btn" onclick="generateTestData()" style="background:var(--nhs-green);color:white;border-color:var(--nhs-green)">🎲 Demo</button>
+          <button class="toolbar-btn" onclick="resetDemo()">🔄 Reset</button>
+        </div>
+      </div>
+      
+      <div class="patient-list" id="rosterList">
+        <div style="text-align:center;padding:40px;color:var(--text-soft);font-size:13px">
+          No patients loaded<br>Import CSV or add manually
+        </div>
+      </div>
+    </aside>
+    
+    <!-- Center - AI Advisor -->
+    <main class="center">
+      <div class="advisor-zone">
+        <div class="face-container" onclick="toggleListen()">
+          <div class="face-glow"></div>
+          <svg class="face-svg" id="faceSVG" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <!-- Face background circle -->
+            <circle cx="100" cy="100" r="90" fill="url(#faceGradient)" stroke="#005EB8" stroke-width="3"/>
+            <defs>
+              <linearGradient id="faceGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#E8EDEE"/>
+                <stop offset="100%" stop-color="#FFFFFF"/>
+              </linearGradient>
+            </defs>
+            
+            <!-- Eyes -->
+            <g id="eyesNormal">
+              <ellipse cx="70" cy="80" rx="12" ry="18" fill="#005EB8"/>
+              <ellipse cx="130" cy="80" rx="12" ry="18" fill="#005EB8"/>
+              <circle cx="70" cy="78" r="5" fill="white"/>
+              <circle cx="130" cy="78" r="5" fill="white"/>
+              <circle cx="72" cy="76" r="2" fill="#003087"/>
+              <circle cx="132" cy="76" r="2" fill="#003087"/>
+            </g>
+            
+            <!-- Eyes closed (blink) -->
+            <g id="eyesBlink" style="display:none">
+              <line x1="58" y1="80" x2="82" y2="80" stroke="#005EB8" stroke-width="4" stroke-linecap="round"/>
+              <line x1="118" y1="80" x2="142" y2="80" stroke="#005EB8" stroke-width="4" stroke-linecap="round"/>
+            </g>
+            
+            <!-- Mouth idle (smile) -->
+            <path id="mouthIdle" d="M 60 120 Q 100 145 140 120" stroke="#005EB8" stroke-width="4" fill="none" stroke-linecap="round"/>
+            
+            <!-- Mouth speaking -->
+            <ellipse id="mouthSpeak" cx="100" cy="130" rx="20" ry="15" fill="#005EB8" style="display:none"/>
+            
+            <!-- Mouth listening (O shape) -->
+            <circle id="mouthListen" cx="100" cy="130" r="12" fill="#005EB8" style="display:none"/>
+            
+            <!-- Cheeks (blush) -->
+            <ellipse cx="50" cy="105" rx="12" ry="8" fill="#FFB6C1" opacity="0.4"/>
+            <ellipse cx="150" cy="105" rx="12" ry="8" fill="#FFB6C1" opacity="0.4"/>
+          </svg>
+        </div>
+        
+        <div class="advisor-label">TAP TO SPEAK</div>
+        <div class="advisor-status" id="advisorStatus">Ready — select a patient or ask me anything</div>
+        
+        <div class="quick-actions">
+          <button class="quick-btn" onclick="quickCmd('Summarise this patient')">▶ Summarise</button>
+          <button class="quick-btn" onclick="quickCmd('Any red flags?')">▶ Red flags</button>
+          <button class="quick-btn" onclick="quickCmd('Generate ward round note')">▶ Generate note</button>
+          <button class="quick-btn" onclick="quickCmd('Is this patient ready for discharge?')">▶ Discharge?</button>
+          <button class="quick-btn" onclick="quickCmd('Review medications and antibiotics')">▶ Medications</button>
+        </div>
+      </div>
+      
+      <div class="transcript" id="transcript">
+        <div class="message system">
+          <div class="message-author">MWIA SYSTEM</div>
+          <div class="message-bubble">
+            Good morning. I'm MWIA v2, your Modern Ward Round Intelligence Advisor. Import a CSV or add patients manually, then select a patient to begin. I can summarise patients, flag clinical concerns, review medications, check discharge readiness, and generate structured ward round documentation. Tap the face to speak or type below.
+          </div>
+        </div>
+        <div class="typing-indicator" id="typingIndicator">
+          <div class="typing-dot"></div>
+          <div class="typing-dot"></div>
+          <div class="typing-dot"></div>
+        </div>
+      </div>
+      
+      <div class="input-area">
+        <textarea class="input-box" id="cmdInput" rows="1" placeholder="Type a question or command…"
+                  onkeydown="if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();sendText();}"></textarea>
+        <button class="btn btn-primary" onclick="sendText()">Send</button>
+      </div>
+    </main>
+    
+    <!-- Right Panel - Patient Data / Tasks / Safety -->
+    <aside class="panel">
+      <div class="panel-tabs">
+        <div class="panel-tab active" onclick="switchPanelTab('overview')">Overview</div>
+        <div class="panel-tab" onclick="switchPanelTab('tasks')">Tasks</div>
+        <div class="panel-tab" onclick="switchPanelTab('safety')">Safety</div>
+      </div>
+      
+      <div class="panel-content" id="panelContent">
+        <div class="no-selection" id="noSelection">
+          <div class="no-selection-icon">📋</div>
+          <div style="font-size:15px;font-weight:600;margin-bottom:8px">No patient selected</div>
+          <div style="font-size:13px">Choose a patient from the roster</div>
+        </div>
+        
+        <div id="overviewPanel" class="hidden"></div>
+        <div id="tasksPanel" class="hidden"></div>
+        <div id="safetyPanel" class="hidden"></div>
+      </div>
+    </aside>
+    
+  </div>
+</div>
+
+<!-- Toast Container -->
+<div class="toast-container" id="toastContainer"></div>
+
+<!-- CSV Import/Export Modal -->
+<div class="modal-overlay" id="csvModal">
+  <div class="modal" style="max-width:640px">
+    <div class="modal-header">
+      <div class="modal-title">📋 Ward Round CSV Import / Export</div>
+      <button class="modal-close" onclick="closeModal('csvModal')">✕</button>
+    </div>
+    <div class="modal-body">
+      <div style="margin-bottom:24px">
+        <div style="font-size:15px;font-weight:600;margin-bottom:12px">Import Patient Data</div>
+        <div class="drop-zone" id="dropZone" onclick="document.getElementById('csvFile').click()"
+             ondragover="handleDragOver(event)" ondrop="handleDrop(event)">
+          <div style="font-size:32px;margin-bottom:8px">📂</div>
+          <div style="font-size:14px;font-weight:600;color:var(--text)" id="dropText">
+            Click to browse or drag & drop CSV file
+          </div>
+          <div style="font-size:12px;color:var(--text-soft);margin-top:4px">
+            ACS Theatre export, MWIA CSV, or custom ward round data
+          </div>
+        </div>
+        <input type="file" id="csvFile" accept=".csv" style="display:none" onchange="handleFileSelect(event)"/>
+        <div id="importStatus" style="margin-top:12px;font-size:13px;color:var(--nhs-green);font-weight:600;display:none"></div>
+      </div>
+      
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <button class="btn btn-primary" onclick="triggerImport()">⇡ Import CSV</button>
+        <button class="btn btn-primary" onclick="exportCSV()" style="background:var(--nhs-green)">⇣ Export CSV</button>
+        <button class="btn btn-ghost" onclick="downloadTemplate()">⬇ Blank Template</button>
+        <button class="btn btn-ghost" onclick="clearAllPatients()" style="color:var(--nhs-red);border-color:var(--nhs-red)">✕ Clear All</button>
+      </div>
+      
+      <div style="margin-top:20px;padding:16px;background:var(--surface-2);border-radius:8px;font-size:12px;line-height:1.8;color:var(--text-soft)">
+        <strong style="color:var(--text)">Supported formats:</strong><br>
+        • MWIA full schema (all ward round fields)<br>
+        • ACS Theatre export (auto-mapped columns)<br>
+        • Custom CSV with patient data
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.drop-zone {
+  border: 2px dashed var(--border-strong);
+  border-radius: 12px;
+  padding: 32px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: var(--surface-2);
+}
+.drop-zone:hover, .drop-zone.drag-over {
+  border-color: var(--nhs-blue);
+  background: rgba(0,94,184,0.05);
+}
+</style>
+
+<script>
+// ═══════════════════════════════════════════════════════
+// CONFIG & STATE
+// ═══════════════════════════════════════════════════════
+const API = '';  // Same origin
+let currentUser = null;
+let aiReady = false;
+let patients = [];
+let selected = null;
+let chatHistory = [];
+let isListening = false;
+let mediaRecorder = null;
+let audioChunks = [];
+let currentAudio = null;
+let currentPanelTab = 'overview';
+
+// Audio unlock
+let audioUnlocked = false;
+function unlockAudio() {
+  if (audioUnlocked) return;
+  const ctx = new (window.AudioContext || window.webkitAudioContext)();
+  ctx.resume().then(() => { audioUnlocked = true; });
+  const silent = new Audio("data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEARKwAAIhYAQACABAAZGF0YQAAAAA=");
+  silent.play().catch(()=>{});
+}
+document.addEventListener('click', unlockAudio);
+document.addEventListener('keydown', unlockAudio);
+
+// ═══════════════════════════════════════════════════════
+// CLOCK
+// ═══════════════════════════════════════════════════════
+function updateClock() {
+  const n = new Date();
+  document.getElementById('clock').textContent = n.toLocaleTimeString('en-GB');
+  document.getElementById('dateLabel').textContent = n.toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
+}
+setInterval(updateClock, 1000);
+updateClock();
+
+// ═══════════════════════════════════════════════════════
+// API HELPER
+// ═══════════════════════════════════════════════════════
+async function api(method, path, body=null) {
+  const opts = { method, credentials:'include', headers:{'Content-Type':'application/json'} };
+  if (body) opts.body = JSON.stringify(body);
+  const r = await fetch(API + path, opts);
+  if (!r.ok) { const e = await r.json().catch(()=>({detail:r.statusText})); throw new Error(e.detail||r.statusText); }
+  return r.json();
+}
+
+// ═══════════════════════════════════════════════════════
+// AUTH
+// ═══════════════════════════════════════════════════════
+async function doLogin() {
+  const user = document.getElementById('loginUser').value.trim();
+  const pass = document.getElementById('loginPass').value;
+  if (!user || !pass) return;
+  try {
+    await api('POST', '/api/login', {username:user, password:pass});
+    currentUser = user;
+    document.getElementById('loginModal').classList.remove('open');
+    document.getElementById('appWrap').classList.remove('hidden');
+    enterApp();
+  } catch(e) {
+    const err = document.getElementById('loginError');
+    err.textContent = e.message || 'Invalid credentials';
+    err.style.display = 'block';
+    setTimeout(()=>err.style.display='none', 3500);
+  }
+}
+
+document.getElementById('loginPass').addEventListener('keydown', e=>{ if(e.key==='Enter') doLogin(); });
+document.getElementById('loginUser').addEventListener('keydown', e=>{ if(e.key==='Enter') document.getElementById('loginPass').focus(); });
+
+async function enterApp() {
+  try {
+    const me = await api('GET', '/api/me');
+    aiReady = me.ai_ready;
+    document.getElementById('aiStatus').textContent = aiReady ? 'OpenAI Voice Active' : 'Browser Voice Only';
+  } catch(e) {}
+  loadPatients();
+}
+
+// ═══════════════════════════════════════════════════════
+// PATIENTS
+// ═══════════════════════════════════════════════════════
+async function loadPatients() {
+  try {
+    const r = await api('GET', '/api/patients');
+    patients = r.patients || [];
+    renderRoster(patients);
+    updateStats();
+  } catch(e) { toast('Failed to load patients: '+e.message, 'error'); }
+}
+
+function filterRoster() {
+  const q = document.getElementById('rosterSearch').value.toLowerCase();
+  const filtered = q ? patients.filter(p =>
+    [p.name,p.admission_reason,p.nhs_number,p.bed,p.consultant,p.ward]
+      .some(v => (v||'').toLowerCase().includes(q))
+  ) : patients;
+  renderRoster(filtered);
+}
+
+function renderRoster(list) {
+  const el = document.getElementById('rosterList');
+  if (!list.length) {
+    el.innerHTML = '<div style="text-align:center;padding:40px;color:var(--text-soft);font-size:13px">No patients loaded<br>Import CSV or add manually</div>';
+    return;
+  }
+  
+  el.innerHTML = list.map(p => {
+    const sortCls = p.sort_category || 'rest';
+    const tags = buildTags(p);
+    return `<div class="patient-card sort-${sortCls} ${selected?.patient_id===p.patient_id?'active':''}" 
+                 id="card-${p.patient_id}" onclick="selectPatient('${p.patient_id}')">
+      <div class="patient-name">${esc(p.name)}</div>
+      <div class="patient-meta">${p.age||''} ${p.gender?p.gender[0]:''} · ${p.ward||''} ${p.bay||''} ${p.bed||''} · Day ${p.days_in||'?'}</div>
+      <div class="patient-reason">${esc(p.admission_reason||p.procedures||'')}</div>
+      <div class="patient-tags">${tags}</div>
+    </div>`;
+  }).join('');
+}
+
+function buildTags(p) {
+  const tags = [];
+  if (p.sort_category === 'sick') tags.push({c:'sick',t:'SICK'});
+  if (p.sort_category === 'out') tags.push({c:'out',t:'OUT TODAY'});
+  if (p.priority === 'urgent') tags.push({c:'urgent',t:'URGENT'});
+  if (p.dnacpr === 'Yes') tags.push({c:'dnacpr',t:'DNACPR'});
+  if (p.isolation) tags.push({c:'isolation',t:p.isolation.toUpperCase()});
+  return tags.map(t=>`<div class="tag ${t.c}">${t.t}</div>`).join('');
+}
+
+async function updateStats() {
+  try {
+    const stats = await api('GET', '/api/stats');
+    document.getElementById('statTotal').textContent = stats.total;
+    document.getElementById('statSick').textContent = stats.sick;
+    document.getElementById('statOut').textContent = stats.out;
+    document.getElementById('statRest').textContent = stats.rest;
+    
+    // Update critical alerts
+    updateCriticalAlerts();
+  } catch(e) {}
+}
+
+function updateCriticalAlerts() {
+  const critical = patients.filter(p => {
+    const news = parseInt(p.news_score || 0);
+    const priority = p.priority;
+    const sort = p.sort_category;
+    
+    // Critical if: NEWS >=7, priority urgent, or sort category sick
+    return news >= 7 || priority === 'urgent' || sort === 'sick';
+  });
+  
+  const alertsBar = document.getElementById('alertsBar');
+  const alertsCount = document.getElementById('alertsCount');
+  const alertsList = document.getElementById('alertsList');
+  const alertsTitle = document.getElementById('alertsTitle');
+  
+  if (critical.length === 0) {
+    alertsBar.classList.remove('visible');
+    return;
+  }
+  
+  alertsBar.classList.add('visible');
+  alertsCount.textContent = critical.length;
+  alertsTitle.textContent = critical.length === 1 ? 'CRITICAL PATIENT NEEDS REVIEW' : 'CRITICAL PATIENTS NEED REVIEW';
+  
+  // Build alert items
+  alertsList.innerHTML = critical.map(p => {
+    const news = p.news_score || '—';
+    const reason = getAlertReason(p);
+    const location = `${p.ward || ''} ${p.bay || ''} ${p.bed || ''}`.trim();
+    
+    return `<div class="alert-item" onclick="selectPatientFromAlert('${p.patient_id}')">
+      <div class="alert-item-patient">${esc(p.name)}</div>
+      <div class="alert-item-reason">${reason}</div>
+      <div class="alert-item-meta">NEWS ${news} · ${location}</div>
+    </div>`;
+  }).join('');
+}
+
+function getAlertReason(p) {
+  const news = parseInt(p.news_score || 0);
+  const reasons = [];
+  
+  if (news >= 7) reasons.push(`NEWS ${news} — critical deterioration`);
+  if (p.sort_category === 'sick') reasons.push('High acuity patient');
+  if (p.priority === 'urgent') reasons.push('Urgent review required');
+  
+  // Check vital signs
+  if (p.obs_hr_flag === 'bad') reasons.push('Abnormal heart rate');
+  if (p.obs_bp_flag === 'bad') reasons.push('Hypotensive');
+  if (p.obs_o2_flag === 'bad') reasons.push('Low oxygen saturation');
+  if (p.obs_rr_flag === 'bad') reasons.push('Tachypnoeic');
+  
+  return reasons[0] || 'Requires urgent attention';
+}
+
+function toggleAlertsBar() {
+  const bar = document.getElementById('alertsBar');
+  bar.classList.toggle('collapsed');
+}
+
+async function selectPatientFromAlert(pid) {
+  // Collapse the alerts bar first
+  const bar = document.getElementById('alertsBar');
+  bar.classList.add('collapsed');
+  
+  await selectPatient(pid);
+  // Scroll patient into view
+  const card = document.getElementById('card-'+pid);
+  if (card) {
+    card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+  // Flash the selected card
+  card?.classList.add('flash');
+  setTimeout(() => card?.classList.remove('flash'), 1000);
+}
+
+// Add flash animation
+const style = document.createElement('style');
+style.textContent = `
+  .patient-card.flash {
+    animation: flash-card 0.5s ease-in-out 2;
+  }
+  @keyframes flash-card {
+    0%, 100% { background: var(--surface-2); }
+    50% { background: rgba(0,94,184,0.2); }
+  }
+`;
+document.head.appendChild(style);
+
+async function selectPatient(pid) {
+  try {
+    const r = await api('GET', '/api/patients/'+pid);
+    selected = r.patient;
+    document.querySelectorAll('.patient-card').forEach(c=>c.classList.remove('active'));
+    document.getElementById('card-'+pid)?.classList.add('active');
+    
+    renderOverview(selected);
+    renderTasks(r.tasks || []);
+    renderSafety(r.safety || {});
+    
+    document.getElementById('noSelection').classList.add('hidden');
+    switchPanelTab('overview');
+    
+    setAdvisorStatus(`${selected.name} selected — ready`);
+    addMessage(`Selected: ${selected.name}, ${selected.age||''} ${selected.gender||''}, ${selected.ward||''} ${selected.bed||''}. ${selected.admission_reason||''}`, 'system');
+  } catch(e) { toast('Failed to load patient: '+e.message, 'error'); }
+}
+
+// ═══════════════════════════════════════════════════════
+// RENDER PANELS
+// ═══════════════════════════════════════════════════════
+function switchPanelTab(tab) {
+  currentPanelTab = tab;
+  document.querySelectorAll('.panel-tab').forEach(t => t.classList.remove('active'));
+  document.querySelector(`.panel-tab:nth-child(${tab==='overview'?1:tab==='tasks'?2:3})`).classList.add('active');
+  
+  document.getElementById('overviewPanel').classList.toggle('hidden', tab !== 'overview');
+  document.getElementById('tasksPanel').classList.toggle('hidden', tab !== 'tasks');
+  document.getElementById('safetyPanel').classList.toggle('hidden', tab !== 'safety');
+}
+
+function renderOverview(p) {
+  const el = document.getElementById('overviewPanel');
+  el.classList.remove('hidden');
+  
+  el.innerHTML = `
+    <div class="section">
+      <div class="section-title">Patient Information</div>
+      <div class="info-grid">
+        <div class="info-box"><div class="info-label">NHS Number</div><div class="info-value">${esc(p.nhs_number||'—')}</div></div>
+        <div class="info-box"><div class="info-label">DOB</div><div class="info-value">${esc(p.dob||'—')}</div></div>
+        <div class="info-box"><div class="info-label">Consultant</div><div class="info-value">${esc(p.consultant||'—')}</div></div>
+        <div class="info-box"><div class="info-label">Specialty</div><div class="info-value">${esc(p.specialty||'—')}</div></div>
+      </div>
+    </div>
+    
+    <div class="section">
+      <div class="section-title">Observations (NEWS ${p.news_score||'—'})</div>
+      <div class="obs-grid">
+        ${obs(p.obs_hr, p.obs_hr_flag, 'HR', 'bpm')}
+        ${obs(p.obs_bp, p.obs_bp_flag, 'BP', 'mmHg')}
+        ${obs(p.obs_temp, p.obs_temp_flag, 'Temp', '°C')}
+        ${obs(p.obs_o2, p.obs_o2_flag, 'SpO₂', '%')}
+        ${obs(p.obs_rr, p.obs_rr_flag, 'RR', '/min')}
+        ${p.news_score?`<div class="obs-box"><div class="obs-value ${newsClass(p.news_score)}">${p.news_score}</div><div class="obs-label">NEWS</div></div>`:''}
+      </div>
+    </div>
+    
+    ${p.medications?`<div class="section">
+      <div class="section-title">Medications</div>
+      <div style="font-size:13px;line-height:1.8;color:var(--text)">${esc(p.medications).split('\n').filter(Boolean).join('<br>')}</div>
+    </div>`:''}
+    
+    ${p.discharge_plan?`<div class="section">
+      <div class="section-title">Discharge Plan</div>
+      <div style="font-size:14px;color:var(--text);line-height:1.6">${esc(p.discharge_plan)}</div>
+      ${p.expected_discharge?`<div style="margin-top:8px;font-size:13px;color:var(--nhs-green);font-weight:600">EDD: ${esc(p.expected_discharge)}</div>`:''}
+    </div>`:''}
+  `;
+}
+
+function obs(val, flag, lbl, unit) {
+  if (!val) return '';
+  const cls = flag==='bad'?'bad':flag==='warn'?'warn':'ok';
+  return `<div class="obs-box"><div class="obs-value ${cls}">${esc(val)}</div><div class="obs-label">${lbl}</div></div>`;
+}
+
+function newsClass(score) {
+  const n = parseInt(score);
+  if (n >= 7) return 'bad';
+  if (n >= 5) return 'warn';
+  return 'ok';
+}
+
+function renderTasks(tasks) {
+  const el = document.getElementById('tasksPanel');
+  el.innerHTML = tasks.length
+    ? tasks.map(t => `<div style="margin-bottom:12px;padding:12px;background:var(--surface-2);border-radius:6px;border-left:3px solid var(--nhs-blue)">
+         <div style="font-size:14px;font-weight:600;color:var(--text)">${esc(t.task_text)}</div>
+         <div style="font-size:12px;color:var(--text-soft);margin-top:4px">${t.category} · ${t.owner} · ${t.status}</div>
+       </div>`).join('')
+    : '<div style="text-align:center;padding:40px;color:var(--text-soft)">No tasks</div>';
+}
+
+function renderSafety(safety) {
+  const el = document.getElementById('safetyPanel');
+  el.innerHTML = `<div class="section">
+    <div class="section-title">VTE Prophylaxis</div>
+    <div style="font-size:14px;color:var(--text)">${esc(safety.vte_indicated||'Not documented')}</div>
+  </div>
+  <div class="section">
+    <div class="section-title">Lines & Catheters</div>
+    <div style="font-size:14px;color:var(--text)">${esc(safety.lines_list||'No lines documented')}</div>
+  </div>`;
+}
+
+// ═══════════════════════════════════════════════════════
+// AI & VOICE
+// ═══════════════════════════════════════════════════════
+async function sendText() {
+  const inp = document.getElementById('cmdInput');
+  const msg = inp.value.trim();
+  if (!msg) return;
+  inp.value = '';
+  if (!selected && !msg.includes('?')) {
+    addMessage('No patient selected — please choose a patient first.', 'system');
+    return;
+  }
+  sendToMWIA(msg);
+}
+
+function quickCmd(cmd) { sendToMWIA(cmd); }
+
+async function sendToMWIA(message) {
+  addMessage(message, 'user');
+  chatHistory.push({role:'user', content:message});
+  setAdvisorStatus('Analysing…');
+  setFaceState('thinking');
+  showTyping(true);
+
+  try {
+    const r = await api('POST', '/api/ai', {
+      message,
+      patient_id: selected?.patient_id || '',
+      mode: 'bedside',
+      history: chatHistory.slice(-8)
+    });
+    showTyping(false);
+    addMessage(r.reply, 'assistant');
+    chatHistory.push({role:'assistant', content:r.reply});
+    await speakReply(r.reply);
+  } catch(e) {
+    showTyping(false);
+    addMessage('Connection issue: '+e.message, 'system');
+    setAdvisorStatus('Ready');
+    setFaceState('idle');
+  }
+}
+
+async function speakReply(text) {
+  if (!text || !text.trim()) return;
+  const clean = text.replace(/[*_#`\[\]]/g,'').replace(/\n+/g,' ').trim();
+  if (!clean) return;
+
+  if (aiReady) {
+    try {
+      setAdvisorStatus('Speaking…');
+      setFaceState('speaking');
+      const r = await fetch(API+'/api/speak', {
+        method:'POST', credentials:'include',
+        headers:{'Content-Type':'application/json'},
+        body: JSON.stringify({text: clean, voice:'shimmer'})
+      });
+      if (!r.ok) throw new Error('TTS failed');
+      const blob = await r.blob();
+      const url  = URL.createObjectURL(blob);
+      if (currentAudio) { currentAudio.pause(); URL.revokeObjectURL(currentAudio.src); }
+      currentAudio = new Audio(url);
+      currentAudio.volume = 1.0;
+      currentAudio.onended = () => {
+        setAdvisorStatus('Ready');
+        setFaceState('idle');
+        URL.revokeObjectURL(url);
+      };
+      currentAudio.onerror = () => {
+        setAdvisorStatus('Ready');
+        setFaceState('idle');
+      };
+      await currentAudio.play();
+      return;
+    } catch(e) {
+      console.warn('OpenAI TTS failed:', e);
+    }
+  }
+
+  // Fallback to browser speech
+  if ('speechSynthesis' in window) {
+    setAdvisorStatus('Speaking…');
+    setFaceState('speaking');
+    window.speechSynthesis.cancel();
+    const utt = new SpeechSynthesisUtterance(clean);
+    const voices = window.speechSynthesis.getVoices();
+    const gbVoice = voices.find(v=>v.lang==='en-GB') || voices.find(v=>v.lang.startsWith('en'));
+    if (gbVoice) utt.voice = gbVoice;
+    utt.rate = 0.92; utt.pitch = 0.95;
+    utt.onend  = ()=>{ setAdvisorStatus('Ready'); setFaceState('idle'); };
+    utt.onerror = ()=>{ setAdvisorStatus('Ready'); setFaceState('idle'); };
+    window.speechSynthesis.speak(utt);
+  }
+}
+
+async function toggleListen() {
+  if (currentAudio && !currentAudio.paused) {
+    currentAudio.pause();
+    setAdvisorStatus('Ready');
+    setFaceState('idle');
+    return;
+  }
+  if ('speechSynthesis' in window && window.speechSynthesis.speaking) {
+    window.speechSynthesis.cancel();
+    setAdvisorStatus('Ready');
+    setFaceState('idle');
+    return;
+  }
+
+  if (!isListening) {
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({audio:true});
+      const mimeType = MediaRecorder.isTypeSupported('audio/webm') ? 'audio/webm' : 'audio/ogg';
+      mediaRecorder = new MediaRecorder(stream, {mimeType});
+      audioChunks = [];
+      mediaRecorder.ondataavailable = e => audioChunks.push(e.data);
+      mediaRecorder.onstop = async () => {
+        stream.getTracks().forEach(t=>t.stop());
+        isListening = false;
+        setAdvisorStatus('Transcribing…');
+        setFaceState('thinking');
+
+        const blob = new Blob(audioChunks, {type: mimeType});
+        if (aiReady) {
+          try {
+            const fd = new FormData();
+            fd.append('audio', blob, 'voice.webm');
+            const r = await fetch(API+'/api/transcribe', {method:'POST', body:fd, credentials:'include'});
+            if (!r.ok) throw new Error('Transcription failed');
+            const data = await r.json();
+            const text = data.text?.trim();
+            if (text) {
+              document.getElementById('cmdInput').value = text;
+              sendText();
+            } else {
+              setAdvisorStatus('Ready — nothing heard');
+              setFaceState('idle');
+            }
+          } catch(e) {
+            addMessage('Transcription failed: '+e.message, 'system');
+            setAdvisorStatus('Ready');
+            setFaceState('idle');
+          }
+        } else {
+          addMessage('[Voice captured — no OpenAI key. Set OPENAI_API_KEY for Whisper.]', 'system');
+          setAdvisorStatus('Ready');
+          setFaceState('idle');
+        }
+      };
+      mediaRecorder.start();
+      isListening = true;
+      setAdvisorStatus('Listening — tap face to send');
+      setFaceState('listening');
+    } catch(e) {
+      addMessage('Microphone access denied.', 'system');
+    }
+  } else {
+    if (mediaRecorder) mediaRecorder.stop();
+    isListening = false;
+  }
+}
+
+function setFaceState(state) {
+  const svg = document.getElementById('faceSVG');
+  svg.classList.remove('speaking','listening','thinking');
+  if (state !== 'idle') svg.classList.add(state);
+  
+  const eyesNormal = svg.querySelector('#eyesNormal');
+  const eyesBlink = svg.querySelector('#eyesBlink');
+  const mouthIdle = svg.querySelector('#mouthIdle');
+  const mouthSpeak = svg.querySelector('#mouthSpeak');
+  const mouthListen = svg.querySelector('#mouthListen');
+  
+  eyesNormal.style.display = '';
+  eyesBlink.style.display = 'none';
+  mouthIdle.style.display = state === 'idle' ? '' : 'none';
+  mouthSpeak.style.display = state === 'speaking' ? '' : 'none';
+  mouthListen.style.display = state === 'listening' ? '' : 'none';
+}
+
+// Blink animation
+setInterval(() => {
+  const eyesNormal = document.querySelector('#eyesNormal');
+  const eyesBlink = document.querySelector('#eyesBlink');
+  if (eyesNormal && eyesBlink && eyesNormal.style.display !== 'none') {
+    eyesNormal.style.display = 'none';
+    eyesBlink.style.display = '';
+    setTimeout(() => {
+      eyesNormal.style.display = '';
+      eyesBlink.style.display = 'none';
+    }, 150);
+  }
+}, 4000 + Math.random()*3000);
+
+// ═══════════════════════════════════════════════════════
+// UI HELPERS
+// ═══════════════════════════════════════════════════════
+function addMessage(text, role) {
+  const t = document.getElementById('transcript');
+  const typing = document.getElementById('typingIndicator');
+  const d = document.createElement('div');
+  d.className = `message ${role}`;
+  const labels = {user:'YOU', assistant:'MWIA', system:'MWIA SYSTEM'};
+  d.innerHTML = `<div class="message-author">${labels[role]||role.toUpperCase()}</div>
+                 <div class="message-bubble">${text.replace(/\n/g,'<br>')}</div>`;
+  t.insertBefore(d, typing);
+  t.scrollTop = t.scrollHeight;
+}
+
+function showTyping(show) {
+  document.getElementById('typingIndicator').style.display = show ? 'flex' : 'none';
+}
+
+function setAdvisorStatus(s) {
+  document.getElementById('advisorStatus').textContent = s;
+}
+
+function toggleTheme() {
+  document.body.classList.toggle('dark');
+  document.getElementById('themeBtn').textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
+}
+
+function toast(msg, type='info') {
+  const c = document.getElementById('toastContainer');
+  const d = document.createElement('div');
+  d.className = `toast ${type}`;
+  d.textContent = msg;
+  c.appendChild(d);
+  setTimeout(() => d.remove(), 3000);
+}
+
+function esc(s) {
+  return (s||'').toString().replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// CSV Import/Export
+let selectedFile = null;
+
+function openCSVModal() {
+  document.getElementById('csvModal').classList.add('open');
+  selectedFile = null;
+  document.getElementById('dropText').textContent = 'Click to browse or drag & drop CSV file';
+  document.getElementById('importStatus').style.display = 'none';
+}
+
+function closeModal(id) {
+  document.getElementById(id).classList.remove('open');
+}
+
+function handleDragOver(e) {
+  e.preventDefault();
+  document.getElementById('dropZone').classList.add('drag-over');
+}
+
+function handleDrop(e) {
+  e.preventDefault();
+  document.getElementById('dropZone').classList.remove('drag-over');
+  const f = e.dataTransfer.files[0];
+  if (f?.name.endsWith('.csv')) {
+    selectedFile = f;
+    updateDropText();
+  }
+}
+
+function handleFileSelect(e) {
+  selectedFile = e.target.files[0];
+  if (selectedFile) updateDropText();
+}
+
+function updateDropText() {
+  if (!selectedFile) return;
+  document.getElementById('dropText').textContent = `📋 ${selectedFile.name} (${(selectedFile.size/1024).toFixed(1)} KB) — ready to import`;
+}
+
+async function triggerImport() {
+  if (!selectedFile) {
+    toast('Please select a CSV file first', 'error');
+    return;
+  }
+  
+  const status = document.getElementById('importStatus');
+  status.style.display = 'block';
+  status.textContent = 'Importing…';
+  
+  try {
+    const fd = new FormData();
+    fd.append('file', selectedFile);
+    const r = await fetch(API+'/api/import-csv', {method:'POST', body:fd, credentials:'include'});
+    if (!r.ok) {
+      const err = await r.json();
+      throw new Error(err.detail || 'Import failed');
+    }
+    const data = await r.json();
+    status.textContent = `✓ Imported ${data.count} patients successfully`;
+    if (data.errors && data.errors.length) {
+      status.textContent += ` (${data.errors.length} errors)`;
+    }
+    toast(`Imported ${data.count} patients`, 'success');
+    await loadPatients();
+    setTimeout(() => closeModal('csvModal'), 1500);
+  } catch(e) {
+    status.textContent = '✕ ' + e.message;
+    status.style.color = 'var(--nhs-red)';
+    toast('Import failed: ' + e.message, 'error');
+  }
+}
+
+async function exportCSV() {
+  try {
+    window.open(API+'/api/export-csv', '_blank');
+    toast('Exporting ward round CSV…', 'success');
+  } catch(e) {
+    toast('Export failed', 'error');
+  }
+}
+
+async function downloadTemplate() {
+  try {
+    window.open(API+'/api/csv-template', '_blank');
+    toast('Downloading blank template…', 'info');
+  } catch(e) {
+    toast('Download failed', 'error');
+  }
+}
+
+async function clearAllPatients() {
+  if (!confirm('Clear ALL patient data? This cannot be undone.')) return;
+  try {
+    for (const p of patients) {
+      await api('DELETE', '/api/patients/'+p.patient_id);
+    }
+    patients = [];
+    selected = null;
+    renderRoster([]);
+    updateStats();
+    document.getElementById('noSelection').classList.remove('hidden');
+    document.getElementById('overviewPanel').classList.add('hidden');
+    toast('All patients cleared', 'info');
+    closeModal('csvModal');
+  } catch(e) {
+    toast('Clear failed: '+e.message, 'error');
+  }
+}
+
+async function generateTestData() {
+  if (patients.length > 0 && !confirm('This will clear existing patients and generate 50 test patients. Continue?')) return;
+  
+  // Clear existing
+  for (const p of patients) {
+    try { await api('DELETE', '/api/patients/'+p.patient_id); } catch(e) {}
+  }
+  
+  toast('Generating 50 test patients…', 'info');
+  
+  const firstNames = ["James","Mary","John","Patricia","Robert","Jennifer","Michael","Linda","William","Barbara","David","Elizabeth","Richard","Susan","Joseph","Jessica","Thomas","Sarah","Charles","Karen","Christopher","Nancy","Daniel","Lisa","Matthew","Betty","Anthony","Margaret","Mark","Sandra","Donald","Ashley","Steven","Kimberly","Paul","Emily","Andrew","Donna","Joshua","Michelle","Kenneth","Dorothy","Kevin","Carol","Brian","Amanda","George","Melissa","Edward","Deborah"];
+  const lastNames = ["Smith","Johnson","Williams","Brown","Jones","Garcia","Miller","Davis","Rodriguez","Martinez","Hernandez","Lopez","Gonzalez","Wilson","Anderson","Thomas","Taylor","Moore","Jackson","Martin","Lee","Perez","Thompson","White","Harris","Sanchez","Clark","Ramirez","Lewis","Robinson","Walker","Young","Allen","King","Wright","Scott","Torres","Nguyen","Hill","Flores","Green","Adams","Nelson","Baker","Hall","Rivera","Campbell","Mitchell","Carter","Roberts"];
+  const wards = ["Ward 4B","Ward 5A","Ward 6C","Cardiac HDU","Surgical Ward 2","Medical Ward 3"];
+  const consultants = ["Dr Shah","Mr Harrington","Ms Osei","Dr Chen","Mr Adeyemi","Dr Patel"];
+  const specialties = ["Cardiology","Cardiac Surgery","General Surgery","Orthopaedics","Medicine","Respiratory"];
+  const diagnoses = [
+    "NSTEMI","Hip replacement","Community-acquired pneumonia","COPD exacerbation",
+    "Elective cholecystectomy","Appendicectomy","CABG x3","Aortic valve replacement",
+    "Knee replacement","GI bleed","Sepsis (urinary source)","DVT","Heart failure",
+    "Atrial fibrillation","Cellulitis"
+  ];
+  
+  for (let i = 0; i < 50; i++) {
+    const gender = Math.random() > 0.5 ? 'Male' : 'Female';
+    const firstNamePool = gender === 'Male' ? 
+      ["James","John","Robert","Michael","William","David","Richard","Joseph","Thomas","Charles","Christopher","Daniel","Matthew","Anthony","Mark","Donald","Steven","Paul","Andrew","Joshua","Kenneth","Kevin","Brian","George","Edward"] :
+      ["Mary","Patricia","Jennifer","Linda","Barbara","Elizabeth","Susan","Jessica","Sarah","Karen","Nancy","Lisa","Betty","Margaret","Sandra","Ashley","Kimberly","Emily","Donna","Michelle","Dorothy","Carol","Amanda","Melissa","Deborah"];
+    
+    const title = gender === 'Male' ? 'Mr' : (Math.random() > 0.5 ? 'Mrs' : 'Ms');
+    const age = 25 + Math.floor(Math.random() * 70);
+    const daysIn = 1 + Math.floor(Math.random() * 20);
+    const newsScore = Math.floor(Math.random() * 12);
+    const priority = newsScore >= 7 ? 'urgent' : newsScore >= 5 ? 'amber' : 'green';
+    
+    const hr = 60 + Math.floor(Math.random() * 60);
+    const hrFlag = hr > 110 ? 'bad' : hr > 100 ? 'warn' : 'ok';
+    const bpSys = 90 + Math.floor(Math.random() * 60);
+    const bpDia = 50 + Math.floor(Math.random() * 40);
+    const bpFlag = bpSys < 100 ? 'warn' : 'ok';
+    const temp = (36 + Math.random() * 3).toFixed(1);
+    const tempFlag = parseFloat(temp) > 38 ? 'warn' : 'ok';
+    const o2 = 92 + Math.floor(Math.random() * 8);
+    const o2Flag = o2 < 94 ? 'warn' : 'ok';
+    const rr = 12 + Math.floor(Math.random() * 16);
+    const rrFlag = rr > 22 ? 'warn' : 'ok';
+    
+    const patient = {
+      name: `${title} ${firstNamePool[Math.floor(Math.random()*firstNamePool.length)]} ${lastNames[Math.floor(Math.random()*lastNames.length)]}`,
+      age: `${age} yrs`,
+      gender,
+      ward: wards[Math.floor(Math.random()*wards.length)],
+      bay: `Bay ${1+Math.floor(Math.random()*4)}`,
+      bed: `Bed ${String.fromCharCode(65+Math.floor(Math.random()*4))}`,
+      consultant: consultants[Math.floor(Math.random()*consultants.length)],
+      specialty: specialties[Math.floor(Math.random()*specialties.length)],
+      admission_reason: diagnoses[Math.floor(Math.random()*diagnoses.length)],
+      days_in: daysIn.toString(),
+      priority,
+      obs_hr: hr.toString(),
+      obs_hr_flag: hrFlag,
+      obs_bp: `${bpSys}/${bpDia}`,
+      obs_bp_flag: bpFlag,
+      obs_temp: temp,
+      obs_temp_flag: tempFlag,
+      obs_o2: `${o2}%`,
+      obs_o2_flag: o2Flag,
+      obs_rr: rr.toString(),
+      obs_rr_flag: rrFlag,
+      news_score: newsScore.toString(),
+      medications: "Paracetamol 1g QDS\nOmeprazole 20mg OD\nEnoxaparin 40mg SC",
+      allergies: Math.random() > 0.7 ? "Penicillin — rash" : "NKDA",
+      discharge_plan: priority === 'green' ? "For discharge in 2-3 days" : "Ongoing treatment required",
+      nhs_number: `${Math.floor(100+Math.random()*899)} ${Math.floor(100+Math.random()*899)} ${Math.floor(1000+Math.random()*8999)}`
+    };
+    
+    try {
+      await api('POST', '/api/patients', patient);
+    } catch(e) {
+      console.error('Failed to create patient:', e);
+    }
+  }
+  
+  await loadPatients();
+  toast('Generated 50 test patients successfully', 'success');
+}
+
+async function resetDemo() {
+  if (!confirm('Reset demo to fresh state? This will clear all data and generate new test patients.')) return;
+  await clearAllPatients();
+  await generateTestData();
+}
+
+function openAddPatient() {
+  toast('Add patient — coming in next update', 'info');
+}
+
+function openBoardRound() {
+  toast('Board Round mode — coming in next update', 'info');
+}
+
+if ('speechSynthesis' in window) {
+  window.speechSynthesis.onvoiceschanged = ()=>{};
+}
+</script>
+</body>
+</html>
